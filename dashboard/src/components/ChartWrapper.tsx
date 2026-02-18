@@ -67,7 +67,7 @@ export function ChartWrapper({
         </p>
       )}
 
-      <div style={{ minHeight }}>{children}</div>
+      <div style={{ minHeight, width: '100%' }}>{children}</div>
     </div>
   );
 }

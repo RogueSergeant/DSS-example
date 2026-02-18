@@ -124,6 +124,19 @@ function liftColor(lift: number): string {
   return `rgb(${r},${g},${b})`;
 }
 
+/** Return contrasting text color for a given lift cell background */
+function liftTextColor(lift: number): string {
+  if (lift === 0) return 'transparent';
+  const t = Math.min((lift - 1.0) / 0.17, 1);
+  const r = Math.round(238 + t * (107 - 238));
+  const g = Math.round(242 + t * (141 - 242));
+  const b = Math.round(247 + t * (181 - 247));
+  // Relative luminance approximation
+  const luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
+  // Dark cells (luminance < 0.55) get white text; light cells get dark navy
+  return luminance < 0.55 ? '#ffffff' : '#1a1a2e';
+}
+
 // ─── Component ──────────────────────────────────────────────────────────────
 
 export function CopierBuyersPage() {
@@ -146,23 +159,39 @@ export function CopierBuyersPage() {
 
     const ratio = avgSpendNon > 0 ? (avgSpendCopier / avgSpendNon).toFixed(1) : '0';
 
+    // Raw values for display labels
+    const rawSpendNon = Math.round(avgSpendNon);
+    const rawSpendCopier = Math.round(avgSpendCopier);
+    const rawMarginNon = parseFloat((avgMarginNon * 100).toFixed(1));
+    const rawMarginCopier = parseFloat((avgMarginCopier * 100).toFixed(1));
+    const rawOrdersNon = parseFloat(avgOrdersNon.toFixed(1));
+    const rawOrdersCopier = parseFloat(avgOrdersCopier.toFixed(1));
+
+    // Normalize each metric so the copier-buyer value = 100,
+    // keeping all three metrics on a comparable visual scale.
     const groupedData = [
       {
         metric: 'Avg Lifetime Spend',
-        nonBuyer: Math.round(avgSpendNon),
-        copierBuyer: Math.round(avgSpendCopier),
+        nonBuyer: rawSpendCopier > 0 ? (rawSpendNon / rawSpendCopier) * 100 : 0,
+        copierBuyer: 100,
+        rawNonBuyer: rawSpendNon,
+        rawCopierBuyer: rawSpendCopier,
         format: 'dollar' as const,
       },
       {
         metric: 'Avg Margin',
-        nonBuyer: parseFloat((avgMarginNon * 100).toFixed(1)),
-        copierBuyer: parseFloat((avgMarginCopier * 100).toFixed(1)),
+        nonBuyer: rawMarginCopier > 0 ? (rawMarginNon / rawMarginCopier) * 100 : 0,
+        copierBuyer: 100,
+        rawNonBuyer: rawMarginNon,
+        rawCopierBuyer: rawMarginCopier,
         format: 'pct' as const,
       },
       {
         metric: 'Avg Orders',
-        nonBuyer: parseFloat(avgOrdersCopier.toFixed(1)) > 0 ? parseFloat(avgOrdersNon.toFixed(1)) : 0,
-        copierBuyer: parseFloat(avgOrdersCopier.toFixed(1)),
+        nonBuyer: rawOrdersCopier > 0 ? (rawOrdersNon / rawOrdersCopier) * 100 : 0,
+        copierBuyer: 100,
+        rawNonBuyer: rawOrdersNon,
+        rawCopierBuyer: rawOrdersCopier,
         format: 'number' as const,
       },
     ];
@@ -244,60 +273,65 @@ export function CopierBuyersPage() {
             subtitle="Average lifetime spend, margin, and order count"
             minHeight={280}
           >
-            <ResponsiveContainer width="100%" height={280}>
-              <BarChart
-                data={grouped}
-                margin={{ top: 16, right: 24, bottom: 8, left: 24 }}
-                barCategoryGap="25%"
-                barGap={4}
-              >
-                <defs>
-                  <pattern
-                    id="hatch-copier"
-                    width={8}
-                    height={8}
-                    patternUnits="userSpaceOnUse"
-                    patternTransform="rotate(45)"
-                  >
-                    <rect width={8} height={8} fill={COPIER_BLUE} fillOpacity={0.35} />
-                    <line
-                      x1={0} y1={0} x2={0} y2={8}
-                      stroke={COPIER_BLUE}
-                      strokeWidth={2}
-                      strokeOpacity={0.7}
-                    />
-                  </pattern>
-                </defs>
-                <CartesianGrid {...gridProps} />
-                <XAxis
-                  dataKey="metric"
-                  tick={{ fill: colors.secondaryText, fontSize: 12 }}
-                  axisLine={false}
-                  tickLine={false}
-                />
-                <YAxis hide />
-                <Tooltip
-                  contentStyle={tooltipStyle}
-                  labelStyle={{ color: colors.secondaryText, fontSize: 12 }}
-                  formatter={(value: number | undefined, name: string | undefined, props: any) => {
-                    const fmt = props?.payload?.format as 'dollar' | 'pct' | 'number' | undefined;
-                    return [fmtBarLabel((value ?? 0) as number, fmt ?? 'number'), name ?? ''];
-                  }}
-                />
-                <Bar
-                  dataKey="nonBuyer"
-                  name="Non-Buyer"
-                  fill={SLATE}
-                  radius={[3, 3, 0, 0]}
-                />
-                <Bar
-                  dataKey="copierBuyer"
-                  name="Copier Buyer"
-                  fill="url(#hatch-copier)"
-                  radius={[3, 3, 0, 0]}
-                />
-              </BarChart>
-            </ResponsiveContainer>
+            <div style={{ width: '100%', height: 280, position: 'relative' }}>
+              <ResponsiveContainer width="100%" height="100%">
+                <BarChart
+                  data={grouped}
+                  margin={{ top: 16, right: 24, bottom: 8, left: 24 }}
+                  barCategoryGap="25%"
+                  barGap={4}
+                >
+                  <defs>
+                    <pattern
+                      id="hatch-copier"
+                      width={8}
+                      height={8}
+                      patternUnits="userSpaceOnUse"
+                      patternTransform="rotate(45)"
+                    >
+                      <rect width={8} height={8} fill={COPIER_BLUE} fillOpacity={0.35} />
+                      <line
+                        x1={0} y1={0} x2={0} y2={8}
+                        stroke={COPIER_BLUE}
+                        strokeWidth={2}
+                        strokeOpacity={0.7}
+                      />
+                    </pattern>
+                  </defs>
+                  <CartesianGrid {...gridProps} />
+                  <XAxis
+                    dataKey="metric"
+                    tick={{ fill: colors.secondaryText, fontSize: 12 }}
+                    axisLine={false}
+                    tickLine={false}
+                  />
+                  <YAxis hide domain={[0, 110]} />
+                  <Tooltip
+                    contentStyle={tooltipStyle}
+                    labelStyle={{ color: colors.secondaryText, fontSize: 12 }}
+                    formatter={(_value: number | undefined, name: string | undefined, props: any) => {
+                      const fmt = props?.payload?.format as 'dollar' | 'pct' | 'number' | undefined;
+                      // Show raw (un-normalized) values in tooltip
+                      const rawKey = name === 'Non-Buyer' ? 'rawNonBuyer' : 'rawCopierBuyer';
+                      const rawVal = props?.payload?.[rawKey] as number | undefined;
+                      return [fmtBarLabel(rawVal ?? 0, fmt ?? 'number'), name ?? ''];
+                    }}
+                  />
+                  <Bar
+                    dataKey="nonBuyer"
+                    name="Non-Buyer"
+                    fill={SLATE}
+                    radius={[3, 3, 0, 0]}
+                  />
+                  <Bar
+                    dataKey="copierBuyer"
+                    name="Copier Buyer"
+                    fill="url(#hatch-copier)"
+                    radius={[3, 3, 0, 0]}
+                  />
+                </BarChart>
+              </ResponsiveContainer>
+            </div>
 
             {/* Custom legend */}
             <div
@@ -363,9 +397,9 @@ export function CopierBuyersPage() {
                     color: colors.secondaryText,
                   }}
                 >
-                  <span style={{ color: SLATE }}>{fmtBarLabel(g.nonBuyer, g.format)}</span>
+                  <span style={{ color: SLATE }}>{fmtBarLabel(g.rawNonBuyer, g.format)}</span>
                   {' / '}
-                  <span style={{ color: COPIER_BLUE }}>{fmtBarLabel(g.copierBuyer, g.format)}</span>
+                  <span style={{ color: COPIER_BLUE }}>{fmtBarLabel(g.rawCopierBuyer, g.format)}</span>
                 </div>
               ))}
             </div>
@@ -469,50 +503,52 @@ export function CopierBuyersPage() {
             subtitle="Distribution shifts right for copier buyers"
             minHeight={260}
           >
-            <ResponsiveContainer width="100%" height={260}>
-              <BarChart
-                data={histogramData}
-                margin={{ top: 16, right: 16, bottom: 8, left: 16 }}
-                barGap={0}
-                barCategoryGap="10%"
-              >
-                <CartesianGrid {...gridProps} />
-                <XAxis
-                  dataKey="label"
-                  tick={{ fill: colors.secondaryText, fontSize: 11 }}
-                  axisLine={false}
-                  tickLine={false}
-                  interval={1}
-                />
-                <YAxis
-                  tick={{ fill: colors.secondaryText, fontSize: 11 }}
-                  axisLine={false}
-                  tickLine={false}
-                  width={36}
-                />
-                <Tooltip
-                  contentStyle={tooltipStyle}
-                  labelStyle={{ color: colors.secondaryText, fontSize: 12 }}
-                  formatter={(value: number | undefined, name: string | undefined) => [fmtNumber(value ?? 0), name ?? '']}
-                />
-                <Bar
-                  dataKey="nonBuyer"
-                  name="Non-Buyer"
-                  fill={SLATE}
-                  fillOpacity={0.8}
-                  radius={[2, 2, 0, 0]}
-                />
-                <Bar
-                  dataKey="copierBuyer"
-                  name="Copier Buyer"
-                  fill={COPIER_BLUE}
-                  fillOpacity={0.55}
-                  stroke={COPIER_BLUE}
-                  strokeWidth={1.5}
-                  radius={[2, 2, 0, 0]}
-                />
-              </BarChart>
-            </ResponsiveContainer>
+            <div style={{ width: '100%', height: 260, position: 'relative' }}>
+              <ResponsiveContainer width="100%" height="100%">
+                <BarChart
+                  data={histogramData}
+                  margin={{ top: 16, right: 16, bottom: 8, left: 16 }}
+                  barGap={0}
+                  barCategoryGap="10%"
+                >
+                  <CartesianGrid {...gridProps} />
+                  <XAxis
+                    dataKey="label"
+                    tick={{ fill: colors.secondaryText, fontSize: 11 }}
+                    axisLine={false}
+                    tickLine={false}
+                    interval={1}
+                  />
+                  <YAxis
+                    tick={{ fill: colors.secondaryText, fontSize: 11 }}
+                    axisLine={false}
+                    tickLine={false}
+                    width={36}
+                  />
+                  <Tooltip
+                    contentStyle={tooltipStyle}
+                    labelStyle={{ color: colors.secondaryText, fontSize: 12 }}
+                    formatter={(value: number | undefined, name: string | undefined) => [fmtNumber(value ?? 0), name ?? '']}
+                  />
+                  <Bar
+                    dataKey="nonBuyer"
+                    name="Non-Buyer"
+                    fill={SLATE}
+                    fillOpacity={0.8}
+                    radius={[2, 2, 0, 0]}
+                  />
+                  <Bar
+                    dataKey="copierBuyer"
+                    name="Copier Buyer"
+                    fill={COPIER_BLUE}
+                    fillOpacity={0.55}
+                    stroke={COPIER_BLUE}
+                    strokeWidth={1.5}
+                    radius={[2, 2, 0, 0]}
+                  />
+                </BarChart>
+              </ResponsiveContainer>
+            </div>
 
             {/* Legend */}
             <div
@@ -621,6 +657,7 @@ export function CopierBuyersPage() {
                             style={{
                               padding: 0,
                               background: isDiag ? colors.pageBg : liftColor(lift),
+                              color: isDiag ? 'transparent' : liftTextColor(lift),
                               border: `1px solid ${colors.pageBg}`,
                               width: '1fr',
                               height: 14,

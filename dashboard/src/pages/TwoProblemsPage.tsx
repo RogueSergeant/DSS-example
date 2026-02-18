@@ -35,7 +35,7 @@ import type { DiscountRow, CountryRegimeRow, YearFilter, PageId } from '../lib/t
 
 // ─── Band ordering ─────────────────────────────────────────────────────────
 
-const BAND_ORDER = ['None', '1\u201315%', '16\u201330%', '31\u201350%', '51%+'];
+const BAND_ORDER = ['None', '1–15%', '16–30%', '31–50%', '51%+'];
 
 // ─── Helpers ───────────────────────────────────────────────────────────────
 
@@ -308,7 +308,7 @@ export function TwoProblemsPage({ year, onNavigate }: TwoProblemsPageProps) {
         <GridCell span={6}>
           <ChartWrapper
             title={marginChartTitle}
-            subtitle={year === 'All' ? 'Margin by discount band, 2011\u20132014' : `Margin by discount band, ${year}`}
+            subtitle={year === 'All' ? 'Margin by discount band, 2011–2014' : `Margin by discount band, ${year}`}
             minHeight={240}
           >
             <ResponsiveContainer width="100%" height={240}>

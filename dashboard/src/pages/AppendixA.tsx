@@ -168,12 +168,12 @@ export function AppendixA() {
                       {r.order_count < 50 && <> <ReliabilityFlag /></>}
                     </td>
                     <td style={tdStyle}>{r.discount_regime}</td>
-                    <td style={{ ...tdStyle, textAlign: 'right' }}>{r.fixed_discount_rate != null ? fmtPct(r.fixed_discount_rate) : '\u2014'}</td>
+                    <td style={{ ...tdStyle, textAlign: 'right' }}>{r.fixed_discount_rate != null ? fmtPct(r.fixed_discount_rate) : '—'}</td>
                     <td style={{ ...tdStyle, textAlign: 'right' }}>{fmtPct(r.margin_pct)}</td>
                     <td style={{ ...tdStyle, textAlign: 'right', color: isLoss ? colors.highlight : colors.emphasisText }}>{fmtDollar(r.profit)}</td>
                     <td style={{ ...tdStyle, textAlign: 'right' }}>{fmtDollar(r.annual_loss)}</td>
                     <td style={tdStyle}>{r.market}</td>
-                    <td style={tdStyle}>{r.regional_manager ?? '\u2014'}</td>
+                    <td style={tdStyle}>{r.regional_manager ?? '—'}</td>
                     <td style={{ ...tdStyle, textAlign: 'right' }}>{fmtNumber(r.order_count)}</td>
                   </tr>
                 );

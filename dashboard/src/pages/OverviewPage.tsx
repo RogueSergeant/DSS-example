@@ -418,13 +418,13 @@ export function OverviewPage({ year, onNavigate: _onNavigate }: OverviewPageProp
       {/* ── Section 2: The Paradox Chart ───────────────────────────────── */}
       <Section heading="The Paradox">
         <ChartWrapper
-          title="Sales double. Margin doesn\u2019t move."
-          subtitle={`Annual sales and net margin, 2011\u20132014${selectedMarket ? ` \u2014 ${selectedMarket}` : ''}`}
+          title="Sales double. Margin doesn't move."
+          subtitle={`Annual sales and net margin, 2011–2014${selectedMarket ? ` — ${selectedMarket}` : ''}`}
         >
           <ResponsiveContainer width="100%" height={280}>
             <ComposedChart
               data={yearlyData}
-              margin={chartDefaults.margin}
+              margin={{ ...chartDefaults.margin, right: 120 }}
               onClick={(state: any) => {
                 if (state?.activePayload?.[0]?.payload) {
                   handleBarClick(state.activePayload[0].payload);
@@ -480,6 +480,7 @@ export function OverviewPage({ year, onNavigate: _onNavigate }: OverviewPageProp
               <Bar
                 yAxisId="left"
                 dataKey="sales"
+                barSize={60}
                 radius={[2, 2, 0, 0]}
                 cursor="pointer"
               >
@@ -513,7 +514,7 @@ export function OverviewPage({ year, onNavigate: _onNavigate }: OverviewPageProp
                   x={2014}
                   stroke="transparent"
                   label={{
-                    value: `${((yearlyData.find((y) => y.year === 2014)?.margin_pct ?? 0) * 100).toFixed(1)}% \u2014 same as 2011`,
+                    value: `${((yearlyData.find((y) => y.year === 2014)?.margin_pct ?? 0) * 100).toFixed(1)}% — same as 2011`,
                     position: 'top',
                     fill: colors.highlight,
                     fontSize: typography.annotation.size,
@@ -618,7 +619,7 @@ export function OverviewPage({ year, onNavigate: _onNavigate }: OverviewPageProp
                                 color: colors.warning,
                               }}
                             >
-                              \u26A0
+                              ⚠
                             </span>
                           )}
                         </td>
@@ -681,7 +682,7 @@ export function OverviewPage({ year, onNavigate: _onNavigate }: OverviewPageProp
           <Section heading="Category Mix">
             <ChartWrapper
               title="Furniture takes a third of sales. It earns a fraction of the margin."
-              subtitle={`Sales share and margin by category, ${selectedYear ?? displayYear}${selectedMarket ? ` \u2014 ${selectedMarket}` : ''}`}
+              subtitle={`Sales share and margin by category, ${selectedYear ?? displayYear}${selectedMarket ? ` — ${selectedMarket}` : ''}`}
               minHeight={120}
             >
               <CategoryBar categories={categoryData} selectedMarket={selectedMarket} />

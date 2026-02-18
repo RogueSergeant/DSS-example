@@ -94,11 +94,22 @@ export function DumbbellChart({
   const rawDots = data.map((d) => ({ ...d, x: d.rawMargin, y: d.manager }));
   const adjDots = data.map((d) => ({ ...d, x: d.adjustedMargin, y: d.manager }));
 
-  // Calculate domain
+  // Calculate domain with nice round percentage ticks
   const allValues = data.flatMap((d) => [d.rawMargin, d.adjustedMargin]);
   const xMin = Math.min(...allValues);
   const xMax = Math.max(...allValues);
   const padding = (xMax - xMin) * 0.15;
+
+  // Round domain to nearest 5% for clean axis
+  const domainMin = Math.floor((xMin - padding) * 20) / 20; // nearest 5%
+  const domainMax = Math.ceil((xMax + padding) * 20) / 20;
+
+  // Generate evenly-spaced round ticks (every 5 or 10 percentage points)
+  const xTicks: number[] = [];
+  const step = 0.05; // 5 percentage points
+  for (let t = domainMin; t <= domainMax + 1e-9; t += step) {
+    xTicks.push(Math.round(t * 100) / 100);
+  }
 
   return (
     <ChartWrapper title={title} subtitle={subtitle}>
@@ -111,7 +122,9 @@ export function DumbbellChart({
         <XAxis
           dataKey="x"
           type="number"
-          domain={[xMin - padding, xMax + padding]}
+          domain={[domainMin, domainMax]}
+          ticks={xTicks}
+          tickFormatter={(v: number) => `${(v * 100).toFixed(0)}%`}
           tick={{ fill: typography.axisLabel.color, fontSize: typography.axisLabel.size }}
           axisLine={false}
           name="Margin"
@@ -147,13 +160,15 @@ export function DumbbellChart({
           ))}
         </Scatter>
 
-        {/* Annotations for managers with no inherited policy */}
-        {data
-          .filter((d) => d.noInheritedPolicy)
-          .map((d) => (
+        {/* Annotation for managers with no inherited policy — show label only once */}
+        {(() => {
+          const noPolicyManagers = data.filter((d) => d.noInheritedPolicy);
+          if (noPolicyManagers.length === 0) return null;
+          const first = noPolicyManagers[0];
+          return (
             <ReferenceLine
-              key={d.manager}
-              x={d.rawMargin}
+              key={first.manager}
+              x={first.rawMargin}
               stroke="transparent"
               label={{
                 value: 'No inherited policies',
@@ -163,7 +178,8 @@ export function DumbbellChart({
                 position: 'right',
               }}
             />
-          ))}
+          );
+        })()}
 
         <Tooltip
           contentStyle={tooltipStyle}
