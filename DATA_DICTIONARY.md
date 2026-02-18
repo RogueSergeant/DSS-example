@@ -196,8 +196,9 @@ Per sub-category, the discount rate at which average margin crosses zero.
 
 ### recommended_ceiling
 
-`breakeven_discount` rounded **down** to the nearest 0.05. This is the safe maximum
-discount that keeps the sub-category profitable.
+`breakeven_discount` minus 0.05 (a safety margin), then rounded to the nearest 0.05.
+This is the safe maximum discount that keeps the sub-category profitable. For example,
+Tables has breakeven = 0.21, so ceiling = round((0.21 − 0.05) / 0.05) × 0.05 = 0.15.
 
 ### annual_loss
 
@@ -291,37 +292,103 @@ true/false.
 | `sub_category` | string | Product sub-category |
 | `zero_discount_margin` | float | Margin when discount = 0 |
 | `breakeven_discount` | float | Discount at which margin crosses zero |
-| `recommended_ceiling` | float | Breakeven floored to nearest 0.05 |
+| `recommended_ceiling` | float | breakeven − 0.05, rounded to nearest 0.05 |
 | `avg_discounted_margin` | float | Average margin across all discounted lines |
 | `order_count_heavy_discount` | int | Lines with discount >= 0.30 |
 | `order_count_not_heavy_discount` | int | Lines with discount < 0.30 |
 
-### whatif_discount_curve.json (71 records)
+### whatif_discount_curve.json (structured object)
+
+**Consuming page:** Page 5 (What-If Calculator)
+
+This file is the complete What-If Calculation Engine (Brief 2). It is a JSON object
+with five top-level keys:
+
+#### `curve` — Discount-to-Margin Curve (71 records)
 
 **Grain:** Discount rate (0.00 to 0.70 at 0.01 steps)
-**Consuming page:** Page 5 (What-If Calculator)
+
+Empirical foundation for all what-if projections. Derived from variable-regime
+countries only, using PCHIP monotone cubic interpolation.
 
 | Field | Type | Description |
 |-------|------|-------------|
 | `discount_rate` | float | 0.00, 0.01, 0.02, … 0.70 |
-| `expected_margin_pct` | float | PCHIP-interpolated expected margin at this rate, derived from variable-country data |
+| `avg_margin` | float | PCHIP-interpolated expected margin at this rate |
+| `order_count` | int | Number of order lines at this exact rate (0 if interpolated) |
+| `interpolated` | boolean | True if this rate was not directly observed in the data |
 
-**Usage:** This curve provides the backbone for the what-if discount simulator.
-Plot discount_rate on x-axis, expected_margin_pct on y-axis. The curve crosses
-zero at approximately 0.28 (the aggregate breakeven point). Brief 2 defines
-the interactive what-if logic that consumes this curve.
+**Runtime lookup:** Convert slider percentage to decimal (e.g. 15 → 0.15), index into
+array. The curve crosses zero at approximately 0.27 (the aggregate breakeven point).
+
+#### `constants` — Key Values
+
+| Field | Type | Value | Description |
+|-------|------|-------|-------------|
+| `total_company_baseline_profit` | float | $1,467,457.29 | Sum of profit across all 51,290 lines |
+| `fixed_country_current_profit` | float | −$412,870.26 | Sum of profit for Fixed-regime lines |
+| `variable_country_current_profit` | float | $931,585.12 | Sum of profit for Variable-regime lines |
+| `zero_discount_country_profit` | float | $948,742.43 | Sum of profit for Zero-discount-regime lines |
+
+Partition identity: `total = fixed + variable + zero` holds exactly.
+
+#### `whatif_fixed_cap_lookup` — Slider A (31 entries, cap 0–30%)
+
+**Model:** If all 24 fixed-policy countries (currently at 40%–70% discount) were capped
+at rate `c`, what is the projected profit? Applies `margin_at_cap` from the curve to
+total fixed-country sales.
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `cap` | int | Cap value as integer percentage (0–30) |
+| `projected_profit` | float | `fixed_total_sales × margin_at_cap` |
+| `recovery` | float | `projected_profit − fixed_country_current_profit` (improvement over current −$413K loss) |
+| `uplift_pct` | float | `recovery / total_company_baseline_profit` |
+
+#### `whatif_variable_cap_lookup` — Slider B (31 entries, cap 0–30%)
+
+**Model:** If every variable-country order line currently above `c` had been placed at
+exactly `c`, how much profit is recovered? Operates at line level.
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `cap` | int | Cap value as integer percentage (0–30) |
+| `lines_affected` | int | Count of variable-country lines where `discount > c` |
+| `recovery` | float | Sum of `sales × (margin_at_c − actual_margin)` for all affected lines |
+| `new_total_profit` | float | `total_company_baseline_profit + recovery` (total company profit if only variable cap applied) |
+| `uplift_pct` | float | `recovery / total_company_baseline_profit` |
+
+#### `scenario_matrix` — Combined Grid (961 cells, 31×31)
+
+Every combination of Slider A (fixed cap) × Slider B (variable cap). The active cell
+in the dashboard is the one matching the current slider values.
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `fixed_cap` | int | Row: fixed-country cap (0–30%) |
+| `variable_cap` | int | Column: variable-country cap (0–30%) |
+| `total_profit` | float | `variable_new_total_profit + fixed_recovery` |
+| `combined_uplift` | float | `(total_profit / total_company_baseline_profit) − 1` |
+
+**Note on the formula:** `variable_new_total_profit` already includes the full company
+baseline plus variable recovery. Adding `fixed_recovery` on top replaces the fixed-country
+baseline with the projected fixed-country profit. The two regime groups (fixed + variable)
+are mutually exclusive; zero-discount countries are unaffected and included in the baseline.
 
 ### whatif_product_breakeven.json (17 records)
 
 **Grain:** Sub-Category
-**Consuming page:** Page 5 (What-If Calculator)
+**Consuming page:** Page 4 (Manager & Product Policy), Page 5 (What-If Calculator)
+
+Static reference table — not interactive. Per-sub-category breakeven analysis using
+variable-regime data and PCHIP interpolation.
 
 | Field | Type | Description |
 |-------|------|-------------|
 | `sub_category` | string | Product sub-category |
 | `breakeven_discount` | float | Discount rate where margin = 0 |
 | `zero_discount_margin` | float | Margin at zero discount |
-| `recommended_ceiling` | float | Safe max discount (breakeven floored to 0.05) |
+| `recommended_ceiling` | float | breakeven − 0.05, rounded to nearest 0.05 |
 
 ### summary_customers.json (1,590 records)
 
@@ -385,7 +452,7 @@ For downstream brief developers, here is which JSON files each dashboard page co
 | Page 2: Discount Impact | `summary_discount.json` | | Quarter x Discount Band |
 | Page 3: Country Regimes | `summary_country_regime.json` | | Includes caveats 3, 4, 6 |
 | Page 4: Manager & Product Policy | `summary_manager.json`, `summary_product.json` | | Manager adjusted vs raw; product breakeven |
-| Page 5: What-If Calculator | `whatif_discount_curve.json`, `whatif_product_breakeven.json` | `detail_orders.json` | Curve for simulator; detail for line-level recalc |
+| Page 5: What-If Calculator | `whatif_discount_curve.json`, `whatif_product_breakeven.json` | | Pre-aggregated lookups for both sliders + scenario matrix; no line-level recalc needed |
 | Page 6: Customer Analysis | `summary_customers.json` | | Lifetime value, copier buyers |
 | Appendices | `detail_orders.json` | | Full denormalised detail |
 
