@@ -1,0 +1,286 @@
+[
+  {
+    "discount_rate": 0.0,
+    "expected_margin_pct": 0.281497
+  },
+  {
+    "discount_rate": 0.01,
+    "expected_margin_pct": 0.260219
+  },
+  {
+    "discount_rate": 0.02,
+    "expected_margin_pct": 0.240839
+  },
+  {
+    "discount_rate": 0.03,
+    "expected_margin_pct": 0.223504
+  },
+  {
+    "discount_rate": 0.04,
+    "expected_margin_pct": 0.208366
+  },
+  {
+    "discount_rate": 0.05,
+    "expected_margin_pct": 0.195574
+  },
+  {
+    "discount_rate": 0.06,
+    "expected_margin_pct": 0.185278
+  },
+  {
+    "discount_rate": 0.07,
+    "expected_margin_pct": 0.177627
+  },
+  {
+    "discount_rate": 0.08,
+    "expected_margin_pct": 0.17287
+  },
+  {
+    "discount_rate": 0.09,
+    "expected_margin_pct": 0.169395
+  },
+  {
+    "discount_rate": 0.1,
+    "expected_margin_pct": 0.164558
+  },
+  {
+    "discount_rate": 0.11,
+    "expected_margin_pct": 0.152994
+  },
+  {
+    "discount_rate": 0.12,
+    "expected_margin_pct": 0.134673
+  },
+  {
+    "discount_rate": 0.13,
+    "expected_margin_pct": 0.114953
+  },
+  {
+    "discount_rate": 0.14,
+    "expected_margin_pct": 0.099192
+  },
+  {
+    "discount_rate": 0.15,
+    "expected_margin_pct": 0.092748
+  },
+  {
+    "discount_rate": 0.16,
+    "expected_margin_pct": 0.097751
+  },
+  {
+    "discount_rate": 0.17,
+    "expected_margin_pct": 0.107416
+  },
+  {
+    "discount_rate": 0.18,
+    "expected_margin_pct": 0.122069
+  },
+  {
+    "discount_rate": 0.19,
+    "expected_margin_pct": 0.139514
+  },
+  {
+    "discount_rate": 0.2,
+    "expected_margin_pct": 0.147952
+  },
+  {
+    "discount_rate": 0.21,
+    "expected_margin_pct": 0.137459
+  },
+  {
+    "discount_rate": 0.22,
+    "expected_margin_pct": 0.111349
+  },
+  {
+    "discount_rate": 0.23,
+    "expected_margin_pct": 0.077668
+  },
+  {
+    "discount_rate": 0.24,
+    "expected_margin_pct": 0.044465
+  },
+  {
+    "discount_rate": 0.25,
+    "expected_margin_pct": 0.019789
+  },
+  {
+    "discount_rate": 0.26,
+    "expected_margin_pct": 0.005898
+  },
+  {
+    "discount_rate": 0.27,
+    "expected_margin_pct": -0.009013
+  },
+  {
+    "discount_rate": 0.28,
+    "expected_margin_pct": -0.037363
+  },
+  {
+    "discount_rate": 0.29,
+    "expected_margin_pct": -0.075495
+  },
+  {
+    "discount_rate": 0.3,
+    "expected_margin_pct": -0.112335
+  },
+  {
+    "discount_rate": 0.31,
+    "expected_margin_pct": -0.151439
+  },
+  {
+    "discount_rate": 0.32,
+    "expected_margin_pct": -0.174292
+  },
+  {
+    "discount_rate": 0.33,
+    "expected_margin_pct": -0.16944
+  },
+  {
+    "discount_rate": 0.34,
+    "expected_margin_pct": -0.160428
+  },
+  {
+    "discount_rate": 0.35,
+    "expected_margin_pct": -0.155576
+  },
+  {
+    "discount_rate": 0.36,
+    "expected_margin_pct": -0.174306
+  },
+  {
+    "discount_rate": 0.37,
+    "expected_margin_pct": -0.20263
+  },
+  {
+    "discount_rate": 0.38,
+    "expected_margin_pct": -0.219129
+  },
+  {
+    "discount_rate": 0.39,
+    "expected_margin_pct": -0.233401
+  },
+  {
+    "discount_rate": 0.4,
+    "expected_margin_pct": -0.250174
+  },
+  {
+    "discount_rate": 0.41,
+    "expected_margin_pct": -0.274503
+  },
+  {
+    "discount_rate": 0.42,
+    "expected_margin_pct": -0.305084
+  },
+  {
+    "discount_rate": 0.43,
+    "expected_margin_pct": -0.337107
+  },
+  {
+    "discount_rate": 0.44,
+    "expected_margin_pct": -0.365763
+  },
+  {
+    "discount_rate": 0.45,
+    "expected_margin_pct": -0.386241
+  },
+  {
+    "discount_rate": 0.46,
+    "expected_margin_pct": -0.396983
+  },
+  {
+    "discount_rate": 0.47,
+    "expected_margin_pct": -0.408269
+  },
+  {
+    "discount_rate": 0.48,
+    "expected_margin_pct": -0.440241
+  },
+  {
+    "discount_rate": 0.49,
+    "expected_margin_pct": -0.482986
+  },
+  {
+    "discount_rate": 0.5,
+    "expected_margin_pct": -0.504375
+  },
+  {
+    "discount_rate": 0.51,
+    "expected_margin_pct": -0.501155
+  },
+  {
+    "discount_rate": 0.52,
+    "expected_margin_pct": -0.493477
+  },
+  {
+    "discount_rate": 0.53,
+    "expected_margin_pct": -0.484313
+  },
+  {
+    "discount_rate": 0.54,
+    "expected_margin_pct": -0.476634
+  },
+  {
+    "discount_rate": 0.55,
+    "expected_margin_pct": -0.473414
+  },
+  {
+    "discount_rate": 0.56,
+    "expected_margin_pct": -0.598035
+  },
+  {
+    "discount_rate": 0.57,
+    "expected_margin_pct": -0.74816
+  },
+  {
+    "discount_rate": 0.58,
+    "expected_margin_pct": -0.78577
+  },
+  {
+    "discount_rate": 0.59,
+    "expected_margin_pct": -0.809162
+  },
+  {
+    "discount_rate": 0.6,
+    "expected_margin_pct": -0.837203
+  },
+  {
+    "discount_rate": 0.61,
+    "expected_margin_pct": -0.887049
+  },
+  {
+    "discount_rate": 0.62,
+    "expected_margin_pct": -0.952904
+  },
+  {
+    "discount_rate": 0.63,
+    "expected_margin_pct": -1.019207
+  },
+  {
+    "discount_rate": 0.64,
+    "expected_margin_pct": -1.0704
+  },
+  {
+    "discount_rate": 0.65,
+    "expected_margin_pct": -1.090922
+  },
+  {
+    "discount_rate": 0.66,
+    "expected_margin_pct": -1.063714
+  },
+  {
+    "discount_rate": 0.67,
+    "expected_margin_pct": -0.998832
+  },
+  {
+    "discount_rate": 0.68,
+    "expected_margin_pct": -0.921393
+  },
+  {
+    "discount_rate": 0.69,
+    "expected_margin_pct": -0.856512
+  },
+  {
+    "discount_rate": 0.7,
+    "expected_margin_pct": -0.829303
+  }
+]

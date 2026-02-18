@@ -1,0 +1,104 @@
+[
+  {
+    "sub_category": "Accessories",
+    "breakeven_discount": 0.28,
+    "zero_discount_margin": 0.269154,
+    "recommended_ceiling": 0.25
+  },
+  {
+    "sub_category": "Appliances",
+    "breakeven_discount": 0.28,
+    "zero_discount_margin": 0.259213,
+    "recommended_ceiling": 0.25
+  },
+  {
+    "sub_category": "Art",
+    "breakeven_discount": 0.25,
+    "zero_discount_margin": 0.250136,
+    "recommended_ceiling": 0.25
+  },
+  {
+    "sub_category": "Binders",
+    "breakeven_discount": 0.33,
+    "zero_discount_margin": 0.318088,
+    "recommended_ceiling": 0.3
+  },
+  {
+    "sub_category": "Bookcases",
+    "breakeven_discount": 0.24,
+    "zero_discount_margin": 0.244188,
+    "recommended_ceiling": 0.2
+  },
+  {
+    "sub_category": "Chairs",
+    "breakeven_discount": 0.27,
+    "zero_discount_margin": 0.238757,
+    "recommended_ceiling": 0.25
+  },
+  {
+    "sub_category": "Copiers",
+    "breakeven_discount": 0.27,
+    "zero_discount_margin": 0.263118,
+    "recommended_ceiling": 0.25
+  },
+  {
+    "sub_category": "Envelopes",
+    "breakeven_discount": 0.32,
+    "zero_discount_margin": 0.286391,
+    "recommended_ceiling": 0.3
+  },
+  {
+    "sub_category": "Fasteners",
+    "breakeven_discount": 0.3,
+    "zero_discount_margin": 0.264266,
+    "recommended_ceiling": 0.25
+  },
+  {
+    "sub_category": "Furnishings",
+    "breakeven_discount": 0.28,
+    "zero_discount_margin": 0.253863,
+    "recommended_ceiling": 0.25
+  },
+  {
+    "sub_category": "Labels",
+    "breakeven_discount": 0.32,
+    "zero_discount_margin": 0.299379,
+    "recommended_ceiling": 0.3
+  },
+  {
+    "sub_category": "Machines",
+    "breakeven_discount": 0.24,
+    "zero_discount_margin": 0.257222,
+    "recommended_ceiling": 0.2
+  },
+  {
+    "sub_category": "Paper",
+    "breakeven_discount": 0.32,
+    "zero_discount_margin": 0.318883,
+    "recommended_ceiling": 0.3
+  },
+  {
+    "sub_category": "Phones",
+    "breakeven_discount": 0.26,
+    "zero_discount_margin": 0.240134,
+    "recommended_ceiling": 0.25
+  },
+  {
+    "sub_category": "Storage",
+    "breakeven_discount": 0.19,
+    "zero_discount_margin": 0.211542,
+    "recommended_ceiling": 0.15
+  },
+  {
+    "sub_category": "Supplies",
+    "breakeven_discount": 0.21,
+    "zero_discount_margin": 0.210923,
+    "recommended_ceiling": 0.2
+  },
+  {
+    "sub_category": "Tables",
+    "breakeven_discount": 0.21,
+    "zero_discount_margin": 0.230883,
+    "recommended_ceiling": 0.2
+  }
+]

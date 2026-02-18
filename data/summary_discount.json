@@ -1,0 +1,562 @@
+[
+  {
+    "year_quarter": "2011-Q1",
+    "discount_band": "16\u201330%",
+    "order_count": 168,
+    "profit": 2231.59,
+    "margin_pct": 0.058171
+  },
+  {
+    "year_quarter": "2011-Q1",
+    "discount_band": "1\u201315%",
+    "order_count": 114,
+    "profit": 6789.57,
+    "margin_pct": 0.186969
+  },
+  {
+    "year_quarter": "2011-Q1",
+    "discount_band": "31\u201350%",
+    "order_count": 144,
+    "profit": -11356.87,
+    "margin_pct": -0.230964
+  },
+  {
+    "year_quarter": "2011-Q1",
+    "discount_band": "51%+",
+    "order_count": 125,
+    "profit": -12131.69,
+    "margin_pct": -1.133408
+  },
+  {
+    "year_quarter": "2011-Q1",
+    "discount_band": "None",
+    "order_count": 799,
+    "profit": 50510.67,
+    "margin_pct": 0.251012
+  },
+  {
+    "year_quarter": "2011-Q2",
+    "discount_band": "16\u201330%",
+    "order_count": 265,
+    "profit": 5092.95,
+    "margin_pct": 0.064583
+  },
+  {
+    "year_quarter": "2011-Q2",
+    "discount_band": "1\u201315%",
+    "order_count": 189,
+    "profit": 15832.75,
+    "margin_pct": 0.200687
+  },
+  {
+    "year_quarter": "2011-Q2",
+    "discount_band": "31\u201350%",
+    "order_count": 253,
+    "profit": -14464.25,
+    "margin_pct": -0.286219
+  },
+  {
+    "year_quarter": "2011-Q2",
+    "discount_band": "51%+",
+    "order_count": 207,
+    "profit": -18365.05,
+    "margin_pct": -1.116347
+  },
+  {
+    "year_quarter": "2011-Q2",
+    "discount_band": "None",
+    "order_count": 1133,
+    "profit": 60405.01,
+    "margin_pct": 0.23769
+  },
+  {
+    "year_quarter": "2011-Q3",
+    "discount_band": "16\u201330%",
+    "order_count": 358,
+    "profit": 4865.41,
+    "margin_pct": 0.048418
+  },
+  {
+    "year_quarter": "2011-Q3",
+    "discount_band": "1\u201315%",
+    "order_count": 202,
+    "profit": 13935.63,
+    "margin_pct": 0.151026
+  },
+  {
+    "year_quarter": "2011-Q3",
+    "discount_band": "31\u201350%",
+    "order_count": 276,
+    "profit": -18110.0,
+    "margin_pct": -0.293255
+  },
+  {
+    "year_quarter": "2011-Q3",
+    "discount_band": "51%+",
+    "order_count": 184,
+    "profit": -22314.85,
+    "margin_pct": -1.202474
+  },
+  {
+    "year_quarter": "2011-Q3",
+    "discount_band": "None",
+    "order_count": 1405,
+    "profit": 86699.36,
+    "margin_pct": 0.254823
+  },
+  {
+    "year_quarter": "2011-Q4",
+    "discount_band": "16\u201330%",
+    "order_count": 518,
+    "profit": 10479.09,
+    "margin_pct": 0.067694
+  },
+  {
+    "year_quarter": "2011-Q4",
+    "discount_band": "1\u201315%",
+    "order_count": 269,
+    "profit": 18568.37,
+    "margin_pct": 0.167866
+  },
+  {
+    "year_quarter": "2011-Q4",
+    "discount_band": "31\u201350%",
+    "order_count": 377,
+    "profit": -23984.1,
+    "margin_pct": -0.34103
+  },
+  {
+    "year_quarter": "2011-Q4",
+    "discount_band": "51%+",
+    "order_count": 263,
+    "profit": -24396.72,
+    "margin_pct": -1.041673
+  },
+  {
+    "year_quarter": "2011-Q4",
+    "discount_band": "None",
+    "order_count": 1749,
+    "profit": 118653.95,
+    "margin_pct": 0.25121
+  },
+  {
+    "year_quarter": "2012-Q1",
+    "discount_band": "16\u201330%",
+    "order_count": 156,
+    "profit": 3140.79,
+    "margin_pct": 0.069327
+  },
+  {
+    "year_quarter": "2012-Q1",
+    "discount_band": "1\u201315%",
+    "order_count": 163,
+    "profit": 9043.8,
+    "margin_pct": 0.14632
+  },
+  {
+    "year_quarter": "2012-Q1",
+    "discount_band": "31\u201350%",
+    "order_count": 199,
+    "profit": -15599.0,
+    "margin_pct": -0.397431
+  },
+  {
+    "year_quarter": "2012-Q1",
+    "discount_band": "51%+",
+    "order_count": 160,
+    "profit": -14092.91,
+    "margin_pct": -1.006654
+  },
+  {
+    "year_quarter": "2012-Q1",
+    "discount_band": "None",
+    "order_count": 952,
+    "profit": 60901.97,
+    "margin_pct": 0.254814
+  },
+  {
+    "year_quarter": "2012-Q2",
+    "discount_band": "16\u201330%",
+    "order_count": 377,
+    "profit": 7612.51,
+    "margin_pct": 0.081039
+  },
+  {
+    "year_quarter": "2012-Q2",
+    "discount_band": "1\u201315%",
+    "order_count": 278,
+    "profit": 22165.01,
+    "margin_pct": 0.200772
+  },
+  {
+    "year_quarter": "2012-Q2",
+    "discount_band": "31\u201350%",
+    "order_count": 269,
+    "profit": -15489.27,
+    "margin_pct": -0.345028
+  },
+  {
+    "year_quarter": "2012-Q2",
+    "discount_band": "51%+",
+    "order_count": 225,
+    "profit": -22484.13,
+    "margin_pct": -1.32278
+  },
+  {
+    "year_quarter": "2012-Q2",
+    "discount_band": "None",
+    "order_count": 1484,
+    "profit": 89846.7,
+    "margin_pct": 0.250014
+  },
+  {
+    "year_quarter": "2012-Q3",
+    "discount_band": "16\u201330%",
+    "order_count": 340,
+    "profit": 5213.51,
+    "margin_pct": 0.054738
+  },
+  {
+    "year_quarter": "2012-Q3",
+    "discount_band": "1\u201315%",
+    "order_count": 341,
+    "profit": 22479.87,
+    "margin_pct": 0.148226
+  },
+  {
+    "year_quarter": "2012-Q3",
+    "discount_band": "31\u201350%",
+    "order_count": 336,
+    "profit": -19858.05,
+    "margin_pct": -0.324991
+  },
+  {
+    "year_quarter": "2012-Q3",
+    "discount_band": "51%+",
+    "order_count": 236,
+    "profit": -21511.88,
+    "margin_pct": -1.085112
+  },
+  {
+    "year_quarter": "2012-Q3",
+    "discount_band": "None",
+    "order_count": 1712,
+    "profit": 100611.99,
+    "margin_pct": 0.245434
+  },
+  {
+    "year_quarter": "2012-Q4",
+    "discount_band": "16\u201330%",
+    "order_count": 521,
+    "profit": 11672.17,
+    "margin_pct": 0.08118
+  },
+  {
+    "year_quarter": "2012-Q4",
+    "discount_band": "1\u201315%",
+    "order_count": 321,
+    "profit": 18408.39,
+    "margin_pct": 0.140025
+  },
+  {
+    "year_quarter": "2012-Q4",
+    "discount_band": "31\u201350%",
+    "order_count": 447,
+    "profit": -28520.09,
+    "margin_pct": -0.3434
+  },
+  {
+    "year_quarter": "2012-Q4",
+    "discount_band": "51%+",
+    "order_count": 295,
+    "profit": -33085.57,
+    "margin_pct": -1.048256
+  },
+  {
+    "year_quarter": "2012-Q4",
+    "discount_band": "None",
+    "order_count": 2150,
+    "profit": 126959.45,
+    "margin_pct": 0.241897
+  },
+  {
+    "year_quarter": "2013-Q1",
+    "discount_band": "16\u201330%",
+    "order_count": 251,
+    "profit": 5342.3,
+    "margin_pct": 0.064539
+  },
+  {
+    "year_quarter": "2013-Q1",
+    "discount_band": "1\u201315%",
+    "order_count": 211,
+    "profit": 11157.55,
+    "margin_pct": 0.120504
+  },
+  {
+    "year_quarter": "2013-Q1",
+    "discount_band": "31\u201350%",
+    "order_count": 206,
+    "profit": -15979.28,
+    "margin_pct": -0.398885
+  },
+  {
+    "year_quarter": "2013-Q1",
+    "discount_band": "51%+",
+    "order_count": 180,
+    "profit": -14703.18,
+    "margin_pct": -1.104926
+  },
+  {
+    "year_quarter": "2013-Q1",
+    "discount_band": "None",
+    "order_count": 1232,
+    "profit": 88189.44,
+    "margin_pct": 0.262246
+  },
+  {
+    "year_quarter": "2013-Q2",
+    "discount_band": "16\u201330%",
+    "order_count": 417,
+    "profit": 7155.97,
+    "margin_pct": 0.058964
+  },
+  {
+    "year_quarter": "2013-Q2",
+    "discount_band": "1\u201315%",
+    "order_count": 305,
+    "profit": 17770.6,
+    "margin_pct": 0.14064
+  },
+  {
+    "year_quarter": "2013-Q2",
+    "discount_band": "31\u201350%",
+    "order_count": 451,
+    "profit": -31185.27,
+    "margin_pct": -0.330695
+  },
+  {
+    "year_quarter": "2013-Q2",
+    "discount_band": "51%+",
+    "order_count": 261,
+    "profit": -22307.24,
+    "margin_pct": -1.07397
+  },
+  {
+    "year_quarter": "2013-Q2",
+    "discount_band": "None",
+    "order_count": 1938,
+    "profit": 122002.08,
+    "margin_pct": 0.258452
+  },
+  {
+    "year_quarter": "2013-Q3",
+    "discount_band": "16\u201330%",
+    "order_count": 514,
+    "profit": 8993.99,
+    "margin_pct": 0.068716
+  },
+  {
+    "year_quarter": "2013-Q3",
+    "discount_band": "1\u201315%",
+    "order_count": 381,
+    "profit": 21284.19,
+    "margin_pct": 0.146421
+  },
+  {
+    "year_quarter": "2013-Q3",
+    "discount_band": "31\u201350%",
+    "order_count": 454,
+    "profit": -28245.43,
+    "margin_pct": -0.350165
+  },
+  {
+    "year_quarter": "2013-Q3",
+    "discount_band": "51%+",
+    "order_count": 342,
+    "profit": -35813.38,
+    "margin_pct": -1.06919
+  },
+  {
+    "year_quarter": "2013-Q3",
+    "discount_band": "None",
+    "order_count": 2358,
+    "profit": 132573.79,
+    "margin_pct": 0.244317
+  },
+  {
+    "year_quarter": "2013-Q4",
+    "discount_band": "16\u201330%",
+    "order_count": 573,
+    "profit": 10703.38,
+    "margin_pct": 0.07509
+  },
+  {
+    "year_quarter": "2013-Q4",
+    "discount_band": "1\u201315%",
+    "order_count": 348,
+    "profit": 26442.07,
+    "margin_pct": 0.156797
+  },
+  {
+    "year_quarter": "2013-Q4",
+    "discount_band": "31\u201350%",
+    "order_count": 556,
+    "profit": -28500.93,
+    "margin_pct": -0.298373
+  },
+  {
+    "year_quarter": "2013-Q4",
+    "discount_band": "51%+",
+    "order_count": 317,
+    "profit": -36454.72,
+    "margin_pct": -1.097533
+  },
+  {
+    "year_quarter": "2013-Q4",
+    "discount_band": "None",
+    "order_count": 2504,
+    "profit": 168509.3,
+    "margin_pct": 0.266235
+  },
+  {
+    "year_quarter": "2014-Q1",
+    "discount_band": "16\u201330%",
+    "order_count": 334,
+    "profit": 6872.6,
+    "margin_pct": 0.06611
+  },
+  {
+    "year_quarter": "2014-Q1",
+    "discount_band": "1\u201315%",
+    "order_count": 289,
+    "profit": 16344.41,
+    "margin_pct": 0.138517
+  },
+  {
+    "year_quarter": "2014-Q1",
+    "discount_band": "31\u201350%",
+    "order_count": 326,
+    "profit": -18573.7,
+    "margin_pct": -0.299912
+  },
+  {
+    "year_quarter": "2014-Q1",
+    "discount_band": "51%+",
+    "order_count": 208,
+    "profit": -20140.19,
+    "margin_pct": -1.103644
+  },
+  {
+    "year_quarter": "2014-Q1",
+    "discount_band": "None",
+    "order_count": 1585,
+    "profit": 100607.23,
+    "margin_pct": 0.259917
+  },
+  {
+    "year_quarter": "2014-Q2",
+    "discount_band": "16\u201330%",
+    "order_count": 462,
+    "profit": 4328.65,
+    "margin_pct": 0.037185
+  },
+  {
+    "year_quarter": "2014-Q2",
+    "discount_band": "1\u201315%",
+    "order_count": 430,
+    "profit": 27805.51,
+    "margin_pct": 0.159443
+  },
+  {
+    "year_quarter": "2014-Q2",
+    "discount_band": "31\u201350%",
+    "order_count": 501,
+    "profit": -27266.71,
+    "margin_pct": -0.327528
+  },
+  {
+    "year_quarter": "2014-Q2",
+    "discount_band": "51%+",
+    "order_count": 377,
+    "profit": -33313.42,
+    "margin_pct": -1.076598
+  },
+  {
+    "year_quarter": "2014-Q2",
+    "discount_band": "None",
+    "order_count": 2313,
+    "profit": 129960.43,
+    "margin_pct": 0.24614
+  },
+  {
+    "year_quarter": "2014-Q3",
+    "discount_band": "16\u201330%",
+    "order_count": 606,
+    "profit": 13894.54,
+    "margin_pct": 0.084645
+  },
+  {
+    "year_quarter": "2014-Q3",
+    "discount_band": "1\u201315%",
+    "order_count": 402,
+    "profit": 24716.5,
+    "margin_pct": 0.142374
+  },
+  {
+    "year_quarter": "2014-Q3",
+    "discount_band": "31\u201350%",
+    "order_count": 586,
+    "profit": -33524.16,
+    "margin_pct": -0.297873
+  },
+  {
+    "year_quarter": "2014-Q3",
+    "discount_band": "51%+",
+    "order_count": 348,
+    "profit": -32828.1,
+    "margin_pct": -1.050577
+  },
+  {
+    "year_quarter": "2014-Q3",
+    "discount_band": "None",
+    "order_count": 2838,
+    "profit": 177299.45,
+    "margin_pct": 0.247993
+  },
+  {
+    "year_quarter": "2014-Q4",
+    "discount_band": "16\u201330%",
+    "order_count": 840,
+    "profit": 17123.87,
+    "margin_pct": 0.077507
+  },
+  {
+    "year_quarter": "2014-Q4",
+    "discount_band": "1\u201315%",
+    "order_count": 516,
+    "profit": 34844.37,
+    "margin_pct": 0.148343
+  },
+  {
+    "year_quarter": "2014-Q4",
+    "discount_band": "31\u201350%",
+    "order_count": 808,
+    "profit": -50287.71,
+    "margin_pct": -0.34054
+  },
+  {
+    "year_quarter": "2014-Q4",
+    "discount_band": "51%+",
+    "order_count": 444,
+    "profit": -48638.64,
+    "margin_pct": -1.25103
+  },
+  {
+    "year_quarter": "2014-Q4",
+    "discount_band": "None",
+    "order_count": 3318,
+    "profit": 214941.04,
+    "margin_pct": 0.256243
+  }
+]
