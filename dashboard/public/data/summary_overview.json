@@ -1,0 +1,758 @@
+[
+  {
+    "year": 2011,
+    "market": "APAC",
+    "category": "Furniture",
+    "sales": 237821.52,
+    "profit": 21218.04,
+    "customer_count": 284,
+    "margin_pct": 0.089218
+  },
+  {
+    "year": 2011,
+    "market": "APAC",
+    "category": "Office Supplies",
+    "sales": 156662.95,
+    "profit": 20321.29,
+    "customer_count": 468,
+    "margin_pct": 0.129713
+  },
+  {
+    "year": 2011,
+    "market": "APAC",
+    "category": "Technology",
+    "sales": 244760.78,
+    "profit": 41492.24,
+    "customer_count": 289,
+    "margin_pct": 0.169522
+  },
+  {
+    "year": 2011,
+    "market": "Africa",
+    "category": "Furniture",
+    "sales": 32944.3,
+    "profit": 1463.77,
+    "customer_count": 92,
+    "margin_pct": 0.044432
+  },
+  {
+    "year": 2011,
+    "market": "Africa",
+    "category": "Office Supplies",
+    "sales": 44482.25,
+    "profit": 2922.47,
+    "customer_count": 256,
+    "margin_pct": 0.0657
+  },
+  {
+    "year": 2011,
+    "market": "Africa",
+    "category": "Technology",
+    "sales": 49760.72,
+    "profit": 6557.87,
+    "customer_count": 110,
+    "margin_pct": 0.131788
+  },
+  {
+    "year": 2011,
+    "market": "Canada",
+    "category": "Furniture",
+    "sales": 482.13,
+    "profit": 202.11,
+    "customer_count": 5,
+    "margin_pct": 0.419202
+  },
+  {
+    "year": 2011,
+    "market": "Canada",
+    "category": "Office Supplies",
+    "sales": 4393.62,
+    "profit": 1108.02,
+    "customer_count": 31,
+    "margin_pct": 0.252188
+  },
+  {
+    "year": 2011,
+    "market": "Canada",
+    "category": "Technology",
+    "sales": 3633.36,
+    "profit": 496.95,
+    "customer_count": 11,
+    "margin_pct": 0.136774
+  },
+  {
+    "year": 2011,
+    "market": "EMEA",
+    "category": "Furniture",
+    "sales": 45567.99,
+    "profit": 1900.95,
+    "customer_count": 123,
+    "margin_pct": 0.041717
+  },
+  {
+    "year": 2011,
+    "market": "EMEA",
+    "category": "Office Supplies",
+    "sales": 39486.58,
+    "profit": -73.88,
+    "customer_count": 265,
+    "margin_pct": -0.001871
+  },
+  {
+    "year": 2011,
+    "market": "EMEA",
+    "category": "Technology",
+    "sales": 51365.75,
+    "profit": 3452.96,
+    "customer_count": 116,
+    "margin_pct": 0.067223
+  },
+  {
+    "year": 2011,
+    "market": "EU",
+    "category": "Furniture",
+    "sales": 139620.58,
+    "profit": 16283.44,
+    "customer_count": 190,
+    "margin_pct": 0.116626
+  },
+  {
+    "year": 2011,
+    "market": "EU",
+    "category": "Office Supplies",
+    "sales": 179116.86,
+    "profit": 24365.22,
+    "customer_count": 467,
+    "margin_pct": 0.13603
+  },
+  {
+    "year": 2011,
+    "market": "EU",
+    "category": "Technology",
+    "sales": 160005.84,
+    "profit": 20976.96,
+    "customer_count": 215,
+    "margin_pct": 0.131101
+  },
+  {
+    "year": 2011,
+    "market": "LATAM",
+    "category": "Furniture",
+    "sales": 142563.01,
+    "profit": 7170.89,
+    "customer_count": 253,
+    "margin_pct": 0.0503
+  },
+  {
+    "year": 2011,
+    "market": "LATAM",
+    "category": "Office Supplies",
+    "sales": 99687.77,
+    "profit": 14759.99,
+    "customer_count": 410,
+    "margin_pct": 0.148062
+  },
+  {
+    "year": 2011,
+    "market": "LATAM",
+    "category": "Technology",
+    "sales": 142847.37,
+    "profit": 14777.53,
+    "customer_count": 244,
+    "margin_pct": 0.10345
+  },
+  {
+    "year": 2011,
+    "market": "US",
+    "category": "Furniture",
+    "sales": 157192.85,
+    "profit": 5457.73,
+    "customer_count": 290,
+    "margin_pct": 0.03472
+  },
+  {
+    "year": 2011,
+    "market": "US",
+    "category": "Office Supplies",
+    "sales": 151776.41,
+    "profit": 22593.42,
+    "customer_count": 509,
+    "margin_pct": 0.14886
+  },
+  {
+    "year": 2011,
+    "market": "US",
+    "category": "Technology",
+    "sales": 175278.23,
+    "profit": 21492.83,
+    "customer_count": 250,
+    "margin_pct": 0.122621
+  },
+  {
+    "year": 2012,
+    "market": "APAC",
+    "category": "Furniture",
+    "sales": 268820.86,
+    "profit": 22733.62,
+    "customer_count": 318,
+    "margin_pct": 0.084568
+  },
+  {
+    "year": 2012,
+    "market": "APAC",
+    "category": "Office Supplies",
+    "sales": 191856.33,
+    "profit": 19621.23,
+    "customer_count": 539,
+    "margin_pct": 0.10227
+  },
+  {
+    "year": 2012,
+    "market": "APAC",
+    "category": "Technology",
+    "sales": 302042.14,
+    "profit": 47056.0,
+    "customer_count": 333,
+    "margin_pct": 0.155793
+  },
+  {
+    "year": 2012,
+    "market": "Africa",
+    "category": "Furniture",
+    "sales": 28894.53,
+    "profit": 1951.95,
+    "customer_count": 88,
+    "margin_pct": 0.067554
+  },
+  {
+    "year": 2012,
+    "market": "Africa",
+    "category": "Office Supplies",
+    "sales": 50851.6,
+    "profit": 3636.25,
+    "customer_count": 272,
+    "margin_pct": 0.071507
+  },
+  {
+    "year": 2012,
+    "market": "Africa",
+    "category": "Technology",
+    "sales": 64734.58,
+    "profit": 6320.74,
+    "customer_count": 137,
+    "margin_pct": 0.097641
+  },
+  {
+    "year": 2012,
+    "market": "Canada",
+    "category": "Furniture",
+    "sales": 1600.68,
+    "profit": 290.19,
+    "customer_count": 11,
+    "margin_pct": 0.181292
+  },
+  {
+    "year": 2012,
+    "market": "Canada",
+    "category": "Office Supplies",
+    "sales": 10078.38,
+    "profit": 3070.77,
+    "customer_count": 40,
+    "margin_pct": 0.304689
+  },
+  {
+    "year": 2012,
+    "market": "Canada",
+    "category": "Technology",
+    "sales": 4417.74,
+    "profit": 1526.88,
+    "customer_count": 10,
+    "margin_pct": 0.345625
+  },
+  {
+    "year": 2012,
+    "market": "EMEA",
+    "category": "Furniture",
+    "sales": 52356.58,
+    "profit": 6375.04,
+    "customer_count": 118,
+    "margin_pct": 0.121762
+  },
+  {
+    "year": 2012,
+    "market": "EMEA",
+    "category": "Office Supplies",
+    "sales": 55526.24,
+    "profit": -1556.44,
+    "customer_count": 326,
+    "margin_pct": -0.028031
+  },
+  {
+    "year": 2012,
+    "market": "EMEA",
+    "category": "Technology",
+    "sales": 55531.55,
+    "profit": 600.98,
+    "customer_count": 156,
+    "margin_pct": 0.010822
+  },
+  {
+    "year": 2012,
+    "market": "EU",
+    "category": "Furniture",
+    "sales": 171980.2,
+    "profit": 11079.52,
+    "customer_count": 247,
+    "margin_pct": 0.064423
+  },
+  {
+    "year": 2012,
+    "market": "EU",
+    "category": "Office Supplies",
+    "sales": 227880.35,
+    "profit": 38029.76,
+    "customer_count": 532,
+    "margin_pct": 0.166885
+  },
+  {
+    "year": 2012,
+    "market": "EU",
+    "category": "Technology",
+    "sales": 255601.14,
+    "profit": 34875.3,
+    "customer_count": 297,
+    "margin_pct": 0.136444
+  },
+  {
+    "year": 2012,
+    "market": "LATAM",
+    "category": "Furniture",
+    "sales": 164731.48,
+    "profit": 12687.32,
+    "customer_count": 322,
+    "margin_pct": 0.077018
+  },
+  {
+    "year": 2012,
+    "market": "LATAM",
+    "category": "Office Supplies",
+    "sales": 121668.27,
+    "profit": 15404.41,
+    "customer_count": 480,
+    "margin_pct": 0.12661
+  },
+  {
+    "year": 2012,
+    "market": "LATAM",
+    "category": "Technology",
+    "sales": 178333.55,
+    "profit": 22093.17,
+    "customer_count": 276,
+    "margin_pct": 0.123887
+  },
+  {
+    "year": 2012,
+    "market": "US",
+    "category": "Furniture",
+    "sales": 170518.24,
+    "profit": 3015.2,
+    "customer_count": 289,
+    "margin_pct": 0.017683
+  },
+  {
+    "year": 2012,
+    "market": "US",
+    "category": "Office Supplies",
+    "sales": 137233.46,
+    "profit": 25099.53,
+    "customer_count": 502,
+    "margin_pct": 0.182897
+  },
+  {
+    "year": 2012,
+    "market": "US",
+    "category": "Technology",
+    "sales": 162780.81,
+    "profit": 33503.87,
+    "customer_count": 276,
+    "margin_pct": 0.205822
+  },
+  {
+    "year": 2013,
+    "market": "APAC",
+    "category": "Furniture",
+    "sales": 378235.26,
+    "profit": 40527.03,
+    "customer_count": 388,
+    "margin_pct": 0.107148
+  },
+  {
+    "year": 2013,
+    "market": "APAC",
+    "category": "Office Supplies",
+    "sales": 223462.43,
+    "profit": 28955.42,
+    "customer_count": 553,
+    "margin_pct": 0.129576
+  },
+  {
+    "year": 2013,
+    "market": "APAC",
+    "category": "Technology",
+    "sales": 372883.17,
+    "profit": 53620.68,
+    "customer_count": 394,
+    "margin_pct": 0.1438
+  },
+  {
+    "year": 2013,
+    "market": "Africa",
+    "category": "Furniture",
+    "sales": 61973.1,
+    "profit": 5549.52,
+    "customer_count": 145,
+    "margin_pct": 0.089547
+  },
+  {
+    "year": 2013,
+    "market": "Africa",
+    "category": "Office Supplies",
+    "sales": 75798.62,
+    "profit": 8941.58,
+    "customer_count": 376,
+    "margin_pct": 0.117965
+  },
+  {
+    "year": 2013,
+    "market": "Africa",
+    "category": "Technology",
+    "sales": 91297.07,
+    "profit": 12196.01,
+    "customer_count": 189,
+    "margin_pct": 0.133586
+  },
+  {
+    "year": 2013,
+    "market": "Canada",
+    "category": "Furniture",
+    "sales": 2764.59,
+    "profit": 902.97,
+    "customer_count": 10,
+    "margin_pct": 0.32662
+  },
+  {
+    "year": 2013,
+    "market": "Canada",
+    "category": "Office Supplies",
+    "sales": 8145.24,
+    "profit": 1804.53,
+    "customer_count": 47,
+    "margin_pct": 0.221544
+  },
+  {
+    "year": 2013,
+    "market": "Canada",
+    "category": "Technology",
+    "sales": 8251.32,
+    "profit": 2421.96,
+    "customer_count": 14,
+    "margin_pct": 0.293524
+  },
+  {
+    "year": 2013,
+    "market": "EMEA",
+    "category": "Furniture",
+    "sales": 45812.76,
+    "profit": 1030.92,
+    "customer_count": 140,
+    "margin_pct": 0.022503
+  },
+  {
+    "year": 2013,
+    "market": "EMEA",
+    "category": "Office Supplies",
+    "sales": 80701.12,
+    "profit": 8923.51,
+    "customer_count": 397,
+    "margin_pct": 0.110575
+  },
+  {
+    "year": 2013,
+    "market": "EMEA",
+    "category": "Technology",
+    "sales": 78126.8,
+    "profit": 643.61,
+    "customer_count": 190,
+    "margin_pct": 0.008238
+  },
+  {
+    "year": 2013,
+    "market": "EU",
+    "category": "Furniture",
+    "sales": 201238.71,
+    "profit": 20642.37,
+    "customer_count": 285,
+    "margin_pct": 0.102577
+  },
+  {
+    "year": 2013,
+    "market": "EU",
+    "category": "Office Supplies",
+    "sales": 276508.56,
+    "profit": 42854.85,
+    "customer_count": 587,
+    "margin_pct": 0.154986
+  },
+  {
+    "year": 2013,
+    "market": "EU",
+    "category": "Technology",
+    "sales": 283933.1,
+    "profit": 34777.96,
+    "customer_count": 332,
+    "margin_pct": 0.122486
+  },
+  {
+    "year": 2013,
+    "market": "LATAM",
+    "category": "Furniture",
+    "sales": 228797.7,
+    "profit": 8450.14,
+    "customer_count": 391,
+    "margin_pct": 0.036933
+  },
+  {
+    "year": 2013,
+    "market": "LATAM",
+    "category": "Office Supplies",
+    "sales": 162591.09,
+    "profit": 22750.19,
+    "customer_count": 601,
+    "margin_pct": 0.139923
+  },
+  {
+    "year": 2013,
+    "market": "LATAM",
+    "category": "Technology",
+    "sales": 216751.99,
+    "profit": 30215.05,
+    "customer_count": 366,
+    "margin_pct": 0.139399
+  },
+  {
+    "year": 2013,
+    "market": "US",
+    "category": "Furniture",
+    "sales": 198901.44,
+    "profit": 6959.95,
+    "customer_count": 355,
+    "margin_pct": 0.034992
+  },
+  {
+    "year": 2013,
+    "market": "US",
+    "category": "Office Supplies",
+    "sales": 183510.59,
+    "profit": 35015.66,
+    "customer_count": 544,
+    "margin_pct": 0.19081
+  },
+  {
+    "year": 2013,
+    "market": "US",
+    "category": "Technology",
+    "sales": 226061.8,
+    "profit": 39751.31,
+    "customer_count": 290,
+    "margin_pct": 0.175843
+  },
+  {
+    "year": 2014,
+    "market": "APAC",
+    "category": "Furniture",
+    "sales": 459056.43,
+    "profit": 41417.46,
+    "customer_count": 459,
+    "margin_pct": 0.090223
+  },
+  {
+    "year": 2014,
+    "market": "APAC",
+    "category": "Office Supplies",
+    "sales": 312338.12,
+    "profit": 36612.1,
+    "customer_count": 661,
+    "margin_pct": 0.117219
+  },
+  {
+    "year": 2014,
+    "market": "APAC",
+    "category": "Technology",
+    "sales": 437804.14,
+    "profit": 62424.94,
+    "customer_count": 456,
+    "margin_pct": 0.142586
+  },
+  {
+    "year": 2014,
+    "market": "Africa",
+    "category": "Furniture",
+    "sales": 70838.71,
+    "profit": 7296.85,
+    "customer_count": 192,
+    "margin_pct": 0.103007
+  },
+  {
+    "year": 2014,
+    "market": "Africa",
+    "category": "Office Supplies",
+    "sales": 95623.06,
+    "profit": 12979.76,
+    "customer_count": 449,
+    "margin_pct": 0.135739
+  },
+  {
+    "year": 2014,
+    "market": "Africa",
+    "category": "Technology",
+    "sales": 116574.66,
+    "profit": 19054.86,
+    "customer_count": 215,
+    "margin_pct": 0.163456
+  },
+  {
+    "year": 2014,
+    "market": "Canada",
+    "category": "Furniture",
+    "sales": 5747.88,
+    "profit": 1217.97,
+    "customer_count": 14,
+    "margin_pct": 0.211899
+  },
+  {
+    "year": 2014,
+    "market": "Canada",
+    "category": "Office Supplies",
+    "sales": 7416.84,
+    "profit": 1974.21,
+    "customer_count": 54,
+    "margin_pct": 0.266179
+  },
+  {
+    "year": 2014,
+    "market": "Canada",
+    "category": "Technology",
+    "sales": 9996.39,
+    "profit": 2800.83,
+    "customer_count": 13,
+    "margin_pct": 0.280184
+  },
+  {
+    "year": 2014,
+    "market": "EMEA",
+    "category": "Furniture",
+    "sales": 84883.42,
+    "profit": 2227.24,
+    "customer_count": 204,
+    "margin_pct": 0.026239
+  },
+  {
+    "year": 2014,
+    "market": "EMEA",
+    "category": "Office Supplies",
+    "sales": 100972.05,
+    "profit": 7576.2,
+    "customer_count": 478,
+    "margin_pct": 0.075033
+  },
+  {
+    "year": 2014,
+    "market": "EMEA",
+    "category": "Technology",
+    "sales": 115830.48,
+    "profit": 12796.89,
+    "customer_count": 241,
+    "margin_pct": 0.110479
+  },
+  {
+    "year": 2014,
+    "market": "EU",
+    "category": "Furniture",
+    "sales": 266263.56,
+    "profit": 20844.81,
+    "customer_count": 322,
+    "margin_pct": 0.078286
+  },
+  {
+    "year": 2014,
+    "market": "EU",
+    "category": "Office Supplies",
+    "sales": 362801.26,
+    "profit": 54457.12,
+    "customer_count": 655,
+    "margin_pct": 0.150102
+  },
+  {
+    "year": 2014,
+    "market": "EU",
+    "category": "Technology",
+    "sales": 413138.91,
+    "profit": 53642.43,
+    "customer_count": 431,
+    "margin_pct": 0.129841
+  },
+  {
+    "year": 2014,
+    "market": "LATAM",
+    "category": "Furniture",
+    "sales": 275878.43,
+    "profit": 13289.35,
+    "customer_count": 423,
+    "margin_pct": 0.048171
+  },
+  {
+    "year": 2014,
+    "market": "LATAM",
+    "category": "Office Supplies",
+    "sales": 179973.6,
+    "profit": 26544.48,
+    "customer_count": 597,
+    "margin_pct": 0.147491
+  },
+  {
+    "year": 2014,
+    "market": "LATAM",
+    "category": "Technology",
+    "sales": 250780.91,
+    "profit": 33500.97,
+    "customer_count": 388,
+    "margin_pct": 0.133587
+  },
+  {
+    "year": 2014,
+    "market": "US",
+    "category": "Furniture",
+    "sales": 215387.27,
+    "profit": 3018.39,
+    "customer_count": 403,
+    "margin_pct": 0.014014
+  },
+  {
+    "year": 2014,
+    "market": "US",
+    "category": "Office Supplies",
+    "sales": 246526.57,
+    "profit": 39782.19,
+    "customer_count": 634,
+    "margin_pct": 0.161371
+  },
+  {
+    "year": 2014,
+    "market": "US",
+    "category": "Technology",
+    "sales": 272033.19,
+    "profit": 50706.93,
+    "customer_count": 388,
+    "margin_pct": 0.1864
+  }
+]
