@@ -45,7 +45,7 @@ interface DumbbellChartProps {
 
 // ─── Custom connecting line component ───────────────────────────────────────
 
-function ConnectingLines({
+function _ConnectingLines({
   data,
   xScale,
   yScale,
@@ -76,6 +76,7 @@ function ConnectingLines({
     </g>
   );
 }
+void _ConnectingLines;
 
 // ─── Component ──────────────────────────────────────────────────────────────
 

@@ -1,0 +1,6611 @@
+{
+  "curve": [
+    {
+      "discount_rate": 0.0,
+      "avg_margin": 0.281497,
+      "order_count": 14166,
+      "interpolated": false
+    },
+    {
+      "discount_rate": 0.01,
+      "avg_margin": 0.260219,
+      "order_count": 0,
+      "interpolated": true
+    },
+    {
+      "discount_rate": 0.02,
+      "avg_margin": 0.240839,
+      "order_count": 0,
+      "interpolated": true
+    },
+    {
+      "discount_rate": 0.03,
+      "avg_margin": 0.223504,
+      "order_count": 0,
+      "interpolated": true
+    },
+    {
+      "discount_rate": 0.04,
+      "avg_margin": 0.208366,
+      "order_count": 0,
+      "interpolated": true
+    },
+    {
+      "discount_rate": 0.05,
+      "avg_margin": 0.195574,
+      "order_count": 0,
+      "interpolated": true
+    },
+    {
+      "discount_rate": 0.06,
+      "avg_margin": 0.185278,
+      "order_count": 0,
+      "interpolated": true
+    },
+    {
+      "discount_rate": 0.07,
+      "avg_margin": 0.177627,
+      "order_count": 150,
+      "interpolated": false
+    },
+    {
+      "discount_rate": 0.08,
+      "avg_margin": 0.17287,
+      "order_count": 0,
+      "interpolated": true
+    },
+    {
+      "discount_rate": 0.09,
+      "avg_margin": 0.169395,
+      "order_count": 0,
+      "interpolated": true
+    },
+    {
+      "discount_rate": 0.1,
+      "avg_margin": 0.164558,
+      "order_count": 4068,
+      "interpolated": false
+    },
+    {
+      "discount_rate": 0.11,
+      "avg_margin": 0.152994,
+      "order_count": 0,
+      "interpolated": true
+    },
+    {
+      "discount_rate": 0.12,
+      "avg_margin": 0.134673,
+      "order_count": 0,
+      "interpolated": true
+    },
+    {
+      "discount_rate": 0.13,
+      "avg_margin": 0.114953,
+      "order_count": 0,
+      "interpolated": true
+    },
+    {
+      "discount_rate": 0.14,
+      "avg_margin": 0.099192,
+      "order_count": 0,
+      "interpolated": true
+    },
+    {
+      "discount_rate": 0.15,
+      "avg_margin": 0.092748,
+      "order_count": 541,
+      "interpolated": false
+    },
+    {
+      "discount_rate": 0.16,
+      "avg_margin": 0.097751,
+      "order_count": 0,
+      "interpolated": true
+    },
+    {
+      "discount_rate": 0.17,
+      "avg_margin": 0.107416,
+      "order_count": 735,
+      "interpolated": false
+    },
+    {
+      "discount_rate": 0.18,
+      "avg_margin": 0.122069,
+      "order_count": 0,
+      "interpolated": true
+    },
+    {
+      "discount_rate": 0.19,
+      "avg_margin": 0.139514,
+      "order_count": 0,
+      "interpolated": true
+    },
+    {
+      "discount_rate": 0.2,
+      "avg_margin": 0.147952,
+      "order_count": 4880,
+      "interpolated": false
+    },
+    {
+      "discount_rate": 0.21,
+      "avg_margin": 0.137459,
+      "order_count": 0,
+      "interpolated": true
+    },
+    {
+      "discount_rate": 0.22,
+      "avg_margin": 0.111349,
+      "order_count": 0,
+      "interpolated": true
+    },
+    {
+      "discount_rate": 0.23,
+      "avg_margin": 0.077668,
+      "order_count": 0,
+      "interpolated": true
+    },
+    {
+      "discount_rate": 0.24,
+      "avg_margin": 0.044465,
+      "order_count": 0,
+      "interpolated": true
+    },
+    {
+      "discount_rate": 0.25,
+      "avg_margin": 0.019789,
+      "order_count": 198,
+      "interpolated": false
+    },
+    {
+      "discount_rate": 0.26,
+      "avg_margin": 0.005898,
+      "order_count": 0,
+      "interpolated": true
+    },
+    {
+      "discount_rate": 0.27,
+      "avg_margin": -0.009013,
+      "order_count": 388,
+      "interpolated": false
+    },
+    {
+      "discount_rate": 0.28,
+      "avg_margin": -0.037363,
+      "order_count": 0,
+      "interpolated": true
+    },
+    {
+      "discount_rate": 0.29,
+      "avg_margin": -0.075495,
+      "order_count": 0,
+      "interpolated": true
+    },
+    {
+      "discount_rate": 0.3,
+      "avg_margin": -0.112335,
+      "order_count": 307,
+      "interpolated": false
+    },
+    {
+      "discount_rate": 0.31,
+      "avg_margin": -0.151439,
+      "order_count": 0,
+      "interpolated": true
+    },
+    {
+      "discount_rate": 0.32,
+      "avg_margin": -0.174292,
+      "order_count": 27,
+      "interpolated": false
+    },
+    {
+      "discount_rate": 0.33,
+      "avg_margin": -0.16944,
+      "order_count": 0,
+      "interpolated": true
+    },
+    {
+      "discount_rate": 0.34,
+      "avg_margin": -0.160428,
+      "order_count": 0,
+      "interpolated": true
+    },
+    {
+      "discount_rate": 0.35,
+      "avg_margin": -0.155576,
+      "order_count": 122,
+      "interpolated": false
+    },
+    {
+      "discount_rate": 0.36,
+      "avg_margin": -0.174306,
+      "order_count": 0,
+      "interpolated": true
+    },
+    {
+      "discount_rate": 0.37,
+      "avg_margin": -0.20263,
+      "order_count": 74,
+      "interpolated": false
+    },
+    {
+      "discount_rate": 0.38,
+      "avg_margin": -0.219129,
+      "order_count": 0,
+      "interpolated": true
+    },
+    {
+      "discount_rate": 0.39,
+      "avg_margin": -0.233401,
+      "order_count": 0,
+      "interpolated": true
+    },
+    {
+      "discount_rate": 0.4,
+      "avg_margin": -0.250174,
+      "order_count": 1421,
+      "interpolated": false
+    },
+    {
+      "discount_rate": 0.41,
+      "avg_margin": -0.274503,
+      "order_count": 0,
+      "interpolated": true
+    },
+    {
+      "discount_rate": 0.42,
+      "avg_margin": -0.305084,
+      "order_count": 0,
+      "interpolated": true
+    },
+    {
+      "discount_rate": 0.43,
+      "avg_margin": -0.337107,
+      "order_count": 0,
+      "interpolated": true
+    },
+    {
+      "discount_rate": 0.44,
+      "avg_margin": -0.365763,
+      "order_count": 0,
+      "interpolated": true
+    },
+    {
+      "discount_rate": 0.45,
+      "avg_margin": -0.386241,
+      "order_count": 327,
+      "interpolated": false
+    },
+    {
+      "discount_rate": 0.46,
+      "avg_margin": -0.396983,
+      "order_count": 0,
+      "interpolated": true
+    },
+    {
+      "discount_rate": 0.47,
+      "avg_margin": -0.408269,
+      "order_count": 725,
+      "interpolated": false
+    },
+    {
+      "discount_rate": 0.48,
+      "avg_margin": -0.440241,
+      "order_count": 0,
+      "interpolated": true
+    },
+    {
+      "discount_rate": 0.49,
+      "avg_margin": -0.482986,
+      "order_count": 0,
+      "interpolated": true
+    },
+    {
+      "discount_rate": 0.5,
+      "avg_margin": -0.504375,
+      "order_count": 360,
+      "interpolated": false
+    },
+    {
+      "discount_rate": 0.51,
+      "avg_margin": -0.501155,
+      "order_count": 0,
+      "interpolated": true
+    },
+    {
+      "discount_rate": 0.52,
+      "avg_margin": -0.493477,
+      "order_count": 0,
+      "interpolated": true
+    },
+    {
+      "discount_rate": 0.53,
+      "avg_margin": -0.484313,
+      "order_count": 0,
+      "interpolated": true
+    },
+    {
+      "discount_rate": 0.54,
+      "avg_margin": -0.476634,
+      "order_count": 0,
+      "interpolated": true
+    },
+    {
+      "discount_rate": 0.55,
+      "avg_margin": -0.473414,
+      "order_count": 10,
+      "interpolated": false
+    },
+    {
+      "discount_rate": 0.56,
+      "avg_margin": -0.598035,
+      "order_count": 0,
+      "interpolated": true
+    },
+    {
+      "discount_rate": 0.57,
+      "avg_margin": -0.74816,
+      "order_count": 12,
+      "interpolated": false
+    },
+    {
+      "discount_rate": 0.58,
+      "avg_margin": -0.78577,
+      "order_count": 0,
+      "interpolated": true
+    },
+    {
+      "discount_rate": 0.59,
+      "avg_margin": -0.809162,
+      "order_count": 0,
+      "interpolated": true
+    },
+    {
+      "discount_rate": 0.6,
+      "avg_margin": -0.837203,
+      "order_count": 631,
+      "interpolated": false
+    },
+    {
+      "discount_rate": 0.61,
+      "avg_margin": -0.887049,
+      "order_count": 0,
+      "interpolated": true
+    },
+    {
+      "discount_rate": 0.62,
+      "avg_margin": -0.952904,
+      "order_count": 0,
+      "interpolated": true
+    },
+    {
+      "discount_rate": 0.63,
+      "avg_margin": -1.019207,
+      "order_count": 0,
+      "interpolated": true
+    },
+    {
+      "discount_rate": 0.64,
+      "avg_margin": -1.0704,
+      "order_count": 0,
+      "interpolated": true
+    },
+    {
+      "discount_rate": 0.65,
+      "avg_margin": -1.090922,
+      "order_count": 17,
+      "interpolated": false
+    },
+    {
+      "discount_rate": 0.66,
+      "avg_margin": -1.063714,
+      "order_count": 0,
+      "interpolated": true
+    },
+    {
+      "discount_rate": 0.67,
+      "avg_margin": -0.998832,
+      "order_count": 0,
+      "interpolated": true
+    },
+    {
+      "discount_rate": 0.68,
+      "avg_margin": -0.921393,
+      "order_count": 0,
+      "interpolated": true
+    },
+    {
+      "discount_rate": 0.69,
+      "avg_margin": -0.856512,
+      "order_count": 0,
+      "interpolated": true
+    },
+    {
+      "discount_rate": 0.7,
+      "avg_margin": -0.829303,
+      "order_count": 444,
+      "interpolated": false
+    }
+  ],
+  "constants": {
+    "total_company_baseline_profit": 1467457.29,
+    "fixed_country_current_profit": -412870.26,
+    "variable_country_current_profit": 931585.12,
+    "zero_discount_country_profit": 948742.43
+  },
+  "whatif_fixed_cap_lookup": [
+    {
+      "cap": 0,
+      "projected_profit": 192264.32,
+      "recovery": 605134.58,
+      "uplift_pct": 0.412369
+    },
+    {
+      "cap": 1,
+      "projected_profit": 177731.31,
+      "recovery": 590601.57,
+      "uplift_pct": 0.402466
+    },
+    {
+      "cap": 2,
+      "projected_profit": 164494.64,
+      "recovery": 577364.9,
+      "uplift_pct": 0.393446
+    },
+    {
+      "cap": 3,
+      "projected_profit": 152654.72,
+      "recovery": 565524.98,
+      "uplift_pct": 0.385377
+    },
+    {
+      "cap": 4,
+      "projected_profit": 142315.36,
+      "recovery": 555185.62,
+      "uplift_pct": 0.378332
+    },
+    {
+      "cap": 5,
+      "projected_profit": 133578.34,
+      "recovery": 546448.6,
+      "uplift_pct": 0.372378
+    },
+    {
+      "cap": 6,
+      "projected_profit": 126546.11,
+      "recovery": 539416.37,
+      "uplift_pct": 0.367586
+    },
+    {
+      "cap": 7,
+      "projected_profit": 121320.42,
+      "recovery": 534190.68,
+      "uplift_pct": 0.364025
+    },
+    {
+      "cap": 8,
+      "projected_profit": 118071.36,
+      "recovery": 530941.62,
+      "uplift_pct": 0.361811
+    },
+    {
+      "cap": 9,
+      "projected_profit": 115697.91,
+      "recovery": 528568.17,
+      "uplift_pct": 0.360193
+    },
+    {
+      "cap": 10,
+      "projected_profit": 112394.21,
+      "recovery": 525264.47,
+      "uplift_pct": 0.357942
+    },
+    {
+      "cap": 11,
+      "projected_profit": 104495.92,
+      "recovery": 517366.18,
+      "uplift_pct": 0.35256
+    },
+    {
+      "cap": 12,
+      "projected_profit": 91982.55,
+      "recovery": 504852.81,
+      "uplift_pct": 0.344032
+    },
+    {
+      "cap": 13,
+      "projected_profit": 78513.66,
+      "recovery": 491383.92,
+      "uplift_pct": 0.334854
+    },
+    {
+      "cap": 14,
+      "projected_profit": 67748.8,
+      "recovery": 480619.06,
+      "uplift_pct": 0.327518
+    },
+    {
+      "cap": 15,
+      "projected_profit": 63347.5,
+      "recovery": 476217.76,
+      "uplift_pct": 0.324519
+    },
+    {
+      "cap": 16,
+      "projected_profit": 66764.58,
+      "recovery": 479634.84,
+      "uplift_pct": 0.326848
+    },
+    {
+      "cap": 17,
+      "projected_profit": 73365.84,
+      "recovery": 486236.1,
+      "uplift_pct": 0.331346
+    },
+    {
+      "cap": 18,
+      "projected_profit": 83373.94,
+      "recovery": 496244.2,
+      "uplift_pct": 0.338166
+    },
+    {
+      "cap": 19,
+      "projected_profit": 95288.99,
+      "recovery": 508159.25,
+      "uplift_pct": 0.346286
+    },
+    {
+      "cap": 20,
+      "projected_profit": 101052.2,
+      "recovery": 513922.46,
+      "uplift_pct": 0.350213
+    },
+    {
+      "cap": 21,
+      "projected_profit": 93885.41,
+      "recovery": 506755.67,
+      "uplift_pct": 0.345329
+    },
+    {
+      "cap": 22,
+      "projected_profit": 76052.11,
+      "recovery": 488922.37,
+      "uplift_pct": 0.333177
+    },
+    {
+      "cap": 23,
+      "projected_profit": 53047.76,
+      "recovery": 465918.02,
+      "uplift_pct": 0.3175
+    },
+    {
+      "cap": 24,
+      "projected_profit": 30369.89,
+      "recovery": 443240.15,
+      "uplift_pct": 0.302046
+    },
+    {
+      "cap": 25,
+      "projected_profit": 13516.02,
+      "recovery": 426386.28,
+      "uplift_pct": 0.290561
+    },
+    {
+      "cap": 26,
+      "projected_profit": 4028.37,
+      "recovery": 416898.63,
+      "uplift_pct": 0.284096
+    },
+    {
+      "cap": 27,
+      "projected_profit": -6155.94,
+      "recovery": 406714.32,
+      "uplift_pct": 0.277156
+    },
+    {
+      "cap": 28,
+      "projected_profit": -25519.18,
+      "recovery": 387351.08,
+      "uplift_pct": 0.263961
+    },
+    {
+      "cap": 29,
+      "projected_profit": -51563.59,
+      "recovery": 361306.67,
+      "uplift_pct": 0.246213
+    },
+    {
+      "cap": 30,
+      "projected_profit": -76725.55,
+      "recovery": 336144.71,
+      "uplift_pct": 0.229066
+    }
+  ],
+  "whatif_variable_cap_lookup": [
+    {
+      "cap": 0,
+      "lines_affected": 15744,
+      "recovery": 1228475.92,
+      "new_total_profit": 2695933.21,
+      "uplift_pct": 0.837146
+    },
+    {
+      "cap": 1,
+      "lines_affected": 15744,
+      "recovery": 1130809.58,
+      "new_total_profit": 2598266.87,
+      "uplift_pct": 0.770591
+    },
+    {
+      "cap": 2,
+      "lines_affected": 15744,
+      "recovery": 1041855.09,
+      "new_total_profit": 2509312.38,
+      "uplift_pct": 0.709973
+    },
+    {
+      "cap": 3,
+      "lines_affected": 15744,
+      "recovery": 962287.18,
+      "new_total_profit": 2429744.47,
+      "uplift_pct": 0.655751
+    },
+    {
+      "cap": 4,
+      "lines_affected": 15744,
+      "recovery": 892803.53,
+      "new_total_profit": 2360260.82,
+      "uplift_pct": 0.608402
+    },
+    {
+      "cap": 5,
+      "lines_affected": 15744,
+      "recovery": 834088.06,
+      "new_total_profit": 2301545.35,
+      "uplift_pct": 0.56839
+    },
+    {
+      "cap": 6,
+      "lines_affected": 15744,
+      "recovery": 786829.26,
+      "new_total_profit": 2254286.55,
+      "uplift_pct": 0.536185
+    },
+    {
+      "cap": 7,
+      "lines_affected": 15594,
+      "recovery": 751257.12,
+      "new_total_profit": 2218714.41,
+      "uplift_pct": 0.511945
+    },
+    {
+      "cap": 8,
+      "lines_affected": 15594,
+      "recovery": 730000.95,
+      "new_total_profit": 2197458.24,
+      "uplift_pct": 0.49746
+    },
+    {
+      "cap": 9,
+      "lines_affected": 15594,
+      "recovery": 714473.27,
+      "new_total_profit": 2181930.56,
+      "uplift_pct": 0.486878
+    },
+    {
+      "cap": 10,
+      "lines_affected": 11526,
+      "recovery": 691986.94,
+      "new_total_profit": 2159444.23,
+      "uplift_pct": 0.471555
+    },
+    {
+      "cap": 11,
+      "lines_affected": 11526,
+      "recovery": 658580.95,
+      "new_total_profit": 2126038.24,
+      "uplift_pct": 0.448791
+    },
+    {
+      "cap": 12,
+      "lines_affected": 11526,
+      "recovery": 605655.4,
+      "new_total_profit": 2073112.69,
+      "uplift_pct": 0.412724
+    },
+    {
+      "cap": 13,
+      "lines_affected": 11526,
+      "recovery": 548688.42,
+      "new_total_profit": 2016145.71,
+      "uplift_pct": 0.373904
+    },
+    {
+      "cap": 14,
+      "lines_affected": 11526,
+      "recovery": 503158.18,
+      "new_total_profit": 1970615.47,
+      "uplift_pct": 0.342878
+    },
+    {
+      "cap": 15,
+      "lines_affected": 10985,
+      "recovery": 483535.05,
+      "new_total_profit": 1950992.34,
+      "uplift_pct": 0.329505
+    },
+    {
+      "cap": 16,
+      "lines_affected": 10985,
+      "recovery": 496456.61,
+      "new_total_profit": 1963913.9,
+      "uplift_pct": 0.338311
+    },
+    {
+      "cap": 17,
+      "lines_affected": 10250,
+      "recovery": 523007.44,
+      "new_total_profit": 1990464.73,
+      "uplift_pct": 0.356404
+    },
+    {
+      "cap": 18,
+      "lines_affected": 10250,
+      "recovery": 557227.51,
+      "new_total_profit": 2024684.8,
+      "uplift_pct": 0.379723
+    },
+    {
+      "cap": 19,
+      "lines_affected": 10250,
+      "recovery": 597967.92,
+      "new_total_profit": 2065425.21,
+      "uplift_pct": 0.407486
+    },
+    {
+      "cap": 20,
+      "lines_affected": 5370,
+      "recovery": 563554.2,
+      "new_total_profit": 2031011.49,
+      "uplift_pct": 0.384034
+    },
+    {
+      "cap": 21,
+      "lines_affected": 5370,
+      "recovery": 550907.66,
+      "new_total_profit": 2018364.95,
+      "uplift_pct": 0.375416
+    },
+    {
+      "cap": 22,
+      "lines_affected": 5370,
+      "recovery": 519438.97,
+      "new_total_profit": 1986896.26,
+      "uplift_pct": 0.353972
+    },
+    {
+      "cap": 23,
+      "lines_affected": 5370,
+      "recovery": 478845.43,
+      "new_total_profit": 1946302.72,
+      "uplift_pct": 0.32631
+    },
+    {
+      "cap": 24,
+      "lines_affected": 5370,
+      "recovery": 438828.0,
+      "new_total_profit": 1906285.29,
+      "uplift_pct": 0.29904
+    },
+    {
+      "cap": 25,
+      "lines_affected": 5172,
+      "recovery": 408145.67,
+      "new_total_profit": 1875602.96,
+      "uplift_pct": 0.278131
+    },
+    {
+      "cap": 26,
+      "lines_affected": 5172,
+      "recovery": 392626.92,
+      "new_total_profit": 1860084.21,
+      "uplift_pct": 0.267556
+    },
+    {
+      "cap": 27,
+      "lines_affected": 4784,
+      "recovery": 375098.9,
+      "new_total_profit": 1842556.19,
+      "uplift_pct": 0.255611
+    },
+    {
+      "cap": 28,
+      "lines_affected": 4784,
+      "recovery": 345959.96,
+      "new_total_profit": 1813417.25,
+      "uplift_pct": 0.235755
+    },
+    {
+      "cap": 29,
+      "lines_affected": 4784,
+      "recovery": 306766.81,
+      "new_total_profit": 1774224.1,
+      "uplift_pct": 0.209046
+    },
+    {
+      "cap": 30,
+      "lines_affected": 4477,
+      "recovery": 270093.04,
+      "new_total_profit": 1737550.33,
+      "uplift_pct": 0.184055
+    }
+  ],
+  "scenario_matrix": [
+    {
+      "fixed_cap": 0,
+      "variable_cap": 0,
+      "total_profit": 3301067.79,
+      "combined_uplift": 1.249515
+    },
+    {
+      "fixed_cap": 0,
+      "variable_cap": 1,
+      "total_profit": 3203401.45,
+      "combined_uplift": 1.182961
+    },
+    {
+      "fixed_cap": 0,
+      "variable_cap": 2,
+      "total_profit": 3114446.96,
+      "combined_uplift": 1.122342
+    },
+    {
+      "fixed_cap": 0,
+      "variable_cap": 3,
+      "total_profit": 3034879.05,
+      "combined_uplift": 1.068121
+    },
+    {
+      "fixed_cap": 0,
+      "variable_cap": 4,
+      "total_profit": 2965395.4,
+      "combined_uplift": 1.020771
+    },
+    {
+      "fixed_cap": 0,
+      "variable_cap": 5,
+      "total_profit": 2906679.93,
+      "combined_uplift": 0.980759
+    },
+    {
+      "fixed_cap": 0,
+      "variable_cap": 6,
+      "total_profit": 2859421.13,
+      "combined_uplift": 0.948555
+    },
+    {
+      "fixed_cap": 0,
+      "variable_cap": 7,
+      "total_profit": 2823848.99,
+      "combined_uplift": 0.924314
+    },
+    {
+      "fixed_cap": 0,
+      "variable_cap": 8,
+      "total_profit": 2802592.82,
+      "combined_uplift": 0.909829
+    },
+    {
+      "fixed_cap": 0,
+      "variable_cap": 9,
+      "total_profit": 2787065.14,
+      "combined_uplift": 0.899248
+    },
+    {
+      "fixed_cap": 0,
+      "variable_cap": 10,
+      "total_profit": 2764578.81,
+      "combined_uplift": 0.883925
+    },
+    {
+      "fixed_cap": 0,
+      "variable_cap": 11,
+      "total_profit": 2731172.82,
+      "combined_uplift": 0.86116
+    },
+    {
+      "fixed_cap": 0,
+      "variable_cap": 12,
+      "total_profit": 2678247.27,
+      "combined_uplift": 0.825094
+    },
+    {
+      "fixed_cap": 0,
+      "variable_cap": 13,
+      "total_profit": 2621280.29,
+      "combined_uplift": 0.786274
+    },
+    {
+      "fixed_cap": 0,
+      "variable_cap": 14,
+      "total_profit": 2575750.05,
+      "combined_uplift": 0.755247
+    },
+    {
+      "fixed_cap": 0,
+      "variable_cap": 15,
+      "total_profit": 2556126.92,
+      "combined_uplift": 0.741875
+    },
+    {
+      "fixed_cap": 0,
+      "variable_cap": 16,
+      "total_profit": 2569048.48,
+      "combined_uplift": 0.75068
+    },
+    {
+      "fixed_cap": 0,
+      "variable_cap": 17,
+      "total_profit": 2595599.31,
+      "combined_uplift": 0.768773
+    },
+    {
+      "fixed_cap": 0,
+      "variable_cap": 18,
+      "total_profit": 2629819.38,
+      "combined_uplift": 0.792093
+    },
+    {
+      "fixed_cap": 0,
+      "variable_cap": 19,
+      "total_profit": 2670559.79,
+      "combined_uplift": 0.819855
+    },
+    {
+      "fixed_cap": 0,
+      "variable_cap": 20,
+      "total_profit": 2636146.07,
+      "combined_uplift": 0.796404
+    },
+    {
+      "fixed_cap": 0,
+      "variable_cap": 21,
+      "total_profit": 2623499.53,
+      "combined_uplift": 0.787786
+    },
+    {
+      "fixed_cap": 0,
+      "variable_cap": 22,
+      "total_profit": 2592030.84,
+      "combined_uplift": 0.766342
+    },
+    {
+      "fixed_cap": 0,
+      "variable_cap": 23,
+      "total_profit": 2551437.3,
+      "combined_uplift": 0.738679
+    },
+    {
+      "fixed_cap": 0,
+      "variable_cap": 24,
+      "total_profit": 2511419.87,
+      "combined_uplift": 0.711409
+    },
+    {
+      "fixed_cap": 0,
+      "variable_cap": 25,
+      "total_profit": 2480737.54,
+      "combined_uplift": 0.690501
+    },
+    {
+      "fixed_cap": 0,
+      "variable_cap": 26,
+      "total_profit": 2465218.79,
+      "combined_uplift": 0.679925
+    },
+    {
+      "fixed_cap": 0,
+      "variable_cap": 27,
+      "total_profit": 2447690.77,
+      "combined_uplift": 0.667981
+    },
+    {
+      "fixed_cap": 0,
+      "variable_cap": 28,
+      "total_profit": 2418551.83,
+      "combined_uplift": 0.648124
+    },
+    {
+      "fixed_cap": 0,
+      "variable_cap": 29,
+      "total_profit": 2379358.68,
+      "combined_uplift": 0.621416
+    },
+    {
+      "fixed_cap": 0,
+      "variable_cap": 30,
+      "total_profit": 2342684.91,
+      "combined_uplift": 0.596425
+    },
+    {
+      "fixed_cap": 1,
+      "variable_cap": 0,
+      "total_profit": 3286534.78,
+      "combined_uplift": 1.239612
+    },
+    {
+      "fixed_cap": 1,
+      "variable_cap": 1,
+      "total_profit": 3188868.44,
+      "combined_uplift": 1.173057
+    },
+    {
+      "fixed_cap": 1,
+      "variable_cap": 2,
+      "total_profit": 3099913.95,
+      "combined_uplift": 1.112439
+    },
+    {
+      "fixed_cap": 1,
+      "variable_cap": 3,
+      "total_profit": 3020346.04,
+      "combined_uplift": 1.058217
+    },
+    {
+      "fixed_cap": 1,
+      "variable_cap": 4,
+      "total_profit": 2950862.39,
+      "combined_uplift": 1.010868
+    },
+    {
+      "fixed_cap": 1,
+      "variable_cap": 5,
+      "total_profit": 2892146.92,
+      "combined_uplift": 0.970856
+    },
+    {
+      "fixed_cap": 1,
+      "variable_cap": 6,
+      "total_profit": 2844888.12,
+      "combined_uplift": 0.938651
+    },
+    {
+      "fixed_cap": 1,
+      "variable_cap": 7,
+      "total_profit": 2809315.98,
+      "combined_uplift": 0.914411
+    },
+    {
+      "fixed_cap": 1,
+      "variable_cap": 8,
+      "total_profit": 2788059.81,
+      "combined_uplift": 0.899926
+    },
+    {
+      "fixed_cap": 1,
+      "variable_cap": 9,
+      "total_profit": 2772532.13,
+      "combined_uplift": 0.889344
+    },
+    {
+      "fixed_cap": 1,
+      "variable_cap": 10,
+      "total_profit": 2750045.8,
+      "combined_uplift": 0.874021
+    },
+    {
+      "fixed_cap": 1,
+      "variable_cap": 11,
+      "total_profit": 2716639.81,
+      "combined_uplift": 0.851256
+    },
+    {
+      "fixed_cap": 1,
+      "variable_cap": 12,
+      "total_profit": 2663714.26,
+      "combined_uplift": 0.81519
+    },
+    {
+      "fixed_cap": 1,
+      "variable_cap": 13,
+      "total_profit": 2606747.28,
+      "combined_uplift": 0.77637
+    },
+    {
+      "fixed_cap": 1,
+      "variable_cap": 14,
+      "total_profit": 2561217.04,
+      "combined_uplift": 0.745343
+    },
+    {
+      "fixed_cap": 1,
+      "variable_cap": 15,
+      "total_profit": 2541593.91,
+      "combined_uplift": 0.731971
+    },
+    {
+      "fixed_cap": 1,
+      "variable_cap": 16,
+      "total_profit": 2554515.47,
+      "combined_uplift": 0.740777
+    },
+    {
+      "fixed_cap": 1,
+      "variable_cap": 17,
+      "total_profit": 2581066.3,
+      "combined_uplift": 0.75887
+    },
+    {
+      "fixed_cap": 1,
+      "variable_cap": 18,
+      "total_profit": 2615286.37,
+      "combined_uplift": 0.782189
+    },
+    {
+      "fixed_cap": 1,
+      "variable_cap": 19,
+      "total_profit": 2656026.78,
+      "combined_uplift": 0.809952
+    },
+    {
+      "fixed_cap": 1,
+      "variable_cap": 20,
+      "total_profit": 2621613.06,
+      "combined_uplift": 0.7865
+    },
+    {
+      "fixed_cap": 1,
+      "variable_cap": 21,
+      "total_profit": 2608966.52,
+      "combined_uplift": 0.777882
+    },
+    {
+      "fixed_cap": 1,
+      "variable_cap": 22,
+      "total_profit": 2577497.83,
+      "combined_uplift": 0.756438
+    },
+    {
+      "fixed_cap": 1,
+      "variable_cap": 23,
+      "total_profit": 2536904.29,
+      "combined_uplift": 0.728776
+    },
+    {
+      "fixed_cap": 1,
+      "variable_cap": 24,
+      "total_profit": 2496886.86,
+      "combined_uplift": 0.701506
+    },
+    {
+      "fixed_cap": 1,
+      "variable_cap": 25,
+      "total_profit": 2466204.53,
+      "combined_uplift": 0.680597
+    },
+    {
+      "fixed_cap": 1,
+      "variable_cap": 26,
+      "total_profit": 2450685.78,
+      "combined_uplift": 0.670022
+    },
+    {
+      "fixed_cap": 1,
+      "variable_cap": 27,
+      "total_profit": 2433157.76,
+      "combined_uplift": 0.658077
+    },
+    {
+      "fixed_cap": 1,
+      "variable_cap": 28,
+      "total_profit": 2404018.82,
+      "combined_uplift": 0.638221
+    },
+    {
+      "fixed_cap": 1,
+      "variable_cap": 29,
+      "total_profit": 2364825.67,
+      "combined_uplift": 0.611512
+    },
+    {
+      "fixed_cap": 1,
+      "variable_cap": 30,
+      "total_profit": 2328151.9,
+      "combined_uplift": 0.586521
+    },
+    {
+      "fixed_cap": 2,
+      "variable_cap": 0,
+      "total_profit": 3273298.11,
+      "combined_uplift": 1.230592
+    },
+    {
+      "fixed_cap": 2,
+      "variable_cap": 1,
+      "total_profit": 3175631.77,
+      "combined_uplift": 1.164037
+    },
+    {
+      "fixed_cap": 2,
+      "variable_cap": 2,
+      "total_profit": 3086677.28,
+      "combined_uplift": 1.103419
+    },
+    {
+      "fixed_cap": 2,
+      "variable_cap": 3,
+      "total_profit": 3007109.37,
+      "combined_uplift": 1.049197
+    },
+    {
+      "fixed_cap": 2,
+      "variable_cap": 4,
+      "total_profit": 2937625.72,
+      "combined_uplift": 1.001848
+    },
+    {
+      "fixed_cap": 2,
+      "variable_cap": 5,
+      "total_profit": 2878910.25,
+      "combined_uplift": 0.961836
+    },
+    {
+      "fixed_cap": 2,
+      "variable_cap": 6,
+      "total_profit": 2831651.45,
+      "combined_uplift": 0.929631
+    },
+    {
+      "fixed_cap": 2,
+      "variable_cap": 7,
+      "total_profit": 2796079.31,
+      "combined_uplift": 0.905391
+    },
+    {
+      "fixed_cap": 2,
+      "variable_cap": 8,
+      "total_profit": 2774823.14,
+      "combined_uplift": 0.890906
+    },
+    {
+      "fixed_cap": 2,
+      "variable_cap": 9,
+      "total_profit": 2759295.46,
+      "combined_uplift": 0.880324
+    },
+    {
+      "fixed_cap": 2,
+      "variable_cap": 10,
+      "total_profit": 2736809.13,
+      "combined_uplift": 0.865001
+    },
+    {
+      "fixed_cap": 2,
+      "variable_cap": 11,
+      "total_profit": 2703403.14,
+      "combined_uplift": 0.842236
+    },
+    {
+      "fixed_cap": 2,
+      "variable_cap": 12,
+      "total_profit": 2650477.59,
+      "combined_uplift": 0.80617
+    },
+    {
+      "fixed_cap": 2,
+      "variable_cap": 13,
+      "total_profit": 2593510.61,
+      "combined_uplift": 0.76735
+    },
+    {
+      "fixed_cap": 2,
+      "variable_cap": 14,
+      "total_profit": 2547980.37,
+      "combined_uplift": 0.736323
+    },
+    {
+      "fixed_cap": 2,
+      "variable_cap": 15,
+      "total_profit": 2528357.24,
+      "combined_uplift": 0.722951
+    },
+    {
+      "fixed_cap": 2,
+      "variable_cap": 16,
+      "total_profit": 2541278.8,
+      "combined_uplift": 0.731757
+    },
+    {
+      "fixed_cap": 2,
+      "variable_cap": 17,
+      "total_profit": 2567829.63,
+      "combined_uplift": 0.74985
+    },
+    {
+      "fixed_cap": 2,
+      "variable_cap": 18,
+      "total_profit": 2602049.7,
+      "combined_uplift": 0.773169
+    },
+    {
+      "fixed_cap": 2,
+      "variable_cap": 19,
+      "total_profit": 2642790.11,
+      "combined_uplift": 0.800932
+    },
+    {
+      "fixed_cap": 2,
+      "variable_cap": 20,
+      "total_profit": 2608376.39,
+      "combined_uplift": 0.77748
+    },
+    {
+      "fixed_cap": 2,
+      "variable_cap": 21,
+      "total_profit": 2595729.85,
+      "combined_uplift": 0.768862
+    },
+    {
+      "fixed_cap": 2,
+      "variable_cap": 22,
+      "total_profit": 2564261.16,
+      "combined_uplift": 0.747418
+    },
+    {
+      "fixed_cap": 2,
+      "variable_cap": 23,
+      "total_profit": 2523667.62,
+      "combined_uplift": 0.719755
+    },
+    {
+      "fixed_cap": 2,
+      "variable_cap": 24,
+      "total_profit": 2483650.19,
+      "combined_uplift": 0.692486
+    },
+    {
+      "fixed_cap": 2,
+      "variable_cap": 25,
+      "total_profit": 2452967.86,
+      "combined_uplift": 0.671577
+    },
+    {
+      "fixed_cap": 2,
+      "variable_cap": 26,
+      "total_profit": 2437449.11,
+      "combined_uplift": 0.661002
+    },
+    {
+      "fixed_cap": 2,
+      "variable_cap": 27,
+      "total_profit": 2419921.09,
+      "combined_uplift": 0.649057
+    },
+    {
+      "fixed_cap": 2,
+      "variable_cap": 28,
+      "total_profit": 2390782.15,
+      "combined_uplift": 0.6292
+    },
+    {
+      "fixed_cap": 2,
+      "variable_cap": 29,
+      "total_profit": 2351589.0,
+      "combined_uplift": 0.602492
+    },
+    {
+      "fixed_cap": 2,
+      "variable_cap": 30,
+      "total_profit": 2314915.23,
+      "combined_uplift": 0.577501
+    },
+    {
+      "fixed_cap": 3,
+      "variable_cap": 0,
+      "total_profit": 3261458.19,
+      "combined_uplift": 1.222523
+    },
+    {
+      "fixed_cap": 3,
+      "variable_cap": 1,
+      "total_profit": 3163791.85,
+      "combined_uplift": 1.155969
+    },
+    {
+      "fixed_cap": 3,
+      "variable_cap": 2,
+      "total_profit": 3074837.36,
+      "combined_uplift": 1.09535
+    },
+    {
+      "fixed_cap": 3,
+      "variable_cap": 3,
+      "total_profit": 2995269.45,
+      "combined_uplift": 1.041129
+    },
+    {
+      "fixed_cap": 3,
+      "variable_cap": 4,
+      "total_profit": 2925785.8,
+      "combined_uplift": 0.993779
+    },
+    {
+      "fixed_cap": 3,
+      "variable_cap": 5,
+      "total_profit": 2867070.33,
+      "combined_uplift": 0.953767
+    },
+    {
+      "fixed_cap": 3,
+      "variable_cap": 6,
+      "total_profit": 2819811.53,
+      "combined_uplift": 0.921563
+    },
+    {
+      "fixed_cap": 3,
+      "variable_cap": 7,
+      "total_profit": 2784239.39,
+      "combined_uplift": 0.897322
+    },
+    {
+      "fixed_cap": 3,
+      "variable_cap": 8,
+      "total_profit": 2762983.22,
+      "combined_uplift": 0.882837
+    },
+    {
+      "fixed_cap": 3,
+      "variable_cap": 9,
+      "total_profit": 2747455.54,
+      "combined_uplift": 0.872256
+    },
+    {
+      "fixed_cap": 3,
+      "variable_cap": 10,
+      "total_profit": 2724969.21,
+      "combined_uplift": 0.856933
+    },
+    {
+      "fixed_cap": 3,
+      "variable_cap": 11,
+      "total_profit": 2691563.22,
+      "combined_uplift": 0.834168
+    },
+    {
+      "fixed_cap": 3,
+      "variable_cap": 12,
+      "total_profit": 2638637.67,
+      "combined_uplift": 0.798102
+    },
+    {
+      "fixed_cap": 3,
+      "variable_cap": 13,
+      "total_profit": 2581670.69,
+      "combined_uplift": 0.759282
+    },
+    {
+      "fixed_cap": 3,
+      "variable_cap": 14,
+      "total_profit": 2536140.45,
+      "combined_uplift": 0.728255
+    },
+    {
+      "fixed_cap": 3,
+      "variable_cap": 15,
+      "total_profit": 2516517.32,
+      "combined_uplift": 0.714883
+    },
+    {
+      "fixed_cap": 3,
+      "variable_cap": 16,
+      "total_profit": 2529438.88,
+      "combined_uplift": 0.723688
+    },
+    {
+      "fixed_cap": 3,
+      "variable_cap": 17,
+      "total_profit": 2555989.71,
+      "combined_uplift": 0.741781
+    },
+    {
+      "fixed_cap": 3,
+      "variable_cap": 18,
+      "total_profit": 2590209.78,
+      "combined_uplift": 0.765101
+    },
+    {
+      "fixed_cap": 3,
+      "variable_cap": 19,
+      "total_profit": 2630950.19,
+      "combined_uplift": 0.792863
+    },
+    {
+      "fixed_cap": 3,
+      "variable_cap": 20,
+      "total_profit": 2596536.47,
+      "combined_uplift": 0.769412
+    },
+    {
+      "fixed_cap": 3,
+      "variable_cap": 21,
+      "total_profit": 2583889.93,
+      "combined_uplift": 0.760794
+    },
+    {
+      "fixed_cap": 3,
+      "variable_cap": 22,
+      "total_profit": 2552421.24,
+      "combined_uplift": 0.73935
+    },
+    {
+      "fixed_cap": 3,
+      "variable_cap": 23,
+      "total_profit": 2511827.7,
+      "combined_uplift": 0.711687
+    },
+    {
+      "fixed_cap": 3,
+      "variable_cap": 24,
+      "total_profit": 2471810.27,
+      "combined_uplift": 0.684417
+    },
+    {
+      "fixed_cap": 3,
+      "variable_cap": 25,
+      "total_profit": 2441127.94,
+      "combined_uplift": 0.663509
+    },
+    {
+      "fixed_cap": 3,
+      "variable_cap": 26,
+      "total_profit": 2425609.19,
+      "combined_uplift": 0.652933
+    },
+    {
+      "fixed_cap": 3,
+      "variable_cap": 27,
+      "total_profit": 2408081.17,
+      "combined_uplift": 0.640989
+    },
+    {
+      "fixed_cap": 3,
+      "variable_cap": 28,
+      "total_profit": 2378942.23,
+      "combined_uplift": 0.621132
+    },
+    {
+      "fixed_cap": 3,
+      "variable_cap": 29,
+      "total_profit": 2339749.08,
+      "combined_uplift": 0.594424
+    },
+    {
+      "fixed_cap": 3,
+      "variable_cap": 30,
+      "total_profit": 2303075.31,
+      "combined_uplift": 0.569433
+    },
+    {
+      "fixed_cap": 4,
+      "variable_cap": 0,
+      "total_profit": 3251118.83,
+      "combined_uplift": 1.215478
+    },
+    {
+      "fixed_cap": 4,
+      "variable_cap": 1,
+      "total_profit": 3153452.49,
+      "combined_uplift": 1.148923
+    },
+    {
+      "fixed_cap": 4,
+      "variable_cap": 2,
+      "total_profit": 3064498.0,
+      "combined_uplift": 1.088305
+    },
+    {
+      "fixed_cap": 4,
+      "variable_cap": 3,
+      "total_profit": 2984930.09,
+      "combined_uplift": 1.034083
+    },
+    {
+      "fixed_cap": 4,
+      "variable_cap": 4,
+      "total_profit": 2915446.44,
+      "combined_uplift": 0.986733
+    },
+    {
+      "fixed_cap": 4,
+      "variable_cap": 5,
+      "total_profit": 2856730.97,
+      "combined_uplift": 0.946722
+    },
+    {
+      "fixed_cap": 4,
+      "variable_cap": 6,
+      "total_profit": 2809472.17,
+      "combined_uplift": 0.914517
+    },
+    {
+      "fixed_cap": 4,
+      "variable_cap": 7,
+      "total_profit": 2773900.03,
+      "combined_uplift": 0.890276
+    },
+    {
+      "fixed_cap": 4,
+      "variable_cap": 8,
+      "total_profit": 2752643.86,
+      "combined_uplift": 0.875791
+    },
+    {
+      "fixed_cap": 4,
+      "variable_cap": 9,
+      "total_profit": 2737116.18,
+      "combined_uplift": 0.86521
+    },
+    {
+      "fixed_cap": 4,
+      "variable_cap": 10,
+      "total_profit": 2714629.85,
+      "combined_uplift": 0.849887
+    },
+    {
+      "fixed_cap": 4,
+      "variable_cap": 11,
+      "total_profit": 2681223.86,
+      "combined_uplift": 0.827122
+    },
+    {
+      "fixed_cap": 4,
+      "variable_cap": 12,
+      "total_profit": 2628298.31,
+      "combined_uplift": 0.791056
+    },
+    {
+      "fixed_cap": 4,
+      "variable_cap": 13,
+      "total_profit": 2571331.33,
+      "combined_uplift": 0.752236
+    },
+    {
+      "fixed_cap": 4,
+      "variable_cap": 14,
+      "total_profit": 2525801.09,
+      "combined_uplift": 0.721209
+    },
+    {
+      "fixed_cap": 4,
+      "variable_cap": 15,
+      "total_profit": 2506177.96,
+      "combined_uplift": 0.707837
+    },
+    {
+      "fixed_cap": 4,
+      "variable_cap": 16,
+      "total_profit": 2519099.52,
+      "combined_uplift": 0.716642
+    },
+    {
+      "fixed_cap": 4,
+      "variable_cap": 17,
+      "total_profit": 2545650.35,
+      "combined_uplift": 0.734736
+    },
+    {
+      "fixed_cap": 4,
+      "variable_cap": 18,
+      "total_profit": 2579870.42,
+      "combined_uplift": 0.758055
+    },
+    {
+      "fixed_cap": 4,
+      "variable_cap": 19,
+      "total_profit": 2620610.83,
+      "combined_uplift": 0.785817
+    },
+    {
+      "fixed_cap": 4,
+      "variable_cap": 20,
+      "total_profit": 2586197.11,
+      "combined_uplift": 0.762366
+    },
+    {
+      "fixed_cap": 4,
+      "variable_cap": 21,
+      "total_profit": 2573550.57,
+      "combined_uplift": 0.753748
+    },
+    {
+      "fixed_cap": 4,
+      "variable_cap": 22,
+      "total_profit": 2542081.88,
+      "combined_uplift": 0.732304
+    },
+    {
+      "fixed_cap": 4,
+      "variable_cap": 23,
+      "total_profit": 2501488.34,
+      "combined_uplift": 0.704641
+    },
+    {
+      "fixed_cap": 4,
+      "variable_cap": 24,
+      "total_profit": 2461470.91,
+      "combined_uplift": 0.677371
+    },
+    {
+      "fixed_cap": 4,
+      "variable_cap": 25,
+      "total_profit": 2430788.58,
+      "combined_uplift": 0.656463
+    },
+    {
+      "fixed_cap": 4,
+      "variable_cap": 26,
+      "total_profit": 2415269.83,
+      "combined_uplift": 0.645888
+    },
+    {
+      "fixed_cap": 4,
+      "variable_cap": 27,
+      "total_profit": 2397741.81,
+      "combined_uplift": 0.633943
+    },
+    {
+      "fixed_cap": 4,
+      "variable_cap": 28,
+      "total_profit": 2368602.87,
+      "combined_uplift": 0.614086
+    },
+    {
+      "fixed_cap": 4,
+      "variable_cap": 29,
+      "total_profit": 2329409.72,
+      "combined_uplift": 0.587378
+    },
+    {
+      "fixed_cap": 4,
+      "variable_cap": 30,
+      "total_profit": 2292735.95,
+      "combined_uplift": 0.562387
+    },
+    {
+      "fixed_cap": 5,
+      "variable_cap": 0,
+      "total_profit": 3242381.81,
+      "combined_uplift": 1.209524
+    },
+    {
+      "fixed_cap": 5,
+      "variable_cap": 1,
+      "total_profit": 3144715.47,
+      "combined_uplift": 1.142969
+    },
+    {
+      "fixed_cap": 5,
+      "variable_cap": 2,
+      "total_profit": 3055760.98,
+      "combined_uplift": 1.082351
+    },
+    {
+      "fixed_cap": 5,
+      "variable_cap": 3,
+      "total_profit": 2976193.07,
+      "combined_uplift": 1.028129
+    },
+    {
+      "fixed_cap": 5,
+      "variable_cap": 4,
+      "total_profit": 2906709.42,
+      "combined_uplift": 0.98078
+    },
+    {
+      "fixed_cap": 5,
+      "variable_cap": 5,
+      "total_profit": 2847993.95,
+      "combined_uplift": 0.940768
+    },
+    {
+      "fixed_cap": 5,
+      "variable_cap": 6,
+      "total_profit": 2800735.15,
+      "combined_uplift": 0.908563
+    },
+    {
+      "fixed_cap": 5,
+      "variable_cap": 7,
+      "total_profit": 2765163.01,
+      "combined_uplift": 0.884323
+    },
+    {
+      "fixed_cap": 5,
+      "variable_cap": 8,
+      "total_profit": 2743906.84,
+      "combined_uplift": 0.869838
+    },
+    {
+      "fixed_cap": 5,
+      "variable_cap": 9,
+      "total_profit": 2728379.16,
+      "combined_uplift": 0.859256
+    },
+    {
+      "fixed_cap": 5,
+      "variable_cap": 10,
+      "total_profit": 2705892.83,
+      "combined_uplift": 0.843933
+    },
+    {
+      "fixed_cap": 5,
+      "variable_cap": 11,
+      "total_profit": 2672486.84,
+      "combined_uplift": 0.821168
+    },
+    {
+      "fixed_cap": 5,
+      "variable_cap": 12,
+      "total_profit": 2619561.29,
+      "combined_uplift": 0.785102
+    },
+    {
+      "fixed_cap": 5,
+      "variable_cap": 13,
+      "total_profit": 2562594.31,
+      "combined_uplift": 0.746282
+    },
+    {
+      "fixed_cap": 5,
+      "variable_cap": 14,
+      "total_profit": 2517064.07,
+      "combined_uplift": 0.715255
+    },
+    {
+      "fixed_cap": 5,
+      "variable_cap": 15,
+      "total_profit": 2497440.94,
+      "combined_uplift": 0.701883
+    },
+    {
+      "fixed_cap": 5,
+      "variable_cap": 16,
+      "total_profit": 2510362.5,
+      "combined_uplift": 0.710689
+    },
+    {
+      "fixed_cap": 5,
+      "variable_cap": 17,
+      "total_profit": 2536913.33,
+      "combined_uplift": 0.728782
+    },
+    {
+      "fixed_cap": 5,
+      "variable_cap": 18,
+      "total_profit": 2571133.4,
+      "combined_uplift": 0.752101
+    },
+    {
+      "fixed_cap": 5,
+      "variable_cap": 19,
+      "total_profit": 2611873.81,
+      "combined_uplift": 0.779864
+    },
+    {
+      "fixed_cap": 5,
+      "variable_cap": 20,
+      "total_profit": 2577460.09,
+      "combined_uplift": 0.756412
+    },
+    {
+      "fixed_cap": 5,
+      "variable_cap": 21,
+      "total_profit": 2564813.55,
+      "combined_uplift": 0.747794
+    },
+    {
+      "fixed_cap": 5,
+      "variable_cap": 22,
+      "total_profit": 2533344.86,
+      "combined_uplift": 0.72635
+    },
+    {
+      "fixed_cap": 5,
+      "variable_cap": 23,
+      "total_profit": 2492751.32,
+      "combined_uplift": 0.698687
+    },
+    {
+      "fixed_cap": 5,
+      "variable_cap": 24,
+      "total_profit": 2452733.89,
+      "combined_uplift": 0.671418
+    },
+    {
+      "fixed_cap": 5,
+      "variable_cap": 25,
+      "total_profit": 2422051.56,
+      "combined_uplift": 0.650509
+    },
+    {
+      "fixed_cap": 5,
+      "variable_cap": 26,
+      "total_profit": 2406532.81,
+      "combined_uplift": 0.639934
+    },
+    {
+      "fixed_cap": 5,
+      "variable_cap": 27,
+      "total_profit": 2389004.79,
+      "combined_uplift": 0.627989
+    },
+    {
+      "fixed_cap": 5,
+      "variable_cap": 28,
+      "total_profit": 2359865.85,
+      "combined_uplift": 0.608133
+    },
+    {
+      "fixed_cap": 5,
+      "variable_cap": 29,
+      "total_profit": 2320672.7,
+      "combined_uplift": 0.581424
+    },
+    {
+      "fixed_cap": 5,
+      "variable_cap": 30,
+      "total_profit": 2283998.93,
+      "combined_uplift": 0.556433
+    },
+    {
+      "fixed_cap": 6,
+      "variable_cap": 0,
+      "total_profit": 3235349.58,
+      "combined_uplift": 1.204732
+    },
+    {
+      "fixed_cap": 6,
+      "variable_cap": 1,
+      "total_profit": 3137683.24,
+      "combined_uplift": 1.138177
+    },
+    {
+      "fixed_cap": 6,
+      "variable_cap": 2,
+      "total_profit": 3048728.75,
+      "combined_uplift": 1.077559
+    },
+    {
+      "fixed_cap": 6,
+      "variable_cap": 3,
+      "total_profit": 2969160.84,
+      "combined_uplift": 1.023337
+    },
+    {
+      "fixed_cap": 6,
+      "variable_cap": 4,
+      "total_profit": 2899677.19,
+      "combined_uplift": 0.975987
+    },
+    {
+      "fixed_cap": 6,
+      "variable_cap": 5,
+      "total_profit": 2840961.72,
+      "combined_uplift": 0.935976
+    },
+    {
+      "fixed_cap": 6,
+      "variable_cap": 6,
+      "total_profit": 2793702.92,
+      "combined_uplift": 0.903771
+    },
+    {
+      "fixed_cap": 6,
+      "variable_cap": 7,
+      "total_profit": 2758130.78,
+      "combined_uplift": 0.879531
+    },
+    {
+      "fixed_cap": 6,
+      "variable_cap": 8,
+      "total_profit": 2736874.61,
+      "combined_uplift": 0.865045
+    },
+    {
+      "fixed_cap": 6,
+      "variable_cap": 9,
+      "total_profit": 2721346.93,
+      "combined_uplift": 0.854464
+    },
+    {
+      "fixed_cap": 6,
+      "variable_cap": 10,
+      "total_profit": 2698860.6,
+      "combined_uplift": 0.839141
+    },
+    {
+      "fixed_cap": 6,
+      "variable_cap": 11,
+      "total_profit": 2665454.61,
+      "combined_uplift": 0.816376
+    },
+    {
+      "fixed_cap": 6,
+      "variable_cap": 12,
+      "total_profit": 2612529.06,
+      "combined_uplift": 0.78031
+    },
+    {
+      "fixed_cap": 6,
+      "variable_cap": 13,
+      "total_profit": 2555562.08,
+      "combined_uplift": 0.74149
+    },
+    {
+      "fixed_cap": 6,
+      "variable_cap": 14,
+      "total_profit": 2510031.84,
+      "combined_uplift": 0.710463
+    },
+    {
+      "fixed_cap": 6,
+      "variable_cap": 15,
+      "total_profit": 2490408.71,
+      "combined_uplift": 0.697091
+    },
+    {
+      "fixed_cap": 6,
+      "variable_cap": 16,
+      "total_profit": 2503330.27,
+      "combined_uplift": 0.705897
+    },
+    {
+      "fixed_cap": 6,
+      "variable_cap": 17,
+      "total_profit": 2529881.1,
+      "combined_uplift": 0.72399
+    },
+    {
+      "fixed_cap": 6,
+      "variable_cap": 18,
+      "total_profit": 2564101.17,
+      "combined_uplift": 0.747309
+    },
+    {
+      "fixed_cap": 6,
+      "variable_cap": 19,
+      "total_profit": 2604841.58,
+      "combined_uplift": 0.775071
+    },
+    {
+      "fixed_cap": 6,
+      "variable_cap": 20,
+      "total_profit": 2570427.86,
+      "combined_uplift": 0.75162
+    },
+    {
+      "fixed_cap": 6,
+      "variable_cap": 21,
+      "total_profit": 2557781.32,
+      "combined_uplift": 0.743002
+    },
+    {
+      "fixed_cap": 6,
+      "variable_cap": 22,
+      "total_profit": 2526312.63,
+      "combined_uplift": 0.721558
+    },
+    {
+      "fixed_cap": 6,
+      "variable_cap": 23,
+      "total_profit": 2485719.09,
+      "combined_uplift": 0.693895
+    },
+    {
+      "fixed_cap": 6,
+      "variable_cap": 24,
+      "total_profit": 2445701.66,
+      "combined_uplift": 0.666625
+    },
+    {
+      "fixed_cap": 6,
+      "variable_cap": 25,
+      "total_profit": 2415019.33,
+      "combined_uplift": 0.645717
+    },
+    {
+      "fixed_cap": 6,
+      "variable_cap": 26,
+      "total_profit": 2399500.58,
+      "combined_uplift": 0.635142
+    },
+    {
+      "fixed_cap": 6,
+      "variable_cap": 27,
+      "total_profit": 2381972.56,
+      "combined_uplift": 0.623197
+    },
+    {
+      "fixed_cap": 6,
+      "variable_cap": 28,
+      "total_profit": 2352833.62,
+      "combined_uplift": 0.60334
+    },
+    {
+      "fixed_cap": 6,
+      "variable_cap": 29,
+      "total_profit": 2313640.47,
+      "combined_uplift": 0.576632
+    },
+    {
+      "fixed_cap": 6,
+      "variable_cap": 30,
+      "total_profit": 2276966.7,
+      "combined_uplift": 0.551641
+    },
+    {
+      "fixed_cap": 7,
+      "variable_cap": 0,
+      "total_profit": 3230123.89,
+      "combined_uplift": 1.201171
+    },
+    {
+      "fixed_cap": 7,
+      "variable_cap": 1,
+      "total_profit": 3132457.55,
+      "combined_uplift": 1.134616
+    },
+    {
+      "fixed_cap": 7,
+      "variable_cap": 2,
+      "total_profit": 3043503.06,
+      "combined_uplift": 1.073998
+    },
+    {
+      "fixed_cap": 7,
+      "variable_cap": 3,
+      "total_profit": 2963935.15,
+      "combined_uplift": 1.019776
+    },
+    {
+      "fixed_cap": 7,
+      "variable_cap": 4,
+      "total_profit": 2894451.5,
+      "combined_uplift": 0.972426
+    },
+    {
+      "fixed_cap": 7,
+      "variable_cap": 5,
+      "total_profit": 2835736.03,
+      "combined_uplift": 0.932415
+    },
+    {
+      "fixed_cap": 7,
+      "variable_cap": 6,
+      "total_profit": 2788477.23,
+      "combined_uplift": 0.90021
+    },
+    {
+      "fixed_cap": 7,
+      "variable_cap": 7,
+      "total_profit": 2752905.09,
+      "combined_uplift": 0.875969
+    },
+    {
+      "fixed_cap": 7,
+      "variable_cap": 8,
+      "total_profit": 2731648.92,
+      "combined_uplift": 0.861484
+    },
+    {
+      "fixed_cap": 7,
+      "variable_cap": 9,
+      "total_profit": 2716121.24,
+      "combined_uplift": 0.850903
+    },
+    {
+      "fixed_cap": 7,
+      "variable_cap": 10,
+      "total_profit": 2693634.91,
+      "combined_uplift": 0.83558
+    },
+    {
+      "fixed_cap": 7,
+      "variable_cap": 11,
+      "total_profit": 2660228.92,
+      "combined_uplift": 0.812815
+    },
+    {
+      "fixed_cap": 7,
+      "variable_cap": 12,
+      "total_profit": 2607303.37,
+      "combined_uplift": 0.776749
+    },
+    {
+      "fixed_cap": 7,
+      "variable_cap": 13,
+      "total_profit": 2550336.39,
+      "combined_uplift": 0.737929
+    },
+    {
+      "fixed_cap": 7,
+      "variable_cap": 14,
+      "total_profit": 2504806.15,
+      "combined_uplift": 0.706902
+    },
+    {
+      "fixed_cap": 7,
+      "variable_cap": 15,
+      "total_profit": 2485183.02,
+      "combined_uplift": 0.69353
+    },
+    {
+      "fixed_cap": 7,
+      "variable_cap": 16,
+      "total_profit": 2498104.58,
+      "combined_uplift": 0.702335
+    },
+    {
+      "fixed_cap": 7,
+      "variable_cap": 17,
+      "total_profit": 2524655.41,
+      "combined_uplift": 0.720429
+    },
+    {
+      "fixed_cap": 7,
+      "variable_cap": 18,
+      "total_profit": 2558875.48,
+      "combined_uplift": 0.743748
+    },
+    {
+      "fixed_cap": 7,
+      "variable_cap": 19,
+      "total_profit": 2599615.89,
+      "combined_uplift": 0.77151
+    },
+    {
+      "fixed_cap": 7,
+      "variable_cap": 20,
+      "total_profit": 2565202.17,
+      "combined_uplift": 0.748059
+    },
+    {
+      "fixed_cap": 7,
+      "variable_cap": 21,
+      "total_profit": 2552555.63,
+      "combined_uplift": 0.739441
+    },
+    {
+      "fixed_cap": 7,
+      "variable_cap": 22,
+      "total_profit": 2521086.94,
+      "combined_uplift": 0.717997
+    },
+    {
+      "fixed_cap": 7,
+      "variable_cap": 23,
+      "total_profit": 2480493.4,
+      "combined_uplift": 0.690334
+    },
+    {
+      "fixed_cap": 7,
+      "variable_cap": 24,
+      "total_profit": 2440475.97,
+      "combined_uplift": 0.663064
+    },
+    {
+      "fixed_cap": 7,
+      "variable_cap": 25,
+      "total_profit": 2409793.64,
+      "combined_uplift": 0.642156
+    },
+    {
+      "fixed_cap": 7,
+      "variable_cap": 26,
+      "total_profit": 2394274.89,
+      "combined_uplift": 0.631581
+    },
+    {
+      "fixed_cap": 7,
+      "variable_cap": 27,
+      "total_profit": 2376746.87,
+      "combined_uplift": 0.619636
+    },
+    {
+      "fixed_cap": 7,
+      "variable_cap": 28,
+      "total_profit": 2347607.93,
+      "combined_uplift": 0.599779
+    },
+    {
+      "fixed_cap": 7,
+      "variable_cap": 29,
+      "total_profit": 2308414.78,
+      "combined_uplift": 0.573071
+    },
+    {
+      "fixed_cap": 7,
+      "variable_cap": 30,
+      "total_profit": 2271741.01,
+      "combined_uplift": 0.54808
+    },
+    {
+      "fixed_cap": 8,
+      "variable_cap": 0,
+      "total_profit": 3226874.83,
+      "combined_uplift": 1.198957
+    },
+    {
+      "fixed_cap": 8,
+      "variable_cap": 1,
+      "total_profit": 3129208.49,
+      "combined_uplift": 1.132402
+    },
+    {
+      "fixed_cap": 8,
+      "variable_cap": 2,
+      "total_profit": 3040254.0,
+      "combined_uplift": 1.071784
+    },
+    {
+      "fixed_cap": 8,
+      "variable_cap": 3,
+      "total_profit": 2960686.09,
+      "combined_uplift": 1.017562
+    },
+    {
+      "fixed_cap": 8,
+      "variable_cap": 4,
+      "total_profit": 2891202.44,
+      "combined_uplift": 0.970212
+    },
+    {
+      "fixed_cap": 8,
+      "variable_cap": 5,
+      "total_profit": 2832486.97,
+      "combined_uplift": 0.930201
+    },
+    {
+      "fixed_cap": 8,
+      "variable_cap": 6,
+      "total_profit": 2785228.17,
+      "combined_uplift": 0.897996
+    },
+    {
+      "fixed_cap": 8,
+      "variable_cap": 7,
+      "total_profit": 2749656.03,
+      "combined_uplift": 0.873755
+    },
+    {
+      "fixed_cap": 8,
+      "variable_cap": 8,
+      "total_profit": 2728399.86,
+      "combined_uplift": 0.85927
+    },
+    {
+      "fixed_cap": 8,
+      "variable_cap": 9,
+      "total_profit": 2712872.18,
+      "combined_uplift": 0.848689
+    },
+    {
+      "fixed_cap": 8,
+      "variable_cap": 10,
+      "total_profit": 2690385.85,
+      "combined_uplift": 0.833366
+    },
+    {
+      "fixed_cap": 8,
+      "variable_cap": 11,
+      "total_profit": 2656979.86,
+      "combined_uplift": 0.810601
+    },
+    {
+      "fixed_cap": 8,
+      "variable_cap": 12,
+      "total_profit": 2604054.31,
+      "combined_uplift": 0.774535
+    },
+    {
+      "fixed_cap": 8,
+      "variable_cap": 13,
+      "total_profit": 2547087.33,
+      "combined_uplift": 0.735715
+    },
+    {
+      "fixed_cap": 8,
+      "variable_cap": 14,
+      "total_profit": 2501557.09,
+      "combined_uplift": 0.704688
+    },
+    {
+      "fixed_cap": 8,
+      "variable_cap": 15,
+      "total_profit": 2481933.96,
+      "combined_uplift": 0.691316
+    },
+    {
+      "fixed_cap": 8,
+      "variable_cap": 16,
+      "total_profit": 2494855.52,
+      "combined_uplift": 0.700121
+    },
+    {
+      "fixed_cap": 8,
+      "variable_cap": 17,
+      "total_profit": 2521406.35,
+      "combined_uplift": 0.718214
+    },
+    {
+      "fixed_cap": 8,
+      "variable_cap": 18,
+      "total_profit": 2555626.42,
+      "combined_uplift": 0.741534
+    },
+    {
+      "fixed_cap": 8,
+      "variable_cap": 19,
+      "total_profit": 2596366.83,
+      "combined_uplift": 0.769296
+    },
+    {
+      "fixed_cap": 8,
+      "variable_cap": 20,
+      "total_profit": 2561953.11,
+      "combined_uplift": 0.745845
+    },
+    {
+      "fixed_cap": 8,
+      "variable_cap": 21,
+      "total_profit": 2549306.57,
+      "combined_uplift": 0.737227
+    },
+    {
+      "fixed_cap": 8,
+      "variable_cap": 22,
+      "total_profit": 2517837.88,
+      "combined_uplift": 0.715783
+    },
+    {
+      "fixed_cap": 8,
+      "variable_cap": 23,
+      "total_profit": 2477244.34,
+      "combined_uplift": 0.68812
+    },
+    {
+      "fixed_cap": 8,
+      "variable_cap": 24,
+      "total_profit": 2437226.91,
+      "combined_uplift": 0.66085
+    },
+    {
+      "fixed_cap": 8,
+      "variable_cap": 25,
+      "total_profit": 2406544.58,
+      "combined_uplift": 0.639942
+    },
+    {
+      "fixed_cap": 8,
+      "variable_cap": 26,
+      "total_profit": 2391025.83,
+      "combined_uplift": 0.629367
+    },
+    {
+      "fixed_cap": 8,
+      "variable_cap": 27,
+      "total_profit": 2373497.81,
+      "combined_uplift": 0.617422
+    },
+    {
+      "fixed_cap": 8,
+      "variable_cap": 28,
+      "total_profit": 2344358.87,
+      "combined_uplift": 0.597565
+    },
+    {
+      "fixed_cap": 8,
+      "variable_cap": 29,
+      "total_profit": 2305165.72,
+      "combined_uplift": 0.570857
+    },
+    {
+      "fixed_cap": 8,
+      "variable_cap": 30,
+      "total_profit": 2268491.95,
+      "combined_uplift": 0.545866
+    },
+    {
+      "fixed_cap": 9,
+      "variable_cap": 0,
+      "total_profit": 3224501.38,
+      "combined_uplift": 1.197339
+    },
+    {
+      "fixed_cap": 9,
+      "variable_cap": 1,
+      "total_profit": 3126835.04,
+      "combined_uplift": 1.130784
+    },
+    {
+      "fixed_cap": 9,
+      "variable_cap": 2,
+      "total_profit": 3037880.55,
+      "combined_uplift": 1.070166
+    },
+    {
+      "fixed_cap": 9,
+      "variable_cap": 3,
+      "total_profit": 2958312.64,
+      "combined_uplift": 1.015945
+    },
+    {
+      "fixed_cap": 9,
+      "variable_cap": 4,
+      "total_profit": 2888828.99,
+      "combined_uplift": 0.968595
+    },
+    {
+      "fixed_cap": 9,
+      "variable_cap": 5,
+      "total_profit": 2830113.52,
+      "combined_uplift": 0.928583
+    },
+    {
+      "fixed_cap": 9,
+      "variable_cap": 6,
+      "total_profit": 2782854.72,
+      "combined_uplift": 0.896379
+    },
+    {
+      "fixed_cap": 9,
+      "variable_cap": 7,
+      "total_profit": 2747282.58,
+      "combined_uplift": 0.872138
+    },
+    {
+      "fixed_cap": 9,
+      "variable_cap": 8,
+      "total_profit": 2726026.41,
+      "combined_uplift": 0.857653
+    },
+    {
+      "fixed_cap": 9,
+      "variable_cap": 9,
+      "total_profit": 2710498.73,
+      "combined_uplift": 0.847072
+    },
+    {
+      "fixed_cap": 9,
+      "variable_cap": 10,
+      "total_profit": 2688012.4,
+      "combined_uplift": 0.831748
+    },
+    {
+      "fixed_cap": 9,
+      "variable_cap": 11,
+      "total_profit": 2654606.41,
+      "combined_uplift": 0.808984
+    },
+    {
+      "fixed_cap": 9,
+      "variable_cap": 12,
+      "total_profit": 2601680.86,
+      "combined_uplift": 0.772918
+    },
+    {
+      "fixed_cap": 9,
+      "variable_cap": 13,
+      "total_profit": 2544713.88,
+      "combined_uplift": 0.734097
+    },
+    {
+      "fixed_cap": 9,
+      "variable_cap": 14,
+      "total_profit": 2499183.64,
+      "combined_uplift": 0.703071
+    },
+    {
+      "fixed_cap": 9,
+      "variable_cap": 15,
+      "total_profit": 2479560.51,
+      "combined_uplift": 0.689699
+    },
+    {
+      "fixed_cap": 9,
+      "variable_cap": 16,
+      "total_profit": 2492482.07,
+      "combined_uplift": 0.698504
+    },
+    {
+      "fixed_cap": 9,
+      "variable_cap": 17,
+      "total_profit": 2519032.9,
+      "combined_uplift": 0.716597
+    },
+    {
+      "fixed_cap": 9,
+      "variable_cap": 18,
+      "total_profit": 2553252.97,
+      "combined_uplift": 0.739916
+    },
+    {
+      "fixed_cap": 9,
+      "variable_cap": 19,
+      "total_profit": 2593993.38,
+      "combined_uplift": 0.767679
+    },
+    {
+      "fixed_cap": 9,
+      "variable_cap": 20,
+      "total_profit": 2559579.66,
+      "combined_uplift": 0.744228
+    },
+    {
+      "fixed_cap": 9,
+      "variable_cap": 21,
+      "total_profit": 2546933.12,
+      "combined_uplift": 0.73561
+    },
+    {
+      "fixed_cap": 9,
+      "variable_cap": 22,
+      "total_profit": 2515464.43,
+      "combined_uplift": 0.714165
+    },
+    {
+      "fixed_cap": 9,
+      "variable_cap": 23,
+      "total_profit": 2474870.89,
+      "combined_uplift": 0.686503
+    },
+    {
+      "fixed_cap": 9,
+      "variable_cap": 24,
+      "total_profit": 2434853.46,
+      "combined_uplift": 0.659233
+    },
+    {
+      "fixed_cap": 9,
+      "variable_cap": 25,
+      "total_profit": 2404171.13,
+      "combined_uplift": 0.638324
+    },
+    {
+      "fixed_cap": 9,
+      "variable_cap": 26,
+      "total_profit": 2388652.38,
+      "combined_uplift": 0.627749
+    },
+    {
+      "fixed_cap": 9,
+      "variable_cap": 27,
+      "total_profit": 2371124.36,
+      "combined_uplift": 0.615805
+    },
+    {
+      "fixed_cap": 9,
+      "variable_cap": 28,
+      "total_profit": 2341985.42,
+      "combined_uplift": 0.595948
+    },
+    {
+      "fixed_cap": 9,
+      "variable_cap": 29,
+      "total_profit": 2302792.27,
+      "combined_uplift": 0.56924
+    },
+    {
+      "fixed_cap": 9,
+      "variable_cap": 30,
+      "total_profit": 2266118.5,
+      "combined_uplift": 0.544248
+    },
+    {
+      "fixed_cap": 10,
+      "variable_cap": 0,
+      "total_profit": 3221197.68,
+      "combined_uplift": 1.195088
+    },
+    {
+      "fixed_cap": 10,
+      "variable_cap": 1,
+      "total_profit": 3123531.34,
+      "combined_uplift": 1.128533
+    },
+    {
+      "fixed_cap": 10,
+      "variable_cap": 2,
+      "total_profit": 3034576.85,
+      "combined_uplift": 1.067915
+    },
+    {
+      "fixed_cap": 10,
+      "variable_cap": 3,
+      "total_profit": 2955008.94,
+      "combined_uplift": 1.013693
+    },
+    {
+      "fixed_cap": 10,
+      "variable_cap": 4,
+      "total_profit": 2885525.29,
+      "combined_uplift": 0.966344
+    },
+    {
+      "fixed_cap": 10,
+      "variable_cap": 5,
+      "total_profit": 2826809.82,
+      "combined_uplift": 0.926332
+    },
+    {
+      "fixed_cap": 10,
+      "variable_cap": 6,
+      "total_profit": 2779551.02,
+      "combined_uplift": 0.894127
+    },
+    {
+      "fixed_cap": 10,
+      "variable_cap": 7,
+      "total_profit": 2743978.88,
+      "combined_uplift": 0.869887
+    },
+    {
+      "fixed_cap": 10,
+      "variable_cap": 8,
+      "total_profit": 2722722.71,
+      "combined_uplift": 0.855402
+    },
+    {
+      "fixed_cap": 10,
+      "variable_cap": 9,
+      "total_profit": 2707195.03,
+      "combined_uplift": 0.84482
+    },
+    {
+      "fixed_cap": 10,
+      "variable_cap": 10,
+      "total_profit": 2684708.7,
+      "combined_uplift": 0.829497
+    },
+    {
+      "fixed_cap": 10,
+      "variable_cap": 11,
+      "total_profit": 2651302.71,
+      "combined_uplift": 0.806732
+    },
+    {
+      "fixed_cap": 10,
+      "variable_cap": 12,
+      "total_profit": 2598377.16,
+      "combined_uplift": 0.770666
+    },
+    {
+      "fixed_cap": 10,
+      "variable_cap": 13,
+      "total_profit": 2541410.18,
+      "combined_uplift": 0.731846
+    },
+    {
+      "fixed_cap": 10,
+      "variable_cap": 14,
+      "total_profit": 2495879.94,
+      "combined_uplift": 0.700819
+    },
+    {
+      "fixed_cap": 10,
+      "variable_cap": 15,
+      "total_profit": 2476256.81,
+      "combined_uplift": 0.687447
+    },
+    {
+      "fixed_cap": 10,
+      "variable_cap": 16,
+      "total_profit": 2489178.37,
+      "combined_uplift": 0.696253
+    },
+    {
+      "fixed_cap": 10,
+      "variable_cap": 17,
+      "total_profit": 2515729.2,
+      "combined_uplift": 0.714346
+    },
+    {
+      "fixed_cap": 10,
+      "variable_cap": 18,
+      "total_profit": 2549949.27,
+      "combined_uplift": 0.737665
+    },
+    {
+      "fixed_cap": 10,
+      "variable_cap": 19,
+      "total_profit": 2590689.68,
+      "combined_uplift": 0.765428
+    },
+    {
+      "fixed_cap": 10,
+      "variable_cap": 20,
+      "total_profit": 2556275.96,
+      "combined_uplift": 0.741976
+    },
+    {
+      "fixed_cap": 10,
+      "variable_cap": 21,
+      "total_profit": 2543629.42,
+      "combined_uplift": 0.733358
+    },
+    {
+      "fixed_cap": 10,
+      "variable_cap": 22,
+      "total_profit": 2512160.73,
+      "combined_uplift": 0.711914
+    },
+    {
+      "fixed_cap": 10,
+      "variable_cap": 23,
+      "total_profit": 2471567.19,
+      "combined_uplift": 0.684252
+    },
+    {
+      "fixed_cap": 10,
+      "variable_cap": 24,
+      "total_profit": 2431549.76,
+      "combined_uplift": 0.656982
+    },
+    {
+      "fixed_cap": 10,
+      "variable_cap": 25,
+      "total_profit": 2400867.43,
+      "combined_uplift": 0.636073
+    },
+    {
+      "fixed_cap": 10,
+      "variable_cap": 26,
+      "total_profit": 2385348.68,
+      "combined_uplift": 0.625498
+    },
+    {
+      "fixed_cap": 10,
+      "variable_cap": 27,
+      "total_profit": 2367820.66,
+      "combined_uplift": 0.613553
+    },
+    {
+      "fixed_cap": 10,
+      "variable_cap": 28,
+      "total_profit": 2338681.72,
+      "combined_uplift": 0.593697
+    },
+    {
+      "fixed_cap": 10,
+      "variable_cap": 29,
+      "total_profit": 2299488.57,
+      "combined_uplift": 0.566988
+    },
+    {
+      "fixed_cap": 10,
+      "variable_cap": 30,
+      "total_profit": 2262814.8,
+      "combined_uplift": 0.541997
+    },
+    {
+      "fixed_cap": 11,
+      "variable_cap": 0,
+      "total_profit": 3213299.39,
+      "combined_uplift": 1.189706
+    },
+    {
+      "fixed_cap": 11,
+      "variable_cap": 1,
+      "total_profit": 3115633.05,
+      "combined_uplift": 1.123151
+    },
+    {
+      "fixed_cap": 11,
+      "variable_cap": 2,
+      "total_profit": 3026678.56,
+      "combined_uplift": 1.062533
+    },
+    {
+      "fixed_cap": 11,
+      "variable_cap": 3,
+      "total_profit": 2947110.65,
+      "combined_uplift": 1.008311
+    },
+    {
+      "fixed_cap": 11,
+      "variable_cap": 4,
+      "total_profit": 2877627.0,
+      "combined_uplift": 0.960961
+    },
+    {
+      "fixed_cap": 11,
+      "variable_cap": 5,
+      "total_profit": 2818911.53,
+      "combined_uplift": 0.92095
+    },
+    {
+      "fixed_cap": 11,
+      "variable_cap": 6,
+      "total_profit": 2771652.73,
+      "combined_uplift": 0.888745
+    },
+    {
+      "fixed_cap": 11,
+      "variable_cap": 7,
+      "total_profit": 2736080.59,
+      "combined_uplift": 0.864504
+    },
+    {
+      "fixed_cap": 11,
+      "variable_cap": 8,
+      "total_profit": 2714824.42,
+      "combined_uplift": 0.850019
+    },
+    {
+      "fixed_cap": 11,
+      "variable_cap": 9,
+      "total_profit": 2699296.74,
+      "combined_uplift": 0.839438
+    },
+    {
+      "fixed_cap": 11,
+      "variable_cap": 10,
+      "total_profit": 2676810.41,
+      "combined_uplift": 0.824115
+    },
+    {
+      "fixed_cap": 11,
+      "variable_cap": 11,
+      "total_profit": 2643404.42,
+      "combined_uplift": 0.80135
+    },
+    {
+      "fixed_cap": 11,
+      "variable_cap": 12,
+      "total_profit": 2590478.87,
+      "combined_uplift": 0.765284
+    },
+    {
+      "fixed_cap": 11,
+      "variable_cap": 13,
+      "total_profit": 2533511.89,
+      "combined_uplift": 0.726464
+    },
+    {
+      "fixed_cap": 11,
+      "variable_cap": 14,
+      "total_profit": 2487981.65,
+      "combined_uplift": 0.695437
+    },
+    {
+      "fixed_cap": 11,
+      "variable_cap": 15,
+      "total_profit": 2468358.52,
+      "combined_uplift": 0.682065
+    },
+    {
+      "fixed_cap": 11,
+      "variable_cap": 16,
+      "total_profit": 2481280.08,
+      "combined_uplift": 0.69087
+    },
+    {
+      "fixed_cap": 11,
+      "variable_cap": 17,
+      "total_profit": 2507830.91,
+      "combined_uplift": 0.708963
+    },
+    {
+      "fixed_cap": 11,
+      "variable_cap": 18,
+      "total_profit": 2542050.98,
+      "combined_uplift": 0.732283
+    },
+    {
+      "fixed_cap": 11,
+      "variable_cap": 19,
+      "total_profit": 2582791.39,
+      "combined_uplift": 0.760045
+    },
+    {
+      "fixed_cap": 11,
+      "variable_cap": 20,
+      "total_profit": 2548377.67,
+      "combined_uplift": 0.736594
+    },
+    {
+      "fixed_cap": 11,
+      "variable_cap": 21,
+      "total_profit": 2535731.13,
+      "combined_uplift": 0.727976
+    },
+    {
+      "fixed_cap": 11,
+      "variable_cap": 22,
+      "total_profit": 2504262.44,
+      "combined_uplift": 0.706532
+    },
+    {
+      "fixed_cap": 11,
+      "variable_cap": 23,
+      "total_profit": 2463668.9,
+      "combined_uplift": 0.678869
+    },
+    {
+      "fixed_cap": 11,
+      "variable_cap": 24,
+      "total_profit": 2423651.47,
+      "combined_uplift": 0.651599
+    },
+    {
+      "fixed_cap": 11,
+      "variable_cap": 25,
+      "total_profit": 2392969.14,
+      "combined_uplift": 0.630691
+    },
+    {
+      "fixed_cap": 11,
+      "variable_cap": 26,
+      "total_profit": 2377450.39,
+      "combined_uplift": 0.620116
+    },
+    {
+      "fixed_cap": 11,
+      "variable_cap": 27,
+      "total_profit": 2359922.37,
+      "combined_uplift": 0.608171
+    },
+    {
+      "fixed_cap": 11,
+      "variable_cap": 28,
+      "total_profit": 2330783.43,
+      "combined_uplift": 0.588314
+    },
+    {
+      "fixed_cap": 11,
+      "variable_cap": 29,
+      "total_profit": 2291590.28,
+      "combined_uplift": 0.561606
+    },
+    {
+      "fixed_cap": 11,
+      "variable_cap": 30,
+      "total_profit": 2254916.51,
+      "combined_uplift": 0.536615
+    },
+    {
+      "fixed_cap": 12,
+      "variable_cap": 0,
+      "total_profit": 3200786.02,
+      "combined_uplift": 1.181178
+    },
+    {
+      "fixed_cap": 12,
+      "variable_cap": 1,
+      "total_profit": 3103119.68,
+      "combined_uplift": 1.114624
+    },
+    {
+      "fixed_cap": 12,
+      "variable_cap": 2,
+      "total_profit": 3014165.19,
+      "combined_uplift": 1.054005
+    },
+    {
+      "fixed_cap": 12,
+      "variable_cap": 3,
+      "total_profit": 2934597.28,
+      "combined_uplift": 0.999784
+    },
+    {
+      "fixed_cap": 12,
+      "variable_cap": 4,
+      "total_profit": 2865113.63,
+      "combined_uplift": 0.952434
+    },
+    {
+      "fixed_cap": 12,
+      "variable_cap": 5,
+      "total_profit": 2806398.16,
+      "combined_uplift": 0.912422
+    },
+    {
+      "fixed_cap": 12,
+      "variable_cap": 6,
+      "total_profit": 2759139.36,
+      "combined_uplift": 0.880218
+    },
+    {
+      "fixed_cap": 12,
+      "variable_cap": 7,
+      "total_profit": 2723567.22,
+      "combined_uplift": 0.855977
+    },
+    {
+      "fixed_cap": 12,
+      "variable_cap": 8,
+      "total_profit": 2702311.05,
+      "combined_uplift": 0.841492
+    },
+    {
+      "fixed_cap": 12,
+      "variable_cap": 9,
+      "total_profit": 2686783.37,
+      "combined_uplift": 0.830911
+    },
+    {
+      "fixed_cap": 12,
+      "variable_cap": 10,
+      "total_profit": 2664297.04,
+      "combined_uplift": 0.815587
+    },
+    {
+      "fixed_cap": 12,
+      "variable_cap": 11,
+      "total_profit": 2630891.05,
+      "combined_uplift": 0.792823
+    },
+    {
+      "fixed_cap": 12,
+      "variable_cap": 12,
+      "total_profit": 2577965.5,
+      "combined_uplift": 0.756757
+    },
+    {
+      "fixed_cap": 12,
+      "variable_cap": 13,
+      "total_profit": 2520998.52,
+      "combined_uplift": 0.717937
+    },
+    {
+      "fixed_cap": 12,
+      "variable_cap": 14,
+      "total_profit": 2475468.28,
+      "combined_uplift": 0.68691
+    },
+    {
+      "fixed_cap": 12,
+      "variable_cap": 15,
+      "total_profit": 2455845.15,
+      "combined_uplift": 0.673538
+    },
+    {
+      "fixed_cap": 12,
+      "variable_cap": 16,
+      "total_profit": 2468766.71,
+      "combined_uplift": 0.682343
+    },
+    {
+      "fixed_cap": 12,
+      "variable_cap": 17,
+      "total_profit": 2495317.54,
+      "combined_uplift": 0.700436
+    },
+    {
+      "fixed_cap": 12,
+      "variable_cap": 18,
+      "total_profit": 2529537.61,
+      "combined_uplift": 0.723756
+    },
+    {
+      "fixed_cap": 12,
+      "variable_cap": 19,
+      "total_profit": 2570278.02,
+      "combined_uplift": 0.751518
+    },
+    {
+      "fixed_cap": 12,
+      "variable_cap": 20,
+      "total_profit": 2535864.3,
+      "combined_uplift": 0.728067
+    },
+    {
+      "fixed_cap": 12,
+      "variable_cap": 21,
+      "total_profit": 2523217.76,
+      "combined_uplift": 0.719449
+    },
+    {
+      "fixed_cap": 12,
+      "variable_cap": 22,
+      "total_profit": 2491749.07,
+      "combined_uplift": 0.698004
+    },
+    {
+      "fixed_cap": 12,
+      "variable_cap": 23,
+      "total_profit": 2451155.53,
+      "combined_uplift": 0.670342
+    },
+    {
+      "fixed_cap": 12,
+      "variable_cap": 24,
+      "total_profit": 2411138.1,
+      "combined_uplift": 0.643072
+    },
+    {
+      "fixed_cap": 12,
+      "variable_cap": 25,
+      "total_profit": 2380455.77,
+      "combined_uplift": 0.622164
+    },
+    {
+      "fixed_cap": 12,
+      "variable_cap": 26,
+      "total_profit": 2364937.02,
+      "combined_uplift": 0.611588
+    },
+    {
+      "fixed_cap": 12,
+      "variable_cap": 27,
+      "total_profit": 2347409.0,
+      "combined_uplift": 0.599644
+    },
+    {
+      "fixed_cap": 12,
+      "variable_cap": 28,
+      "total_profit": 2318270.06,
+      "combined_uplift": 0.579787
+    },
+    {
+      "fixed_cap": 12,
+      "variable_cap": 29,
+      "total_profit": 2279076.91,
+      "combined_uplift": 0.553079
+    },
+    {
+      "fixed_cap": 12,
+      "variable_cap": 30,
+      "total_profit": 2242403.14,
+      "combined_uplift": 0.528087
+    },
+    {
+      "fixed_cap": 13,
+      "variable_cap": 0,
+      "total_profit": 3187317.13,
+      "combined_uplift": 1.172
+    },
+    {
+      "fixed_cap": 13,
+      "variable_cap": 1,
+      "total_profit": 3089650.79,
+      "combined_uplift": 1.105445
+    },
+    {
+      "fixed_cap": 13,
+      "variable_cap": 2,
+      "total_profit": 3000696.3,
+      "combined_uplift": 1.044827
+    },
+    {
+      "fixed_cap": 13,
+      "variable_cap": 3,
+      "total_profit": 2921128.39,
+      "combined_uplift": 0.990605
+    },
+    {
+      "fixed_cap": 13,
+      "variable_cap": 4,
+      "total_profit": 2851644.74,
+      "combined_uplift": 0.943256
+    },
+    {
+      "fixed_cap": 13,
+      "variable_cap": 5,
+      "total_profit": 2792929.27,
+      "combined_uplift": 0.903244
+    },
+    {
+      "fixed_cap": 13,
+      "variable_cap": 6,
+      "total_profit": 2745670.47,
+      "combined_uplift": 0.871039
+    },
+    {
+      "fixed_cap": 13,
+      "variable_cap": 7,
+      "total_profit": 2710098.33,
+      "combined_uplift": 0.846799
+    },
+    {
+      "fixed_cap": 13,
+      "variable_cap": 8,
+      "total_profit": 2688842.16,
+      "combined_uplift": 0.832314
+    },
+    {
+      "fixed_cap": 13,
+      "variable_cap": 9,
+      "total_profit": 2673314.48,
+      "combined_uplift": 0.821732
+    },
+    {
+      "fixed_cap": 13,
+      "variable_cap": 10,
+      "total_profit": 2650828.15,
+      "combined_uplift": 0.806409
+    },
+    {
+      "fixed_cap": 13,
+      "variable_cap": 11,
+      "total_profit": 2617422.16,
+      "combined_uplift": 0.783645
+    },
+    {
+      "fixed_cap": 13,
+      "variable_cap": 12,
+      "total_profit": 2564496.61,
+      "combined_uplift": 0.747578
+    },
+    {
+      "fixed_cap": 13,
+      "variable_cap": 13,
+      "total_profit": 2507529.63,
+      "combined_uplift": 0.708758
+    },
+    {
+      "fixed_cap": 13,
+      "variable_cap": 14,
+      "total_profit": 2461999.39,
+      "combined_uplift": 0.677732
+    },
+    {
+      "fixed_cap": 13,
+      "variable_cap": 15,
+      "total_profit": 2442376.26,
+      "combined_uplift": 0.664359
+    },
+    {
+      "fixed_cap": 13,
+      "variable_cap": 16,
+      "total_profit": 2455297.82,
+      "combined_uplift": 0.673165
+    },
+    {
+      "fixed_cap": 13,
+      "variable_cap": 17,
+      "total_profit": 2481848.65,
+      "combined_uplift": 0.691258
+    },
+    {
+      "fixed_cap": 13,
+      "variable_cap": 18,
+      "total_profit": 2516068.72,
+      "combined_uplift": 0.714577
+    },
+    {
+      "fixed_cap": 13,
+      "variable_cap": 19,
+      "total_profit": 2556809.13,
+      "combined_uplift": 0.74234
+    },
+    {
+      "fixed_cap": 13,
+      "variable_cap": 20,
+      "total_profit": 2522395.41,
+      "combined_uplift": 0.718888
+    },
+    {
+      "fixed_cap": 13,
+      "variable_cap": 21,
+      "total_profit": 2509748.87,
+      "combined_uplift": 0.71027
+    },
+    {
+      "fixed_cap": 13,
+      "variable_cap": 22,
+      "total_profit": 2478280.18,
+      "combined_uplift": 0.688826
+    },
+    {
+      "fixed_cap": 13,
+      "variable_cap": 23,
+      "total_profit": 2437686.64,
+      "combined_uplift": 0.661164
+    },
+    {
+      "fixed_cap": 13,
+      "variable_cap": 24,
+      "total_profit": 2397669.21,
+      "combined_uplift": 0.633894
+    },
+    {
+      "fixed_cap": 13,
+      "variable_cap": 25,
+      "total_profit": 2366986.88,
+      "combined_uplift": 0.612985
+    },
+    {
+      "fixed_cap": 13,
+      "variable_cap": 26,
+      "total_profit": 2351468.13,
+      "combined_uplift": 0.60241
+    },
+    {
+      "fixed_cap": 13,
+      "variable_cap": 27,
+      "total_profit": 2333940.11,
+      "combined_uplift": 0.590465
+    },
+    {
+      "fixed_cap": 13,
+      "variable_cap": 28,
+      "total_profit": 2304801.17,
+      "combined_uplift": 0.570609
+    },
+    {
+      "fixed_cap": 13,
+      "variable_cap": 29,
+      "total_profit": 2265608.02,
+      "combined_uplift": 0.5439
+    },
+    {
+      "fixed_cap": 13,
+      "variable_cap": 30,
+      "total_profit": 2228934.25,
+      "combined_uplift": 0.518909
+    },
+    {
+      "fixed_cap": 14,
+      "variable_cap": 0,
+      "total_profit": 3176552.27,
+      "combined_uplift": 1.164664
+    },
+    {
+      "fixed_cap": 14,
+      "variable_cap": 1,
+      "total_profit": 3078885.93,
+      "combined_uplift": 1.098109
+    },
+    {
+      "fixed_cap": 14,
+      "variable_cap": 2,
+      "total_profit": 2989931.44,
+      "combined_uplift": 1.037491
+    },
+    {
+      "fixed_cap": 14,
+      "variable_cap": 3,
+      "total_profit": 2910363.53,
+      "combined_uplift": 0.98327
+    },
+    {
+      "fixed_cap": 14,
+      "variable_cap": 4,
+      "total_profit": 2840879.88,
+      "combined_uplift": 0.93592
+    },
+    {
+      "fixed_cap": 14,
+      "variable_cap": 5,
+      "total_profit": 2782164.41,
+      "combined_uplift": 0.895908
+    },
+    {
+      "fixed_cap": 14,
+      "variable_cap": 6,
+      "total_profit": 2734905.61,
+      "combined_uplift": 0.863704
+    },
+    {
+      "fixed_cap": 14,
+      "variable_cap": 7,
+      "total_profit": 2699333.47,
+      "combined_uplift": 0.839463
+    },
+    {
+      "fixed_cap": 14,
+      "variable_cap": 8,
+      "total_profit": 2678077.3,
+      "combined_uplift": 0.824978
+    },
+    {
+      "fixed_cap": 14,
+      "variable_cap": 9,
+      "total_profit": 2662549.62,
+      "combined_uplift": 0.814397
+    },
+    {
+      "fixed_cap": 14,
+      "variable_cap": 10,
+      "total_profit": 2640063.29,
+      "combined_uplift": 0.799073
+    },
+    {
+      "fixed_cap": 14,
+      "variable_cap": 11,
+      "total_profit": 2606657.3,
+      "combined_uplift": 0.776309
+    },
+    {
+      "fixed_cap": 14,
+      "variable_cap": 12,
+      "total_profit": 2553731.75,
+      "combined_uplift": 0.740243
+    },
+    {
+      "fixed_cap": 14,
+      "variable_cap": 13,
+      "total_profit": 2496764.77,
+      "combined_uplift": 0.701422
+    },
+    {
+      "fixed_cap": 14,
+      "variable_cap": 14,
+      "total_profit": 2451234.53,
+      "combined_uplift": 0.670396
+    },
+    {
+      "fixed_cap": 14,
+      "variable_cap": 15,
+      "total_profit": 2431611.4,
+      "combined_uplift": 0.657024
+    },
+    {
+      "fixed_cap": 14,
+      "variable_cap": 16,
+      "total_profit": 2444532.96,
+      "combined_uplift": 0.665829
+    },
+    {
+      "fixed_cap": 14,
+      "variable_cap": 17,
+      "total_profit": 2471083.79,
+      "combined_uplift": 0.683922
+    },
+    {
+      "fixed_cap": 14,
+      "variable_cap": 18,
+      "total_profit": 2505303.86,
+      "combined_uplift": 0.707241
+    },
+    {
+      "fixed_cap": 14,
+      "variable_cap": 19,
+      "total_profit": 2546044.27,
+      "combined_uplift": 0.735004
+    },
+    {
+      "fixed_cap": 14,
+      "variable_cap": 20,
+      "total_profit": 2511630.55,
+      "combined_uplift": 0.711553
+    },
+    {
+      "fixed_cap": 14,
+      "variable_cap": 21,
+      "total_profit": 2498984.01,
+      "combined_uplift": 0.702935
+    },
+    {
+      "fixed_cap": 14,
+      "variable_cap": 22,
+      "total_profit": 2467515.32,
+      "combined_uplift": 0.68149
+    },
+    {
+      "fixed_cap": 14,
+      "variable_cap": 23,
+      "total_profit": 2426921.78,
+      "combined_uplift": 0.653828
+    },
+    {
+      "fixed_cap": 14,
+      "variable_cap": 24,
+      "total_profit": 2386904.35,
+      "combined_uplift": 0.626558
+    },
+    {
+      "fixed_cap": 14,
+      "variable_cap": 25,
+      "total_profit": 2356222.02,
+      "combined_uplift": 0.605649
+    },
+    {
+      "fixed_cap": 14,
+      "variable_cap": 26,
+      "total_profit": 2340703.27,
+      "combined_uplift": 0.595074
+    },
+    {
+      "fixed_cap": 14,
+      "variable_cap": 27,
+      "total_profit": 2323175.25,
+      "combined_uplift": 0.58313
+    },
+    {
+      "fixed_cap": 14,
+      "variable_cap": 28,
+      "total_profit": 2294036.31,
+      "combined_uplift": 0.563273
+    },
+    {
+      "fixed_cap": 14,
+      "variable_cap": 29,
+      "total_profit": 2254843.16,
+      "combined_uplift": 0.536565
+    },
+    {
+      "fixed_cap": 14,
+      "variable_cap": 30,
+      "total_profit": 2218169.39,
+      "combined_uplift": 0.511573
+    },
+    {
+      "fixed_cap": 15,
+      "variable_cap": 0,
+      "total_profit": 3172150.97,
+      "combined_uplift": 1.161665
+    },
+    {
+      "fixed_cap": 15,
+      "variable_cap": 1,
+      "total_profit": 3074484.63,
+      "combined_uplift": 1.09511
+    },
+    {
+      "fixed_cap": 15,
+      "variable_cap": 2,
+      "total_profit": 2985530.14,
+      "combined_uplift": 1.034492
+    },
+    {
+      "fixed_cap": 15,
+      "variable_cap": 3,
+      "total_profit": 2905962.23,
+      "combined_uplift": 0.98027
+    },
+    {
+      "fixed_cap": 15,
+      "variable_cap": 4,
+      "total_profit": 2836478.58,
+      "combined_uplift": 0.932921
+    },
+    {
+      "fixed_cap": 15,
+      "variable_cap": 5,
+      "total_profit": 2777763.11,
+      "combined_uplift": 0.892909
+    },
+    {
+      "fixed_cap": 15,
+      "variable_cap": 6,
+      "total_profit": 2730504.31,
+      "combined_uplift": 0.860704
+    },
+    {
+      "fixed_cap": 15,
+      "variable_cap": 7,
+      "total_profit": 2694932.17,
+      "combined_uplift": 0.836464
+    },
+    {
+      "fixed_cap": 15,
+      "variable_cap": 8,
+      "total_profit": 2673676.0,
+      "combined_uplift": 0.821979
+    },
+    {
+      "fixed_cap": 15,
+      "variable_cap": 9,
+      "total_profit": 2658148.32,
+      "combined_uplift": 0.811397
+    },
+    {
+      "fixed_cap": 15,
+      "variable_cap": 10,
+      "total_profit": 2635661.99,
+      "combined_uplift": 0.796074
+    },
+    {
+      "fixed_cap": 15,
+      "variable_cap": 11,
+      "total_profit": 2602256.0,
+      "combined_uplift": 0.77331
+    },
+    {
+      "fixed_cap": 15,
+      "variable_cap": 12,
+      "total_profit": 2549330.45,
+      "combined_uplift": 0.737243
+    },
+    {
+      "fixed_cap": 15,
+      "variable_cap": 13,
+      "total_profit": 2492363.47,
+      "combined_uplift": 0.698423
+    },
+    {
+      "fixed_cap": 15,
+      "variable_cap": 14,
+      "total_profit": 2446833.23,
+      "combined_uplift": 0.667397
+    },
+    {
+      "fixed_cap": 15,
+      "variable_cap": 15,
+      "total_profit": 2427210.1,
+      "combined_uplift": 0.654024
+    },
+    {
+      "fixed_cap": 15,
+      "variable_cap": 16,
+      "total_profit": 2440131.66,
+      "combined_uplift": 0.66283
+    },
+    {
+      "fixed_cap": 15,
+      "variable_cap": 17,
+      "total_profit": 2466682.49,
+      "combined_uplift": 0.680923
+    },
+    {
+      "fixed_cap": 15,
+      "variable_cap": 18,
+      "total_profit": 2500902.56,
+      "combined_uplift": 0.704242
+    },
+    {
+      "fixed_cap": 15,
+      "variable_cap": 19,
+      "total_profit": 2541642.97,
+      "combined_uplift": 0.732005
+    },
+    {
+      "fixed_cap": 15,
+      "variable_cap": 20,
+      "total_profit": 2507229.25,
+      "combined_uplift": 0.708553
+    },
+    {
+      "fixed_cap": 15,
+      "variable_cap": 21,
+      "total_profit": 2494582.71,
+      "combined_uplift": 0.699935
+    },
+    {
+      "fixed_cap": 15,
+      "variable_cap": 22,
+      "total_profit": 2463114.02,
+      "combined_uplift": 0.678491
+    },
+    {
+      "fixed_cap": 15,
+      "variable_cap": 23,
+      "total_profit": 2422520.48,
+      "combined_uplift": 0.650829
+    },
+    {
+      "fixed_cap": 15,
+      "variable_cap": 24,
+      "total_profit": 2382503.05,
+      "combined_uplift": 0.623559
+    },
+    {
+      "fixed_cap": 15,
+      "variable_cap": 25,
+      "total_profit": 2351820.72,
+      "combined_uplift": 0.60265
+    },
+    {
+      "fixed_cap": 15,
+      "variable_cap": 26,
+      "total_profit": 2336301.97,
+      "combined_uplift": 0.592075
+    },
+    {
+      "fixed_cap": 15,
+      "variable_cap": 27,
+      "total_profit": 2318773.95,
+      "combined_uplift": 0.58013
+    },
+    {
+      "fixed_cap": 15,
+      "variable_cap": 28,
+      "total_profit": 2289635.01,
+      "combined_uplift": 0.560274
+    },
+    {
+      "fixed_cap": 15,
+      "variable_cap": 29,
+      "total_profit": 2250441.86,
+      "combined_uplift": 0.533565
+    },
+    {
+      "fixed_cap": 15,
+      "variable_cap": 30,
+      "total_profit": 2213768.09,
+      "combined_uplift": 0.508574
+    },
+    {
+      "fixed_cap": 16,
+      "variable_cap": 0,
+      "total_profit": 3175568.05,
+      "combined_uplift": 1.163994
+    },
+    {
+      "fixed_cap": 16,
+      "variable_cap": 1,
+      "total_profit": 3077901.71,
+      "combined_uplift": 1.097439
+    },
+    {
+      "fixed_cap": 16,
+      "variable_cap": 2,
+      "total_profit": 2988947.22,
+      "combined_uplift": 1.036821
+    },
+    {
+      "fixed_cap": 16,
+      "variable_cap": 3,
+      "total_profit": 2909379.31,
+      "combined_uplift": 0.982599
+    },
+    {
+      "fixed_cap": 16,
+      "variable_cap": 4,
+      "total_profit": 2839895.66,
+      "combined_uplift": 0.935249
+    },
+    {
+      "fixed_cap": 16,
+      "variable_cap": 5,
+      "total_profit": 2781180.19,
+      "combined_uplift": 0.895238
+    },
+    {
+      "fixed_cap": 16,
+      "variable_cap": 6,
+      "total_profit": 2733921.39,
+      "combined_uplift": 0.863033
+    },
+    {
+      "fixed_cap": 16,
+      "variable_cap": 7,
+      "total_profit": 2698349.25,
+      "combined_uplift": 0.838792
+    },
+    {
+      "fixed_cap": 16,
+      "variable_cap": 8,
+      "total_profit": 2677093.08,
+      "combined_uplift": 0.824307
+    },
+    {
+      "fixed_cap": 16,
+      "variable_cap": 9,
+      "total_profit": 2661565.4,
+      "combined_uplift": 0.813726
+    },
+    {
+      "fixed_cap": 16,
+      "variable_cap": 10,
+      "total_profit": 2639079.07,
+      "combined_uplift": 0.798403
+    },
+    {
+      "fixed_cap": 16,
+      "variable_cap": 11,
+      "total_profit": 2605673.08,
+      "combined_uplift": 0.775638
+    },
+    {
+      "fixed_cap": 16,
+      "variable_cap": 12,
+      "total_profit": 2552747.53,
+      "combined_uplift": 0.739572
+    },
+    {
+      "fixed_cap": 16,
+      "variable_cap": 13,
+      "total_profit": 2495780.55,
+      "combined_uplift": 0.700752
+    },
+    {
+      "fixed_cap": 16,
+      "variable_cap": 14,
+      "total_profit": 2450250.31,
+      "combined_uplift": 0.669725
+    },
+    {
+      "fixed_cap": 16,
+      "variable_cap": 15,
+      "total_profit": 2430627.18,
+      "combined_uplift": 0.656353
+    },
+    {
+      "fixed_cap": 16,
+      "variable_cap": 16,
+      "total_profit": 2443548.74,
+      "combined_uplift": 0.665158
+    },
+    {
+      "fixed_cap": 16,
+      "variable_cap": 17,
+      "total_profit": 2470099.57,
+      "combined_uplift": 0.683251
+    },
+    {
+      "fixed_cap": 16,
+      "variable_cap": 18,
+      "total_profit": 2504319.64,
+      "combined_uplift": 0.706571
+    },
+    {
+      "fixed_cap": 16,
+      "variable_cap": 19,
+      "total_profit": 2545060.05,
+      "combined_uplift": 0.734333
+    },
+    {
+      "fixed_cap": 16,
+      "variable_cap": 20,
+      "total_profit": 2510646.33,
+      "combined_uplift": 0.710882
+    },
+    {
+      "fixed_cap": 16,
+      "variable_cap": 21,
+      "total_profit": 2497999.79,
+      "combined_uplift": 0.702264
+    },
+    {
+      "fixed_cap": 16,
+      "variable_cap": 22,
+      "total_profit": 2466531.1,
+      "combined_uplift": 0.68082
+    },
+    {
+      "fixed_cap": 16,
+      "variable_cap": 23,
+      "total_profit": 2425937.56,
+      "combined_uplift": 0.653157
+    },
+    {
+      "fixed_cap": 16,
+      "variable_cap": 24,
+      "total_profit": 2385920.13,
+      "combined_uplift": 0.625887
+    },
+    {
+      "fixed_cap": 16,
+      "variable_cap": 25,
+      "total_profit": 2355237.8,
+      "combined_uplift": 0.604979
+    },
+    {
+      "fixed_cap": 16,
+      "variable_cap": 26,
+      "total_profit": 2339719.05,
+      "combined_uplift": 0.594404
+    },
+    {
+      "fixed_cap": 16,
+      "variable_cap": 27,
+      "total_profit": 2322191.03,
+      "combined_uplift": 0.582459
+    },
+    {
+      "fixed_cap": 16,
+      "variable_cap": 28,
+      "total_profit": 2293052.09,
+      "combined_uplift": 0.562602
+    },
+    {
+      "fixed_cap": 16,
+      "variable_cap": 29,
+      "total_profit": 2253858.94,
+      "combined_uplift": 0.535894
+    },
+    {
+      "fixed_cap": 16,
+      "variable_cap": 30,
+      "total_profit": 2217185.17,
+      "combined_uplift": 0.510903
+    },
+    {
+      "fixed_cap": 17,
+      "variable_cap": 0,
+      "total_profit": 3182169.31,
+      "combined_uplift": 1.168492
+    },
+    {
+      "fixed_cap": 17,
+      "variable_cap": 1,
+      "total_profit": 3084502.97,
+      "combined_uplift": 1.101937
+    },
+    {
+      "fixed_cap": 17,
+      "variable_cap": 2,
+      "total_profit": 2995548.48,
+      "combined_uplift": 1.041319
+    },
+    {
+      "fixed_cap": 17,
+      "variable_cap": 3,
+      "total_profit": 2915980.57,
+      "combined_uplift": 0.987097
+    },
+    {
+      "fixed_cap": 17,
+      "variable_cap": 4,
+      "total_profit": 2846496.92,
+      "combined_uplift": 0.939748
+    },
+    {
+      "fixed_cap": 17,
+      "variable_cap": 5,
+      "total_profit": 2787781.45,
+      "combined_uplift": 0.899736
+    },
+    {
+      "fixed_cap": 17,
+      "variable_cap": 6,
+      "total_profit": 2740522.65,
+      "combined_uplift": 0.867531
+    },
+    {
+      "fixed_cap": 17,
+      "variable_cap": 7,
+      "total_profit": 2704950.51,
+      "combined_uplift": 0.843291
+    },
+    {
+      "fixed_cap": 17,
+      "variable_cap": 8,
+      "total_profit": 2683694.34,
+      "combined_uplift": 0.828806
+    },
+    {
+      "fixed_cap": 17,
+      "variable_cap": 9,
+      "total_profit": 2668166.66,
+      "combined_uplift": 0.818224
+    },
+    {
+      "fixed_cap": 17,
+      "variable_cap": 10,
+      "total_profit": 2645680.33,
+      "combined_uplift": 0.802901
+    },
+    {
+      "fixed_cap": 17,
+      "variable_cap": 11,
+      "total_profit": 2612274.34,
+      "combined_uplift": 0.780137
+    },
+    {
+      "fixed_cap": 17,
+      "variable_cap": 12,
+      "total_profit": 2559348.79,
+      "combined_uplift": 0.74407
+    },
+    {
+      "fixed_cap": 17,
+      "variable_cap": 13,
+      "total_profit": 2502381.81,
+      "combined_uplift": 0.70525
+    },
+    {
+      "fixed_cap": 17,
+      "variable_cap": 14,
+      "total_profit": 2456851.57,
+      "combined_uplift": 0.674224
+    },
+    {
+      "fixed_cap": 17,
+      "variable_cap": 15,
+      "total_profit": 2437228.44,
+      "combined_uplift": 0.660851
+    },
+    {
+      "fixed_cap": 17,
+      "variable_cap": 16,
+      "total_profit": 2450150.0,
+      "combined_uplift": 0.669657
+    },
+    {
+      "fixed_cap": 17,
+      "variable_cap": 17,
+      "total_profit": 2476700.83,
+      "combined_uplift": 0.68775
+    },
+    {
+      "fixed_cap": 17,
+      "variable_cap": 18,
+      "total_profit": 2510920.9,
+      "combined_uplift": 0.711069
+    },
+    {
+      "fixed_cap": 17,
+      "variable_cap": 19,
+      "total_profit": 2551661.31,
+      "combined_uplift": 0.738832
+    },
+    {
+      "fixed_cap": 17,
+      "variable_cap": 20,
+      "total_profit": 2517247.59,
+      "combined_uplift": 0.71538
+    },
+    {
+      "fixed_cap": 17,
+      "variable_cap": 21,
+      "total_profit": 2504601.05,
+      "combined_uplift": 0.706762
+    },
+    {
+      "fixed_cap": 17,
+      "variable_cap": 22,
+      "total_profit": 2473132.36,
+      "combined_uplift": 0.685318
+    },
+    {
+      "fixed_cap": 17,
+      "variable_cap": 23,
+      "total_profit": 2432538.82,
+      "combined_uplift": 0.657656
+    },
+    {
+      "fixed_cap": 17,
+      "variable_cap": 24,
+      "total_profit": 2392521.39,
+      "combined_uplift": 0.630386
+    },
+    {
+      "fixed_cap": 17,
+      "variable_cap": 25,
+      "total_profit": 2361839.06,
+      "combined_uplift": 0.609477
+    },
+    {
+      "fixed_cap": 17,
+      "variable_cap": 26,
+      "total_profit": 2346320.31,
+      "combined_uplift": 0.598902
+    },
+    {
+      "fixed_cap": 17,
+      "variable_cap": 27,
+      "total_profit": 2328792.29,
+      "combined_uplift": 0.586957
+    },
+    {
+      "fixed_cap": 17,
+      "variable_cap": 28,
+      "total_profit": 2299653.35,
+      "combined_uplift": 0.567101
+    },
+    {
+      "fixed_cap": 17,
+      "variable_cap": 29,
+      "total_profit": 2260460.2,
+      "combined_uplift": 0.540392
+    },
+    {
+      "fixed_cap": 17,
+      "variable_cap": 30,
+      "total_profit": 2223786.43,
+      "combined_uplift": 0.515401
+    },
+    {
+      "fixed_cap": 18,
+      "variable_cap": 0,
+      "total_profit": 3192177.41,
+      "combined_uplift": 1.175312
+    },
+    {
+      "fixed_cap": 18,
+      "variable_cap": 1,
+      "total_profit": 3094511.07,
+      "combined_uplift": 1.108757
+    },
+    {
+      "fixed_cap": 18,
+      "variable_cap": 2,
+      "total_profit": 3005556.58,
+      "combined_uplift": 1.048139
+    },
+    {
+      "fixed_cap": 18,
+      "variable_cap": 3,
+      "total_profit": 2925988.67,
+      "combined_uplift": 0.993917
+    },
+    {
+      "fixed_cap": 18,
+      "variable_cap": 4,
+      "total_profit": 2856505.02,
+      "combined_uplift": 0.946568
+    },
+    {
+      "fixed_cap": 18,
+      "variable_cap": 5,
+      "total_profit": 2797789.55,
+      "combined_uplift": 0.906556
+    },
+    {
+      "fixed_cap": 18,
+      "variable_cap": 6,
+      "total_profit": 2750530.75,
+      "combined_uplift": 0.874351
+    },
+    {
+      "fixed_cap": 18,
+      "variable_cap": 7,
+      "total_profit": 2714958.61,
+      "combined_uplift": 0.850111
+    },
+    {
+      "fixed_cap": 18,
+      "variable_cap": 8,
+      "total_profit": 2693702.44,
+      "combined_uplift": 0.835626
+    },
+    {
+      "fixed_cap": 18,
+      "variable_cap": 9,
+      "total_profit": 2678174.76,
+      "combined_uplift": 0.825044
+    },
+    {
+      "fixed_cap": 18,
+      "variable_cap": 10,
+      "total_profit": 2655688.43,
+      "combined_uplift": 0.809721
+    },
+    {
+      "fixed_cap": 18,
+      "variable_cap": 11,
+      "total_profit": 2622282.44,
+      "combined_uplift": 0.786957
+    },
+    {
+      "fixed_cap": 18,
+      "variable_cap": 12,
+      "total_profit": 2569356.89,
+      "combined_uplift": 0.75089
+    },
+    {
+      "fixed_cap": 18,
+      "variable_cap": 13,
+      "total_profit": 2512389.91,
+      "combined_uplift": 0.71207
+    },
+    {
+      "fixed_cap": 18,
+      "variable_cap": 14,
+      "total_profit": 2466859.67,
+      "combined_uplift": 0.681044
+    },
+    {
+      "fixed_cap": 18,
+      "variable_cap": 15,
+      "total_profit": 2447236.54,
+      "combined_uplift": 0.667671
+    },
+    {
+      "fixed_cap": 18,
+      "variable_cap": 16,
+      "total_profit": 2460158.1,
+      "combined_uplift": 0.676477
+    },
+    {
+      "fixed_cap": 18,
+      "variable_cap": 17,
+      "total_profit": 2486708.93,
+      "combined_uplift": 0.69457
+    },
+    {
+      "fixed_cap": 18,
+      "variable_cap": 18,
+      "total_profit": 2520929.0,
+      "combined_uplift": 0.717889
+    },
+    {
+      "fixed_cap": 18,
+      "variable_cap": 19,
+      "total_profit": 2561669.41,
+      "combined_uplift": 0.745652
+    },
+    {
+      "fixed_cap": 18,
+      "variable_cap": 20,
+      "total_profit": 2527255.69,
+      "combined_uplift": 0.722201
+    },
+    {
+      "fixed_cap": 18,
+      "variable_cap": 21,
+      "total_profit": 2514609.15,
+      "combined_uplift": 0.713583
+    },
+    {
+      "fixed_cap": 18,
+      "variable_cap": 22,
+      "total_profit": 2483140.46,
+      "combined_uplift": 0.692138
+    },
+    {
+      "fixed_cap": 18,
+      "variable_cap": 23,
+      "total_profit": 2442546.92,
+      "combined_uplift": 0.664476
+    },
+    {
+      "fixed_cap": 18,
+      "variable_cap": 24,
+      "total_profit": 2402529.49,
+      "combined_uplift": 0.637206
+    },
+    {
+      "fixed_cap": 18,
+      "variable_cap": 25,
+      "total_profit": 2371847.16,
+      "combined_uplift": 0.616297
+    },
+    {
+      "fixed_cap": 18,
+      "variable_cap": 26,
+      "total_profit": 2356328.41,
+      "combined_uplift": 0.605722
+    },
+    {
+      "fixed_cap": 18,
+      "variable_cap": 27,
+      "total_profit": 2338800.39,
+      "combined_uplift": 0.593777
+    },
+    {
+      "fixed_cap": 18,
+      "variable_cap": 28,
+      "total_profit": 2309661.45,
+      "combined_uplift": 0.573921
+    },
+    {
+      "fixed_cap": 18,
+      "variable_cap": 29,
+      "total_profit": 2270468.3,
+      "combined_uplift": 0.547213
+    },
+    {
+      "fixed_cap": 18,
+      "variable_cap": 30,
+      "total_profit": 2233794.53,
+      "combined_uplift": 0.522221
+    },
+    {
+      "fixed_cap": 19,
+      "variable_cap": 0,
+      "total_profit": 3204092.46,
+      "combined_uplift": 1.183431
+    },
+    {
+      "fixed_cap": 19,
+      "variable_cap": 1,
+      "total_profit": 3106426.12,
+      "combined_uplift": 1.116877
+    },
+    {
+      "fixed_cap": 19,
+      "variable_cap": 2,
+      "total_profit": 3017471.63,
+      "combined_uplift": 1.056259
+    },
+    {
+      "fixed_cap": 19,
+      "variable_cap": 3,
+      "total_profit": 2937903.72,
+      "combined_uplift": 1.002037
+    },
+    {
+      "fixed_cap": 19,
+      "variable_cap": 4,
+      "total_profit": 2868420.07,
+      "combined_uplift": 0.954687
+    },
+    {
+      "fixed_cap": 19,
+      "variable_cap": 5,
+      "total_profit": 2809704.6,
+      "combined_uplift": 0.914676
+    },
+    {
+      "fixed_cap": 19,
+      "variable_cap": 6,
+      "total_profit": 2762445.8,
+      "combined_uplift": 0.882471
+    },
+    {
+      "fixed_cap": 19,
+      "variable_cap": 7,
+      "total_profit": 2726873.66,
+      "combined_uplift": 0.85823
+    },
+    {
+      "fixed_cap": 19,
+      "variable_cap": 8,
+      "total_profit": 2705617.49,
+      "combined_uplift": 0.843745
+    },
+    {
+      "fixed_cap": 19,
+      "variable_cap": 9,
+      "total_profit": 2690089.81,
+      "combined_uplift": 0.833164
+    },
+    {
+      "fixed_cap": 19,
+      "variable_cap": 10,
+      "total_profit": 2667603.48,
+      "combined_uplift": 0.817841
+    },
+    {
+      "fixed_cap": 19,
+      "variable_cap": 11,
+      "total_profit": 2634197.49,
+      "combined_uplift": 0.795076
+    },
+    {
+      "fixed_cap": 19,
+      "variable_cap": 12,
+      "total_profit": 2581271.94,
+      "combined_uplift": 0.75901
+    },
+    {
+      "fixed_cap": 19,
+      "variable_cap": 13,
+      "total_profit": 2524304.96,
+      "combined_uplift": 0.72019
+    },
+    {
+      "fixed_cap": 19,
+      "variable_cap": 14,
+      "total_profit": 2478774.72,
+      "combined_uplift": 0.689163
+    },
+    {
+      "fixed_cap": 19,
+      "variable_cap": 15,
+      "total_profit": 2459151.59,
+      "combined_uplift": 0.675791
+    },
+    {
+      "fixed_cap": 19,
+      "variable_cap": 16,
+      "total_profit": 2472073.15,
+      "combined_uplift": 0.684596
+    },
+    {
+      "fixed_cap": 19,
+      "variable_cap": 17,
+      "total_profit": 2498623.98,
+      "combined_uplift": 0.702689
+    },
+    {
+      "fixed_cap": 19,
+      "variable_cap": 18,
+      "total_profit": 2532844.05,
+      "combined_uplift": 0.726009
+    },
+    {
+      "fixed_cap": 19,
+      "variable_cap": 19,
+      "total_profit": 2573584.46,
+      "combined_uplift": 0.753771
+    },
+    {
+      "fixed_cap": 19,
+      "variable_cap": 20,
+      "total_profit": 2539170.74,
+      "combined_uplift": 0.73032
+    },
+    {
+      "fixed_cap": 19,
+      "variable_cap": 21,
+      "total_profit": 2526524.2,
+      "combined_uplift": 0.721702
+    },
+    {
+      "fixed_cap": 19,
+      "variable_cap": 22,
+      "total_profit": 2495055.51,
+      "combined_uplift": 0.700258
+    },
+    {
+      "fixed_cap": 19,
+      "variable_cap": 23,
+      "total_profit": 2454461.97,
+      "combined_uplift": 0.672595
+    },
+    {
+      "fixed_cap": 19,
+      "variable_cap": 24,
+      "total_profit": 2414444.54,
+      "combined_uplift": 0.645325
+    },
+    {
+      "fixed_cap": 19,
+      "variable_cap": 25,
+      "total_profit": 2383762.21,
+      "combined_uplift": 0.624417
+    },
+    {
+      "fixed_cap": 19,
+      "variable_cap": 26,
+      "total_profit": 2368243.46,
+      "combined_uplift": 0.613841
+    },
+    {
+      "fixed_cap": 19,
+      "variable_cap": 27,
+      "total_profit": 2350715.44,
+      "combined_uplift": 0.601897
+    },
+    {
+      "fixed_cap": 19,
+      "variable_cap": 28,
+      "total_profit": 2321576.5,
+      "combined_uplift": 0.58204
+    },
+    {
+      "fixed_cap": 19,
+      "variable_cap": 29,
+      "total_profit": 2282383.35,
+      "combined_uplift": 0.555332
+    },
+    {
+      "fixed_cap": 19,
+      "variable_cap": 30,
+      "total_profit": 2245709.58,
+      "combined_uplift": 0.530341
+    },
+    {
+      "fixed_cap": 20,
+      "variable_cap": 0,
+      "total_profit": 3209855.67,
+      "combined_uplift": 1.187359
+    },
+    {
+      "fixed_cap": 20,
+      "variable_cap": 1,
+      "total_profit": 3112189.33,
+      "combined_uplift": 1.120804
+    },
+    {
+      "fixed_cap": 20,
+      "variable_cap": 2,
+      "total_profit": 3023234.84,
+      "combined_uplift": 1.060186
+    },
+    {
+      "fixed_cap": 20,
+      "variable_cap": 3,
+      "total_profit": 2943666.93,
+      "combined_uplift": 1.005964
+    },
+    {
+      "fixed_cap": 20,
+      "variable_cap": 4,
+      "total_profit": 2874183.28,
+      "combined_uplift": 0.958615
+    },
+    {
+      "fixed_cap": 20,
+      "variable_cap": 5,
+      "total_profit": 2815467.81,
+      "combined_uplift": 0.918603
+    },
+    {
+      "fixed_cap": 20,
+      "variable_cap": 6,
+      "total_profit": 2768209.01,
+      "combined_uplift": 0.886398
+    },
+    {
+      "fixed_cap": 20,
+      "variable_cap": 7,
+      "total_profit": 2732636.87,
+      "combined_uplift": 0.862158
+    },
+    {
+      "fixed_cap": 20,
+      "variable_cap": 8,
+      "total_profit": 2711380.7,
+      "combined_uplift": 0.847673
+    },
+    {
+      "fixed_cap": 20,
+      "variable_cap": 9,
+      "total_profit": 2695853.02,
+      "combined_uplift": 0.837091
+    },
+    {
+      "fixed_cap": 20,
+      "variable_cap": 10,
+      "total_profit": 2673366.69,
+      "combined_uplift": 0.821768
+    },
+    {
+      "fixed_cap": 20,
+      "variable_cap": 11,
+      "total_profit": 2639960.7,
+      "combined_uplift": 0.799003
+    },
+    {
+      "fixed_cap": 20,
+      "variable_cap": 12,
+      "total_profit": 2587035.15,
+      "combined_uplift": 0.762937
+    },
+    {
+      "fixed_cap": 20,
+      "variable_cap": 13,
+      "total_profit": 2530068.17,
+      "combined_uplift": 0.724117
+    },
+    {
+      "fixed_cap": 20,
+      "variable_cap": 14,
+      "total_profit": 2484537.93,
+      "combined_uplift": 0.69309
+    },
+    {
+      "fixed_cap": 20,
+      "variable_cap": 15,
+      "total_profit": 2464914.8,
+      "combined_uplift": 0.679718
+    },
+    {
+      "fixed_cap": 20,
+      "variable_cap": 16,
+      "total_profit": 2477836.36,
+      "combined_uplift": 0.688524
+    },
+    {
+      "fixed_cap": 20,
+      "variable_cap": 17,
+      "total_profit": 2504387.19,
+      "combined_uplift": 0.706617
+    },
+    {
+      "fixed_cap": 20,
+      "variable_cap": 18,
+      "total_profit": 2538607.26,
+      "combined_uplift": 0.729936
+    },
+    {
+      "fixed_cap": 20,
+      "variable_cap": 19,
+      "total_profit": 2579347.67,
+      "combined_uplift": 0.757699
+    },
+    {
+      "fixed_cap": 20,
+      "variable_cap": 20,
+      "total_profit": 2544933.95,
+      "combined_uplift": 0.734247
+    },
+    {
+      "fixed_cap": 20,
+      "variable_cap": 21,
+      "total_profit": 2532287.41,
+      "combined_uplift": 0.725629
+    },
+    {
+      "fixed_cap": 20,
+      "variable_cap": 22,
+      "total_profit": 2500818.72,
+      "combined_uplift": 0.704185
+    },
+    {
+      "fixed_cap": 20,
+      "variable_cap": 23,
+      "total_profit": 2460225.18,
+      "combined_uplift": 0.676523
+    },
+    {
+      "fixed_cap": 20,
+      "variable_cap": 24,
+      "total_profit": 2420207.75,
+      "combined_uplift": 0.649253
+    },
+    {
+      "fixed_cap": 20,
+      "variable_cap": 25,
+      "total_profit": 2389525.42,
+      "combined_uplift": 0.628344
+    },
+    {
+      "fixed_cap": 20,
+      "variable_cap": 26,
+      "total_profit": 2374006.67,
+      "combined_uplift": 0.617769
+    },
+    {
+      "fixed_cap": 20,
+      "variable_cap": 27,
+      "total_profit": 2356478.65,
+      "combined_uplift": 0.605824
+    },
+    {
+      "fixed_cap": 20,
+      "variable_cap": 28,
+      "total_profit": 2327339.71,
+      "combined_uplift": 0.585968
+    },
+    {
+      "fixed_cap": 20,
+      "variable_cap": 29,
+      "total_profit": 2288146.56,
+      "combined_uplift": 0.559259
+    },
+    {
+      "fixed_cap": 20,
+      "variable_cap": 30,
+      "total_profit": 2251472.79,
+      "combined_uplift": 0.534268
+    },
+    {
+      "fixed_cap": 21,
+      "variable_cap": 0,
+      "total_profit": 3202688.88,
+      "combined_uplift": 1.182475
+    },
+    {
+      "fixed_cap": 21,
+      "variable_cap": 1,
+      "total_profit": 3105022.54,
+      "combined_uplift": 1.11592
+    },
+    {
+      "fixed_cap": 21,
+      "variable_cap": 2,
+      "total_profit": 3016068.05,
+      "combined_uplift": 1.055302
+    },
+    {
+      "fixed_cap": 21,
+      "variable_cap": 3,
+      "total_profit": 2936500.14,
+      "combined_uplift": 1.00108
+    },
+    {
+      "fixed_cap": 21,
+      "variable_cap": 4,
+      "total_profit": 2867016.49,
+      "combined_uplift": 0.953731
+    },
+    {
+      "fixed_cap": 21,
+      "variable_cap": 5,
+      "total_profit": 2808301.02,
+      "combined_uplift": 0.913719
+    },
+    {
+      "fixed_cap": 21,
+      "variable_cap": 6,
+      "total_profit": 2761042.22,
+      "combined_uplift": 0.881515
+    },
+    {
+      "fixed_cap": 21,
+      "variable_cap": 7,
+      "total_profit": 2725470.08,
+      "combined_uplift": 0.857274
+    },
+    {
+      "fixed_cap": 21,
+      "variable_cap": 8,
+      "total_profit": 2704213.91,
+      "combined_uplift": 0.842789
+    },
+    {
+      "fixed_cap": 21,
+      "variable_cap": 9,
+      "total_profit": 2688686.23,
+      "combined_uplift": 0.832207
+    },
+    {
+      "fixed_cap": 21,
+      "variable_cap": 10,
+      "total_profit": 2666199.9,
+      "combined_uplift": 0.816884
+    },
+    {
+      "fixed_cap": 21,
+      "variable_cap": 11,
+      "total_profit": 2632793.91,
+      "combined_uplift": 0.79412
+    },
+    {
+      "fixed_cap": 21,
+      "variable_cap": 12,
+      "total_profit": 2579868.36,
+      "combined_uplift": 0.758053
+    },
+    {
+      "fixed_cap": 21,
+      "variable_cap": 13,
+      "total_profit": 2522901.38,
+      "combined_uplift": 0.719233
+    },
+    {
+      "fixed_cap": 21,
+      "variable_cap": 14,
+      "total_profit": 2477371.14,
+      "combined_uplift": 0.688207
+    },
+    {
+      "fixed_cap": 21,
+      "variable_cap": 15,
+      "total_profit": 2457748.01,
+      "combined_uplift": 0.674834
+    },
+    {
+      "fixed_cap": 21,
+      "variable_cap": 16,
+      "total_profit": 2470669.57,
+      "combined_uplift": 0.68364
+    },
+    {
+      "fixed_cap": 21,
+      "variable_cap": 17,
+      "total_profit": 2497220.4,
+      "combined_uplift": 0.701733
+    },
+    {
+      "fixed_cap": 21,
+      "variable_cap": 18,
+      "total_profit": 2531440.47,
+      "combined_uplift": 0.725052
+    },
+    {
+      "fixed_cap": 21,
+      "variable_cap": 19,
+      "total_profit": 2572180.88,
+      "combined_uplift": 0.752815
+    },
+    {
+      "fixed_cap": 21,
+      "variable_cap": 20,
+      "total_profit": 2537767.16,
+      "combined_uplift": 0.729364
+    },
+    {
+      "fixed_cap": 21,
+      "variable_cap": 21,
+      "total_profit": 2525120.62,
+      "combined_uplift": 0.720746
+    },
+    {
+      "fixed_cap": 21,
+      "variable_cap": 22,
+      "total_profit": 2493651.93,
+      "combined_uplift": 0.699301
+    },
+    {
+      "fixed_cap": 21,
+      "variable_cap": 23,
+      "total_profit": 2453058.39,
+      "combined_uplift": 0.671639
+    },
+    {
+      "fixed_cap": 21,
+      "variable_cap": 24,
+      "total_profit": 2413040.96,
+      "combined_uplift": 0.644369
+    },
+    {
+      "fixed_cap": 21,
+      "variable_cap": 25,
+      "total_profit": 2382358.63,
+      "combined_uplift": 0.62346
+    },
+    {
+      "fixed_cap": 21,
+      "variable_cap": 26,
+      "total_profit": 2366839.88,
+      "combined_uplift": 0.612885
+    },
+    {
+      "fixed_cap": 21,
+      "variable_cap": 27,
+      "total_profit": 2349311.86,
+      "combined_uplift": 0.600941
+    },
+    {
+      "fixed_cap": 21,
+      "variable_cap": 28,
+      "total_profit": 2320172.92,
+      "combined_uplift": 0.581084
+    },
+    {
+      "fixed_cap": 21,
+      "variable_cap": 29,
+      "total_profit": 2280979.77,
+      "combined_uplift": 0.554376
+    },
+    {
+      "fixed_cap": 21,
+      "variable_cap": 30,
+      "total_profit": 2244306.0,
+      "combined_uplift": 0.529384
+    },
+    {
+      "fixed_cap": 22,
+      "variable_cap": 0,
+      "total_profit": 3184855.58,
+      "combined_uplift": 1.170323
+    },
+    {
+      "fixed_cap": 22,
+      "variable_cap": 1,
+      "total_profit": 3087189.24,
+      "combined_uplift": 1.103768
+    },
+    {
+      "fixed_cap": 22,
+      "variable_cap": 2,
+      "total_profit": 2998234.75,
+      "combined_uplift": 1.04315
+    },
+    {
+      "fixed_cap": 22,
+      "variable_cap": 3,
+      "total_profit": 2918666.84,
+      "combined_uplift": 0.988928
+    },
+    {
+      "fixed_cap": 22,
+      "variable_cap": 4,
+      "total_profit": 2849183.19,
+      "combined_uplift": 0.941578
+    },
+    {
+      "fixed_cap": 22,
+      "variable_cap": 5,
+      "total_profit": 2790467.72,
+      "combined_uplift": 0.901567
+    },
+    {
+      "fixed_cap": 22,
+      "variable_cap": 6,
+      "total_profit": 2743208.92,
+      "combined_uplift": 0.869362
+    },
+    {
+      "fixed_cap": 22,
+      "variable_cap": 7,
+      "total_profit": 2707636.78,
+      "combined_uplift": 0.845121
+    },
+    {
+      "fixed_cap": 22,
+      "variable_cap": 8,
+      "total_profit": 2686380.61,
+      "combined_uplift": 0.830636
+    },
+    {
+      "fixed_cap": 22,
+      "variable_cap": 9,
+      "total_profit": 2670852.93,
+      "combined_uplift": 0.820055
+    },
+    {
+      "fixed_cap": 22,
+      "variable_cap": 10,
+      "total_profit": 2648366.6,
+      "combined_uplift": 0.804732
+    },
+    {
+      "fixed_cap": 22,
+      "variable_cap": 11,
+      "total_profit": 2614960.61,
+      "combined_uplift": 0.781967
+    },
+    {
+      "fixed_cap": 22,
+      "variable_cap": 12,
+      "total_profit": 2562035.06,
+      "combined_uplift": 0.745901
+    },
+    {
+      "fixed_cap": 22,
+      "variable_cap": 13,
+      "total_profit": 2505068.08,
+      "combined_uplift": 0.707081
+    },
+    {
+      "fixed_cap": 22,
+      "variable_cap": 14,
+      "total_profit": 2459537.84,
+      "combined_uplift": 0.676054
+    },
+    {
+      "fixed_cap": 22,
+      "variable_cap": 15,
+      "total_profit": 2439914.71,
+      "combined_uplift": 0.662682
+    },
+    {
+      "fixed_cap": 22,
+      "variable_cap": 16,
+      "total_profit": 2452836.27,
+      "combined_uplift": 0.671487
+    },
+    {
+      "fixed_cap": 22,
+      "variable_cap": 17,
+      "total_profit": 2479387.1,
+      "combined_uplift": 0.68958
+    },
+    {
+      "fixed_cap": 22,
+      "variable_cap": 18,
+      "total_profit": 2513607.17,
+      "combined_uplift": 0.7129
+    },
+    {
+      "fixed_cap": 22,
+      "variable_cap": 19,
+      "total_profit": 2554347.58,
+      "combined_uplift": 0.740662
+    },
+    {
+      "fixed_cap": 22,
+      "variable_cap": 20,
+      "total_profit": 2519933.86,
+      "combined_uplift": 0.717211
+    },
+    {
+      "fixed_cap": 22,
+      "variable_cap": 21,
+      "total_profit": 2507287.32,
+      "combined_uplift": 0.708593
+    },
+    {
+      "fixed_cap": 22,
+      "variable_cap": 22,
+      "total_profit": 2475818.63,
+      "combined_uplift": 0.687149
+    },
+    {
+      "fixed_cap": 22,
+      "variable_cap": 23,
+      "total_profit": 2435225.09,
+      "combined_uplift": 0.659486
+    },
+    {
+      "fixed_cap": 22,
+      "variable_cap": 24,
+      "total_profit": 2395207.66,
+      "combined_uplift": 0.632216
+    },
+    {
+      "fixed_cap": 22,
+      "variable_cap": 25,
+      "total_profit": 2364525.33,
+      "combined_uplift": 0.611308
+    },
+    {
+      "fixed_cap": 22,
+      "variable_cap": 26,
+      "total_profit": 2349006.58,
+      "combined_uplift": 0.600733
+    },
+    {
+      "fixed_cap": 22,
+      "variable_cap": 27,
+      "total_profit": 2331478.56,
+      "combined_uplift": 0.588788
+    },
+    {
+      "fixed_cap": 22,
+      "variable_cap": 28,
+      "total_profit": 2302339.62,
+      "combined_uplift": 0.568931
+    },
+    {
+      "fixed_cap": 22,
+      "variable_cap": 29,
+      "total_profit": 2263146.47,
+      "combined_uplift": 0.542223
+    },
+    {
+      "fixed_cap": 22,
+      "variable_cap": 30,
+      "total_profit": 2226472.7,
+      "combined_uplift": 0.517232
+    },
+    {
+      "fixed_cap": 23,
+      "variable_cap": 0,
+      "total_profit": 3161851.23,
+      "combined_uplift": 1.154646
+    },
+    {
+      "fixed_cap": 23,
+      "variable_cap": 1,
+      "total_profit": 3064184.89,
+      "combined_uplift": 1.088091
+    },
+    {
+      "fixed_cap": 23,
+      "variable_cap": 2,
+      "total_profit": 2975230.4,
+      "combined_uplift": 1.027473
+    },
+    {
+      "fixed_cap": 23,
+      "variable_cap": 3,
+      "total_profit": 2895662.49,
+      "combined_uplift": 0.973252
+    },
+    {
+      "fixed_cap": 23,
+      "variable_cap": 4,
+      "total_profit": 2826178.84,
+      "combined_uplift": 0.925902
+    },
+    {
+      "fixed_cap": 23,
+      "variable_cap": 5,
+      "total_profit": 2767463.37,
+      "combined_uplift": 0.88589
+    },
+    {
+      "fixed_cap": 23,
+      "variable_cap": 6,
+      "total_profit": 2720204.57,
+      "combined_uplift": 0.853686
+    },
+    {
+      "fixed_cap": 23,
+      "variable_cap": 7,
+      "total_profit": 2684632.43,
+      "combined_uplift": 0.829445
+    },
+    {
+      "fixed_cap": 23,
+      "variable_cap": 8,
+      "total_profit": 2663376.26,
+      "combined_uplift": 0.81496
+    },
+    {
+      "fixed_cap": 23,
+      "variable_cap": 9,
+      "total_profit": 2647848.58,
+      "combined_uplift": 0.804379
+    },
+    {
+      "fixed_cap": 23,
+      "variable_cap": 10,
+      "total_profit": 2625362.25,
+      "combined_uplift": 0.789055
+    },
+    {
+      "fixed_cap": 23,
+      "variable_cap": 11,
+      "total_profit": 2591956.26,
+      "combined_uplift": 0.766291
+    },
+    {
+      "fixed_cap": 23,
+      "variable_cap": 12,
+      "total_profit": 2539030.71,
+      "combined_uplift": 0.730225
+    },
+    {
+      "fixed_cap": 23,
+      "variable_cap": 13,
+      "total_profit": 2482063.73,
+      "combined_uplift": 0.691404
+    },
+    {
+      "fixed_cap": 23,
+      "variable_cap": 14,
+      "total_profit": 2436533.49,
+      "combined_uplift": 0.660378
+    },
+    {
+      "fixed_cap": 23,
+      "variable_cap": 15,
+      "total_profit": 2416910.36,
+      "combined_uplift": 0.647006
+    },
+    {
+      "fixed_cap": 23,
+      "variable_cap": 16,
+      "total_profit": 2429831.92,
+      "combined_uplift": 0.655811
+    },
+    {
+      "fixed_cap": 23,
+      "variable_cap": 17,
+      "total_profit": 2456382.75,
+      "combined_uplift": 0.673904
+    },
+    {
+      "fixed_cap": 23,
+      "variable_cap": 18,
+      "total_profit": 2490602.82,
+      "combined_uplift": 0.697223
+    },
+    {
+      "fixed_cap": 23,
+      "variable_cap": 19,
+      "total_profit": 2531343.23,
+      "combined_uplift": 0.724986
+    },
+    {
+      "fixed_cap": 23,
+      "variable_cap": 20,
+      "total_profit": 2496929.51,
+      "combined_uplift": 0.701535
+    },
+    {
+      "fixed_cap": 23,
+      "variable_cap": 21,
+      "total_profit": 2484282.97,
+      "combined_uplift": 0.692917
+    },
+    {
+      "fixed_cap": 23,
+      "variable_cap": 22,
+      "total_profit": 2452814.28,
+      "combined_uplift": 0.671472
+    },
+    {
+      "fixed_cap": 23,
+      "variable_cap": 23,
+      "total_profit": 2412220.74,
+      "combined_uplift": 0.64381
+    },
+    {
+      "fixed_cap": 23,
+      "variable_cap": 24,
+      "total_profit": 2372203.31,
+      "combined_uplift": 0.61654
+    },
+    {
+      "fixed_cap": 23,
+      "variable_cap": 25,
+      "total_profit": 2341520.98,
+      "combined_uplift": 0.595631
+    },
+    {
+      "fixed_cap": 23,
+      "variable_cap": 26,
+      "total_profit": 2326002.23,
+      "combined_uplift": 0.585056
+    },
+    {
+      "fixed_cap": 23,
+      "variable_cap": 27,
+      "total_profit": 2308474.21,
+      "combined_uplift": 0.573112
+    },
+    {
+      "fixed_cap": 23,
+      "variable_cap": 28,
+      "total_profit": 2279335.27,
+      "combined_uplift": 0.553255
+    },
+    {
+      "fixed_cap": 23,
+      "variable_cap": 29,
+      "total_profit": 2240142.12,
+      "combined_uplift": 0.526547
+    },
+    {
+      "fixed_cap": 23,
+      "variable_cap": 30,
+      "total_profit": 2203468.35,
+      "combined_uplift": 0.501555
+    },
+    {
+      "fixed_cap": 24,
+      "variable_cap": 0,
+      "total_profit": 3139173.36,
+      "combined_uplift": 1.139192
+    },
+    {
+      "fixed_cap": 24,
+      "variable_cap": 1,
+      "total_profit": 3041507.02,
+      "combined_uplift": 1.072638
+    },
+    {
+      "fixed_cap": 24,
+      "variable_cap": 2,
+      "total_profit": 2952552.53,
+      "combined_uplift": 1.012019
+    },
+    {
+      "fixed_cap": 24,
+      "variable_cap": 3,
+      "total_profit": 2872984.62,
+      "combined_uplift": 0.957798
+    },
+    {
+      "fixed_cap": 24,
+      "variable_cap": 4,
+      "total_profit": 2803500.97,
+      "combined_uplift": 0.910448
+    },
+    {
+      "fixed_cap": 24,
+      "variable_cap": 5,
+      "total_profit": 2744785.5,
+      "combined_uplift": 0.870436
+    },
+    {
+      "fixed_cap": 24,
+      "variable_cap": 6,
+      "total_profit": 2697526.7,
+      "combined_uplift": 0.838232
+    },
+    {
+      "fixed_cap": 24,
+      "variable_cap": 7,
+      "total_profit": 2661954.56,
+      "combined_uplift": 0.813991
+    },
+    {
+      "fixed_cap": 24,
+      "variable_cap": 8,
+      "total_profit": 2640698.39,
+      "combined_uplift": 0.799506
+    },
+    {
+      "fixed_cap": 24,
+      "variable_cap": 9,
+      "total_profit": 2625170.71,
+      "combined_uplift": 0.788925
+    },
+    {
+      "fixed_cap": 24,
+      "variable_cap": 10,
+      "total_profit": 2602684.38,
+      "combined_uplift": 0.773601
+    },
+    {
+      "fixed_cap": 24,
+      "variable_cap": 11,
+      "total_profit": 2569278.39,
+      "combined_uplift": 0.750837
+    },
+    {
+      "fixed_cap": 24,
+      "variable_cap": 12,
+      "total_profit": 2516352.84,
+      "combined_uplift": 0.714771
+    },
+    {
+      "fixed_cap": 24,
+      "variable_cap": 13,
+      "total_profit": 2459385.86,
+      "combined_uplift": 0.675951
+    },
+    {
+      "fixed_cap": 24,
+      "variable_cap": 14,
+      "total_profit": 2413855.62,
+      "combined_uplift": 0.644924
+    },
+    {
+      "fixed_cap": 24,
+      "variable_cap": 15,
+      "total_profit": 2394232.49,
+      "combined_uplift": 0.631552
+    },
+    {
+      "fixed_cap": 24,
+      "variable_cap": 16,
+      "total_profit": 2407154.05,
+      "combined_uplift": 0.640357
+    },
+    {
+      "fixed_cap": 24,
+      "variable_cap": 17,
+      "total_profit": 2433704.88,
+      "combined_uplift": 0.65845
+    },
+    {
+      "fixed_cap": 24,
+      "variable_cap": 18,
+      "total_profit": 2467924.95,
+      "combined_uplift": 0.68177
+    },
+    {
+      "fixed_cap": 24,
+      "variable_cap": 19,
+      "total_profit": 2508665.36,
+      "combined_uplift": 0.709532
+    },
+    {
+      "fixed_cap": 24,
+      "variable_cap": 20,
+      "total_profit": 2474251.64,
+      "combined_uplift": 0.686081
+    },
+    {
+      "fixed_cap": 24,
+      "variable_cap": 21,
+      "total_profit": 2461605.1,
+      "combined_uplift": 0.677463
+    },
+    {
+      "fixed_cap": 24,
+      "variable_cap": 22,
+      "total_profit": 2430136.41,
+      "combined_uplift": 0.656018
+    },
+    {
+      "fixed_cap": 24,
+      "variable_cap": 23,
+      "total_profit": 2389542.87,
+      "combined_uplift": 0.628356
+    },
+    {
+      "fixed_cap": 24,
+      "variable_cap": 24,
+      "total_profit": 2349525.44,
+      "combined_uplift": 0.601086
+    },
+    {
+      "fixed_cap": 24,
+      "variable_cap": 25,
+      "total_profit": 2318843.11,
+      "combined_uplift": 0.580178
+    },
+    {
+      "fixed_cap": 24,
+      "variable_cap": 26,
+      "total_profit": 2303324.36,
+      "combined_uplift": 0.569602
+    },
+    {
+      "fixed_cap": 24,
+      "variable_cap": 27,
+      "total_profit": 2285796.34,
+      "combined_uplift": 0.557658
+    },
+    {
+      "fixed_cap": 24,
+      "variable_cap": 28,
+      "total_profit": 2256657.4,
+      "combined_uplift": 0.537801
+    },
+    {
+      "fixed_cap": 24,
+      "variable_cap": 29,
+      "total_profit": 2217464.25,
+      "combined_uplift": 0.511093
+    },
+    {
+      "fixed_cap": 24,
+      "variable_cap": 30,
+      "total_profit": 2180790.48,
+      "combined_uplift": 0.486102
+    },
+    {
+      "fixed_cap": 25,
+      "variable_cap": 0,
+      "total_profit": 3122319.49,
+      "combined_uplift": 1.127707
+    },
+    {
+      "fixed_cap": 25,
+      "variable_cap": 1,
+      "total_profit": 3024653.15,
+      "combined_uplift": 1.061152
+    },
+    {
+      "fixed_cap": 25,
+      "variable_cap": 2,
+      "total_profit": 2935698.66,
+      "combined_uplift": 1.000534
+    },
+    {
+      "fixed_cap": 25,
+      "variable_cap": 3,
+      "total_profit": 2856130.75,
+      "combined_uplift": 0.946313
+    },
+    {
+      "fixed_cap": 25,
+      "variable_cap": 4,
+      "total_profit": 2786647.1,
+      "combined_uplift": 0.898963
+    },
+    {
+      "fixed_cap": 25,
+      "variable_cap": 5,
+      "total_profit": 2727931.63,
+      "combined_uplift": 0.858951
+    },
+    {
+      "fixed_cap": 25,
+      "variable_cap": 6,
+      "total_profit": 2680672.83,
+      "combined_uplift": 0.826747
+    },
+    {
+      "fixed_cap": 25,
+      "variable_cap": 7,
+      "total_profit": 2645100.69,
+      "combined_uplift": 0.802506
+    },
+    {
+      "fixed_cap": 25,
+      "variable_cap": 8,
+      "total_profit": 2623844.52,
+      "combined_uplift": 0.788021
+    },
+    {
+      "fixed_cap": 25,
+      "variable_cap": 9,
+      "total_profit": 2608316.84,
+      "combined_uplift": 0.77744
+    },
+    {
+      "fixed_cap": 25,
+      "variable_cap": 10,
+      "total_profit": 2585830.51,
+      "combined_uplift": 0.762116
+    },
+    {
+      "fixed_cap": 25,
+      "variable_cap": 11,
+      "total_profit": 2552424.52,
+      "combined_uplift": 0.739352
+    },
+    {
+      "fixed_cap": 25,
+      "variable_cap": 12,
+      "total_profit": 2499498.97,
+      "combined_uplift": 0.703286
+    },
+    {
+      "fixed_cap": 25,
+      "variable_cap": 13,
+      "total_profit": 2442531.99,
+      "combined_uplift": 0.664465
+    },
+    {
+      "fixed_cap": 25,
+      "variable_cap": 14,
+      "total_profit": 2397001.75,
+      "combined_uplift": 0.633439
+    },
+    {
+      "fixed_cap": 25,
+      "variable_cap": 15,
+      "total_profit": 2377378.62,
+      "combined_uplift": 0.620067
+    },
+    {
+      "fixed_cap": 25,
+      "variable_cap": 16,
+      "total_profit": 2390300.18,
+      "combined_uplift": 0.628872
+    },
+    {
+      "fixed_cap": 25,
+      "variable_cap": 17,
+      "total_profit": 2416851.01,
+      "combined_uplift": 0.646965
+    },
+    {
+      "fixed_cap": 25,
+      "variable_cap": 18,
+      "total_profit": 2451071.08,
+      "combined_uplift": 0.670284
+    },
+    {
+      "fixed_cap": 25,
+      "variable_cap": 19,
+      "total_profit": 2491811.49,
+      "combined_uplift": 0.698047
+    },
+    {
+      "fixed_cap": 25,
+      "variable_cap": 20,
+      "total_profit": 2457397.77,
+      "combined_uplift": 0.674596
+    },
+    {
+      "fixed_cap": 25,
+      "variable_cap": 21,
+      "total_profit": 2444751.23,
+      "combined_uplift": 0.665978
+    },
+    {
+      "fixed_cap": 25,
+      "variable_cap": 22,
+      "total_profit": 2413282.54,
+      "combined_uplift": 0.644533
+    },
+    {
+      "fixed_cap": 25,
+      "variable_cap": 23,
+      "total_profit": 2372689.0,
+      "combined_uplift": 0.616871
+    },
+    {
+      "fixed_cap": 25,
+      "variable_cap": 24,
+      "total_profit": 2332671.57,
+      "combined_uplift": 0.589601
+    },
+    {
+      "fixed_cap": 25,
+      "variable_cap": 25,
+      "total_profit": 2301989.24,
+      "combined_uplift": 0.568692
+    },
+    {
+      "fixed_cap": 25,
+      "variable_cap": 26,
+      "total_profit": 2286470.49,
+      "combined_uplift": 0.558117
+    },
+    {
+      "fixed_cap": 25,
+      "variable_cap": 27,
+      "total_profit": 2268942.47,
+      "combined_uplift": 0.546173
+    },
+    {
+      "fixed_cap": 25,
+      "variable_cap": 28,
+      "total_profit": 2239803.53,
+      "combined_uplift": 0.526316
+    },
+    {
+      "fixed_cap": 25,
+      "variable_cap": 29,
+      "total_profit": 2200610.38,
+      "combined_uplift": 0.499608
+    },
+    {
+      "fixed_cap": 25,
+      "variable_cap": 30,
+      "total_profit": 2163936.61,
+      "combined_uplift": 0.474616
+    },
+    {
+      "fixed_cap": 26,
+      "variable_cap": 0,
+      "total_profit": 3112831.84,
+      "combined_uplift": 1.121242
+    },
+    {
+      "fixed_cap": 26,
+      "variable_cap": 1,
+      "total_profit": 3015165.5,
+      "combined_uplift": 1.054687
+    },
+    {
+      "fixed_cap": 26,
+      "variable_cap": 2,
+      "total_profit": 2926211.01,
+      "combined_uplift": 0.994069
+    },
+    {
+      "fixed_cap": 26,
+      "variable_cap": 3,
+      "total_profit": 2846643.1,
+      "combined_uplift": 0.939847
+    },
+    {
+      "fixed_cap": 26,
+      "variable_cap": 4,
+      "total_profit": 2777159.45,
+      "combined_uplift": 0.892498
+    },
+    {
+      "fixed_cap": 26,
+      "variable_cap": 5,
+      "total_profit": 2718443.98,
+      "combined_uplift": 0.852486
+    },
+    {
+      "fixed_cap": 26,
+      "variable_cap": 6,
+      "total_profit": 2671185.18,
+      "combined_uplift": 0.820281
+    },
+    {
+      "fixed_cap": 26,
+      "variable_cap": 7,
+      "total_profit": 2635613.04,
+      "combined_uplift": 0.796041
+    },
+    {
+      "fixed_cap": 26,
+      "variable_cap": 8,
+      "total_profit": 2614356.87,
+      "combined_uplift": 0.781556
+    },
+    {
+      "fixed_cap": 26,
+      "variable_cap": 9,
+      "total_profit": 2598829.19,
+      "combined_uplift": 0.770974
+    },
+    {
+      "fixed_cap": 26,
+      "variable_cap": 10,
+      "total_profit": 2576342.86,
+      "combined_uplift": 0.755651
+    },
+    {
+      "fixed_cap": 26,
+      "variable_cap": 11,
+      "total_profit": 2542936.87,
+      "combined_uplift": 0.732886
+    },
+    {
+      "fixed_cap": 26,
+      "variable_cap": 12,
+      "total_profit": 2490011.32,
+      "combined_uplift": 0.69682
+    },
+    {
+      "fixed_cap": 26,
+      "variable_cap": 13,
+      "total_profit": 2433044.34,
+      "combined_uplift": 0.658
+    },
+    {
+      "fixed_cap": 26,
+      "variable_cap": 14,
+      "total_profit": 2387514.1,
+      "combined_uplift": 0.626973
+    },
+    {
+      "fixed_cap": 26,
+      "variable_cap": 15,
+      "total_profit": 2367890.97,
+      "combined_uplift": 0.613601
+    },
+    {
+      "fixed_cap": 26,
+      "variable_cap": 16,
+      "total_profit": 2380812.53,
+      "combined_uplift": 0.622407
+    },
+    {
+      "fixed_cap": 26,
+      "variable_cap": 17,
+      "total_profit": 2407363.36,
+      "combined_uplift": 0.6405
+    },
+    {
+      "fixed_cap": 26,
+      "variable_cap": 18,
+      "total_profit": 2441583.43,
+      "combined_uplift": 0.663819
+    },
+    {
+      "fixed_cap": 26,
+      "variable_cap": 19,
+      "total_profit": 2482323.84,
+      "combined_uplift": 0.691582
+    },
+    {
+      "fixed_cap": 26,
+      "variable_cap": 20,
+      "total_profit": 2447910.12,
+      "combined_uplift": 0.66813
+    },
+    {
+      "fixed_cap": 26,
+      "variable_cap": 21,
+      "total_profit": 2435263.58,
+      "combined_uplift": 0.659512
+    },
+    {
+      "fixed_cap": 26,
+      "variable_cap": 22,
+      "total_profit": 2403794.89,
+      "combined_uplift": 0.638068
+    },
+    {
+      "fixed_cap": 26,
+      "variable_cap": 23,
+      "total_profit": 2363201.35,
+      "combined_uplift": 0.610406
+    },
+    {
+      "fixed_cap": 26,
+      "variable_cap": 24,
+      "total_profit": 2323183.92,
+      "combined_uplift": 0.583136
+    },
+    {
+      "fixed_cap": 26,
+      "variable_cap": 25,
+      "total_profit": 2292501.59,
+      "combined_uplift": 0.562227
+    },
+    {
+      "fixed_cap": 26,
+      "variable_cap": 26,
+      "total_profit": 2276982.84,
+      "combined_uplift": 0.551652
+    },
+    {
+      "fixed_cap": 26,
+      "variable_cap": 27,
+      "total_profit": 2259454.82,
+      "combined_uplift": 0.539707
+    },
+    {
+      "fixed_cap": 26,
+      "variable_cap": 28,
+      "total_profit": 2230315.88,
+      "combined_uplift": 0.519851
+    },
+    {
+      "fixed_cap": 26,
+      "variable_cap": 29,
+      "total_profit": 2191122.73,
+      "combined_uplift": 0.493142
+    },
+    {
+      "fixed_cap": 26,
+      "variable_cap": 30,
+      "total_profit": 2154448.96,
+      "combined_uplift": 0.468151
+    },
+    {
+      "fixed_cap": 27,
+      "variable_cap": 0,
+      "total_profit": 3102647.53,
+      "combined_uplift": 1.114302
+    },
+    {
+      "fixed_cap": 27,
+      "variable_cap": 1,
+      "total_profit": 3004981.19,
+      "combined_uplift": 1.047747
+    },
+    {
+      "fixed_cap": 27,
+      "variable_cap": 2,
+      "total_profit": 2916026.7,
+      "combined_uplift": 0.987129
+    },
+    {
+      "fixed_cap": 27,
+      "variable_cap": 3,
+      "total_profit": 2836458.79,
+      "combined_uplift": 0.932907
+    },
+    {
+      "fixed_cap": 27,
+      "variable_cap": 4,
+      "total_profit": 2766975.14,
+      "combined_uplift": 0.885558
+    },
+    {
+      "fixed_cap": 27,
+      "variable_cap": 5,
+      "total_profit": 2708259.67,
+      "combined_uplift": 0.845546
+    },
+    {
+      "fixed_cap": 27,
+      "variable_cap": 6,
+      "total_profit": 2661000.87,
+      "combined_uplift": 0.813341
+    },
+    {
+      "fixed_cap": 27,
+      "variable_cap": 7,
+      "total_profit": 2625428.73,
+      "combined_uplift": 0.789101
+    },
+    {
+      "fixed_cap": 27,
+      "variable_cap": 8,
+      "total_profit": 2604172.56,
+      "combined_uplift": 0.774616
+    },
+    {
+      "fixed_cap": 27,
+      "variable_cap": 9,
+      "total_profit": 2588644.88,
+      "combined_uplift": 0.764034
+    },
+    {
+      "fixed_cap": 27,
+      "variable_cap": 10,
+      "total_profit": 2566158.55,
+      "combined_uplift": 0.748711
+    },
+    {
+      "fixed_cap": 27,
+      "variable_cap": 11,
+      "total_profit": 2532752.56,
+      "combined_uplift": 0.725946
+    },
+    {
+      "fixed_cap": 27,
+      "variable_cap": 12,
+      "total_profit": 2479827.01,
+      "combined_uplift": 0.68988
+    },
+    {
+      "fixed_cap": 27,
+      "variable_cap": 13,
+      "total_profit": 2422860.03,
+      "combined_uplift": 0.65106
+    },
+    {
+      "fixed_cap": 27,
+      "variable_cap": 14,
+      "total_profit": 2377329.79,
+      "combined_uplift": 0.620033
+    },
+    {
+      "fixed_cap": 27,
+      "variable_cap": 15,
+      "total_profit": 2357706.66,
+      "combined_uplift": 0.606661
+    },
+    {
+      "fixed_cap": 27,
+      "variable_cap": 16,
+      "total_profit": 2370628.22,
+      "combined_uplift": 0.615467
+    },
+    {
+      "fixed_cap": 27,
+      "variable_cap": 17,
+      "total_profit": 2397179.05,
+      "combined_uplift": 0.63356
+    },
+    {
+      "fixed_cap": 27,
+      "variable_cap": 18,
+      "total_profit": 2431399.12,
+      "combined_uplift": 0.656879
+    },
+    {
+      "fixed_cap": 27,
+      "variable_cap": 19,
+      "total_profit": 2472139.53,
+      "combined_uplift": 0.684642
+    },
+    {
+      "fixed_cap": 27,
+      "variable_cap": 20,
+      "total_profit": 2437725.81,
+      "combined_uplift": 0.66119
+    },
+    {
+      "fixed_cap": 27,
+      "variable_cap": 21,
+      "total_profit": 2425079.27,
+      "combined_uplift": 0.652572
+    },
+    {
+      "fixed_cap": 27,
+      "variable_cap": 22,
+      "total_profit": 2393610.58,
+      "combined_uplift": 0.631128
+    },
+    {
+      "fixed_cap": 27,
+      "variable_cap": 23,
+      "total_profit": 2353017.04,
+      "combined_uplift": 0.603465
+    },
+    {
+      "fixed_cap": 27,
+      "variable_cap": 24,
+      "total_profit": 2312999.61,
+      "combined_uplift": 0.576196
+    },
+    {
+      "fixed_cap": 27,
+      "variable_cap": 25,
+      "total_profit": 2282317.28,
+      "combined_uplift": 0.555287
+    },
+    {
+      "fixed_cap": 27,
+      "variable_cap": 26,
+      "total_profit": 2266798.53,
+      "combined_uplift": 0.544712
+    },
+    {
+      "fixed_cap": 27,
+      "variable_cap": 27,
+      "total_profit": 2249270.51,
+      "combined_uplift": 0.532767
+    },
+    {
+      "fixed_cap": 27,
+      "variable_cap": 28,
+      "total_profit": 2220131.57,
+      "combined_uplift": 0.512911
+    },
+    {
+      "fixed_cap": 27,
+      "variable_cap": 29,
+      "total_profit": 2180938.42,
+      "combined_uplift": 0.486202
+    },
+    {
+      "fixed_cap": 27,
+      "variable_cap": 30,
+      "total_profit": 2144264.65,
+      "combined_uplift": 0.461211
+    },
+    {
+      "fixed_cap": 28,
+      "variable_cap": 0,
+      "total_profit": 3083284.29,
+      "combined_uplift": 1.101107
+    },
+    {
+      "fixed_cap": 28,
+      "variable_cap": 1,
+      "total_profit": 2985617.95,
+      "combined_uplift": 1.034552
+    },
+    {
+      "fixed_cap": 28,
+      "variable_cap": 2,
+      "total_profit": 2896663.46,
+      "combined_uplift": 0.973934
+    },
+    {
+      "fixed_cap": 28,
+      "variable_cap": 3,
+      "total_profit": 2817095.55,
+      "combined_uplift": 0.919712
+    },
+    {
+      "fixed_cap": 28,
+      "variable_cap": 4,
+      "total_profit": 2747611.9,
+      "combined_uplift": 0.872362
+    },
+    {
+      "fixed_cap": 28,
+      "variable_cap": 5,
+      "total_profit": 2688896.43,
+      "combined_uplift": 0.832351
+    },
+    {
+      "fixed_cap": 28,
+      "variable_cap": 6,
+      "total_profit": 2641637.63,
+      "combined_uplift": 0.800146
+    },
+    {
+      "fixed_cap": 28,
+      "variable_cap": 7,
+      "total_profit": 2606065.49,
+      "combined_uplift": 0.775906
+    },
+    {
+      "fixed_cap": 28,
+      "variable_cap": 8,
+      "total_profit": 2584809.32,
+      "combined_uplift": 0.76142
+    },
+    {
+      "fixed_cap": 28,
+      "variable_cap": 9,
+      "total_profit": 2569281.64,
+      "combined_uplift": 0.750839
+    },
+    {
+      "fixed_cap": 28,
+      "variable_cap": 10,
+      "total_profit": 2546795.31,
+      "combined_uplift": 0.735516
+    },
+    {
+      "fixed_cap": 28,
+      "variable_cap": 11,
+      "total_profit": 2513389.32,
+      "combined_uplift": 0.712751
+    },
+    {
+      "fixed_cap": 28,
+      "variable_cap": 12,
+      "total_profit": 2460463.77,
+      "combined_uplift": 0.676685
+    },
+    {
+      "fixed_cap": 28,
+      "variable_cap": 13,
+      "total_profit": 2403496.79,
+      "combined_uplift": 0.637865
+    },
+    {
+      "fixed_cap": 28,
+      "variable_cap": 14,
+      "total_profit": 2357966.55,
+      "combined_uplift": 0.606838
+    },
+    {
+      "fixed_cap": 28,
+      "variable_cap": 15,
+      "total_profit": 2338343.42,
+      "combined_uplift": 0.593466
+    },
+    {
+      "fixed_cap": 28,
+      "variable_cap": 16,
+      "total_profit": 2351264.98,
+      "combined_uplift": 0.602271
+    },
+    {
+      "fixed_cap": 28,
+      "variable_cap": 17,
+      "total_profit": 2377815.81,
+      "combined_uplift": 0.620365
+    },
+    {
+      "fixed_cap": 28,
+      "variable_cap": 18,
+      "total_profit": 2412035.88,
+      "combined_uplift": 0.643684
+    },
+    {
+      "fixed_cap": 28,
+      "variable_cap": 19,
+      "total_profit": 2452776.29,
+      "combined_uplift": 0.671446
+    },
+    {
+      "fixed_cap": 28,
+      "variable_cap": 20,
+      "total_profit": 2418362.57,
+      "combined_uplift": 0.647995
+    },
+    {
+      "fixed_cap": 28,
+      "variable_cap": 21,
+      "total_profit": 2405716.03,
+      "combined_uplift": 0.639377
+    },
+    {
+      "fixed_cap": 28,
+      "variable_cap": 22,
+      "total_profit": 2374247.34,
+      "combined_uplift": 0.617933
+    },
+    {
+      "fixed_cap": 28,
+      "variable_cap": 23,
+      "total_profit": 2333653.8,
+      "combined_uplift": 0.59027
+    },
+    {
+      "fixed_cap": 28,
+      "variable_cap": 24,
+      "total_profit": 2293636.37,
+      "combined_uplift": 0.563
+    },
+    {
+      "fixed_cap": 28,
+      "variable_cap": 25,
+      "total_profit": 2262954.04,
+      "combined_uplift": 0.542092
+    },
+    {
+      "fixed_cap": 28,
+      "variable_cap": 26,
+      "total_profit": 2247435.29,
+      "combined_uplift": 0.531517
+    },
+    {
+      "fixed_cap": 28,
+      "variable_cap": 27,
+      "total_profit": 2229907.27,
+      "combined_uplift": 0.519572
+    },
+    {
+      "fixed_cap": 28,
+      "variable_cap": 28,
+      "total_profit": 2200768.33,
+      "combined_uplift": 0.499715
+    },
+    {
+      "fixed_cap": 28,
+      "variable_cap": 29,
+      "total_profit": 2161575.18,
+      "combined_uplift": 0.473007
+    },
+    {
+      "fixed_cap": 28,
+      "variable_cap": 30,
+      "total_profit": 2124901.41,
+      "combined_uplift": 0.448016
+    },
+    {
+      "fixed_cap": 29,
+      "variable_cap": 0,
+      "total_profit": 3057239.88,
+      "combined_uplift": 1.083359
+    },
+    {
+      "fixed_cap": 29,
+      "variable_cap": 1,
+      "total_profit": 2959573.54,
+      "combined_uplift": 1.016804
+    },
+    {
+      "fixed_cap": 29,
+      "variable_cap": 2,
+      "total_profit": 2870619.05,
+      "combined_uplift": 0.956186
+    },
+    {
+      "fixed_cap": 29,
+      "variable_cap": 3,
+      "total_profit": 2791051.14,
+      "combined_uplift": 0.901964
+    },
+    {
+      "fixed_cap": 29,
+      "variable_cap": 4,
+      "total_profit": 2721567.49,
+      "combined_uplift": 0.854614
+    },
+    {
+      "fixed_cap": 29,
+      "variable_cap": 5,
+      "total_profit": 2662852.02,
+      "combined_uplift": 0.814603
+    },
+    {
+      "fixed_cap": 29,
+      "variable_cap": 6,
+      "total_profit": 2615593.22,
+      "combined_uplift": 0.782398
+    },
+    {
+      "fixed_cap": 29,
+      "variable_cap": 7,
+      "total_profit": 2580021.08,
+      "combined_uplift": 0.758158
+    },
+    {
+      "fixed_cap": 29,
+      "variable_cap": 8,
+      "total_profit": 2558764.91,
+      "combined_uplift": 0.743672
+    },
+    {
+      "fixed_cap": 29,
+      "variable_cap": 9,
+      "total_profit": 2543237.23,
+      "combined_uplift": 0.733091
+    },
+    {
+      "fixed_cap": 29,
+      "variable_cap": 10,
+      "total_profit": 2520750.9,
+      "combined_uplift": 0.717768
+    },
+    {
+      "fixed_cap": 29,
+      "variable_cap": 11,
+      "total_profit": 2487344.91,
+      "combined_uplift": 0.695003
+    },
+    {
+      "fixed_cap": 29,
+      "variable_cap": 12,
+      "total_profit": 2434419.36,
+      "combined_uplift": 0.658937
+    },
+    {
+      "fixed_cap": 29,
+      "variable_cap": 13,
+      "total_profit": 2377452.38,
+      "combined_uplift": 0.620117
+    },
+    {
+      "fixed_cap": 29,
+      "variable_cap": 14,
+      "total_profit": 2331922.14,
+      "combined_uplift": 0.58909
+    },
+    {
+      "fixed_cap": 29,
+      "variable_cap": 15,
+      "total_profit": 2312299.01,
+      "combined_uplift": 0.575718
+    },
+    {
+      "fixed_cap": 29,
+      "variable_cap": 16,
+      "total_profit": 2325220.57,
+      "combined_uplift": 0.584524
+    },
+    {
+      "fixed_cap": 29,
+      "variable_cap": 17,
+      "total_profit": 2351771.4,
+      "combined_uplift": 0.602617
+    },
+    {
+      "fixed_cap": 29,
+      "variable_cap": 18,
+      "total_profit": 2385991.47,
+      "combined_uplift": 0.625936
+    },
+    {
+      "fixed_cap": 29,
+      "variable_cap": 19,
+      "total_profit": 2426731.88,
+      "combined_uplift": 0.653698
+    },
+    {
+      "fixed_cap": 29,
+      "variable_cap": 20,
+      "total_profit": 2392318.16,
+      "combined_uplift": 0.630247
+    },
+    {
+      "fixed_cap": 29,
+      "variable_cap": 21,
+      "total_profit": 2379671.62,
+      "combined_uplift": 0.621629
+    },
+    {
+      "fixed_cap": 29,
+      "variable_cap": 22,
+      "total_profit": 2348202.93,
+      "combined_uplift": 0.600185
+    },
+    {
+      "fixed_cap": 29,
+      "variable_cap": 23,
+      "total_profit": 2307609.39,
+      "combined_uplift": 0.572522
+    },
+    {
+      "fixed_cap": 29,
+      "variable_cap": 24,
+      "total_profit": 2267591.96,
+      "combined_uplift": 0.545252
+    },
+    {
+      "fixed_cap": 29,
+      "variable_cap": 25,
+      "total_profit": 2236909.63,
+      "combined_uplift": 0.524344
+    },
+    {
+      "fixed_cap": 29,
+      "variable_cap": 26,
+      "total_profit": 2221390.88,
+      "combined_uplift": 0.513769
+    },
+    {
+      "fixed_cap": 29,
+      "variable_cap": 27,
+      "total_profit": 2203862.86,
+      "combined_uplift": 0.501824
+    },
+    {
+      "fixed_cap": 29,
+      "variable_cap": 28,
+      "total_profit": 2174723.92,
+      "combined_uplift": 0.481967
+    },
+    {
+      "fixed_cap": 29,
+      "variable_cap": 29,
+      "total_profit": 2135530.77,
+      "combined_uplift": 0.455259
+    },
+    {
+      "fixed_cap": 29,
+      "variable_cap": 30,
+      "total_profit": 2098857.0,
+      "combined_uplift": 0.430268
+    },
+    {
+      "fixed_cap": 30,
+      "variable_cap": 0,
+      "total_profit": 3032077.92,
+      "combined_uplift": 1.066212
+    },
+    {
+      "fixed_cap": 30,
+      "variable_cap": 1,
+      "total_profit": 2934411.58,
+      "combined_uplift": 0.999657
+    },
+    {
+      "fixed_cap": 30,
+      "variable_cap": 2,
+      "total_profit": 2845457.09,
+      "combined_uplift": 0.939039
+    },
+    {
+      "fixed_cap": 30,
+      "variable_cap": 3,
+      "total_profit": 2765889.18,
+      "combined_uplift": 0.884817
+    },
+    {
+      "fixed_cap": 30,
+      "variable_cap": 4,
+      "total_profit": 2696405.53,
+      "combined_uplift": 0.837468
+    },
+    {
+      "fixed_cap": 30,
+      "variable_cap": 5,
+      "total_profit": 2637690.06,
+      "combined_uplift": 0.797456
+    },
+    {
+      "fixed_cap": 30,
+      "variable_cap": 6,
+      "total_profit": 2590431.26,
+      "combined_uplift": 0.765252
+    },
+    {
+      "fixed_cap": 30,
+      "variable_cap": 7,
+      "total_profit": 2554859.12,
+      "combined_uplift": 0.741011
+    },
+    {
+      "fixed_cap": 30,
+      "variable_cap": 8,
+      "total_profit": 2533602.95,
+      "combined_uplift": 0.726526
+    },
+    {
+      "fixed_cap": 30,
+      "variable_cap": 9,
+      "total_profit": 2518075.27,
+      "combined_uplift": 0.715945
+    },
+    {
+      "fixed_cap": 30,
+      "variable_cap": 10,
+      "total_profit": 2495588.94,
+      "combined_uplift": 0.700621
+    },
+    {
+      "fixed_cap": 30,
+      "variable_cap": 11,
+      "total_profit": 2462182.95,
+      "combined_uplift": 0.677857
+    },
+    {
+      "fixed_cap": 30,
+      "variable_cap": 12,
+      "total_profit": 2409257.4,
+      "combined_uplift": 0.64179
+    },
+    {
+      "fixed_cap": 30,
+      "variable_cap": 13,
+      "total_profit": 2352290.42,
+      "combined_uplift": 0.60297
+    },
+    {
+      "fixed_cap": 30,
+      "variable_cap": 14,
+      "total_profit": 2306760.18,
+      "combined_uplift": 0.571944
+    },
+    {
+      "fixed_cap": 30,
+      "variable_cap": 15,
+      "total_profit": 2287137.05,
+      "combined_uplift": 0.558571
+    },
+    {
+      "fixed_cap": 30,
+      "variable_cap": 16,
+      "total_profit": 2300058.61,
+      "combined_uplift": 0.567377
+    },
+    {
+      "fixed_cap": 30,
+      "variable_cap": 17,
+      "total_profit": 2326609.44,
+      "combined_uplift": 0.58547
+    },
+    {
+      "fixed_cap": 30,
+      "variable_cap": 18,
+      "total_profit": 2360829.51,
+      "combined_uplift": 0.608789
+    },
+    {
+      "fixed_cap": 30,
+      "variable_cap": 19,
+      "total_profit": 2401569.92,
+      "combined_uplift": 0.636552
+    },
+    {
+      "fixed_cap": 30,
+      "variable_cap": 20,
+      "total_profit": 2367156.2,
+      "combined_uplift": 0.613101
+    },
+    {
+      "fixed_cap": 30,
+      "variable_cap": 21,
+      "total_profit": 2354509.66,
+      "combined_uplift": 0.604483
+    },
+    {
+      "fixed_cap": 30,
+      "variable_cap": 22,
+      "total_profit": 2323040.97,
+      "combined_uplift": 0.583038
+    },
+    {
+      "fixed_cap": 30,
+      "variable_cap": 23,
+      "total_profit": 2282447.43,
+      "combined_uplift": 0.555376
+    },
+    {
+      "fixed_cap": 30,
+      "variable_cap": 24,
+      "total_profit": 2242430.0,
+      "combined_uplift": 0.528106
+    },
+    {
+      "fixed_cap": 30,
+      "variable_cap": 25,
+      "total_profit": 2211747.67,
+      "combined_uplift": 0.507197
+    },
+    {
+      "fixed_cap": 30,
+      "variable_cap": 26,
+      "total_profit": 2196228.92,
+      "combined_uplift": 0.496622
+    },
+    {
+      "fixed_cap": 30,
+      "variable_cap": 27,
+      "total_profit": 2178700.9,
+      "combined_uplift": 0.484678
+    },
+    {
+      "fixed_cap": 30,
+      "variable_cap": 28,
+      "total_profit": 2149561.96,
+      "combined_uplift": 0.464821
+    },
+    {
+      "fixed_cap": 30,
+      "variable_cap": 29,
+      "total_profit": 2110368.81,
+      "combined_uplift": 0.438113
+    },
+    {
+      "fixed_cap": 30,
+      "variable_cap": 30,
+      "total_profit": 2073695.04,
+      "combined_uplift": 0.413121
+    }
+  ]
+}

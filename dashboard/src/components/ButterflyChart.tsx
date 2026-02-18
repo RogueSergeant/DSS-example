@@ -85,8 +85,8 @@ export function ButterflyChart({
         <YAxis
           dataKey="subCategory"
           type="category"
-          tick={(props: { x: number; y: number; index: number; payload: { value: string } }) => {
-            const isBold = props.index < boldTop;
+          tick={(props: { x: string | number; y: string | number; index?: number; payload: { value: string } }) => {
+            const isBold = (props.index ?? 0) < boldTop;
             return (
               <text
                 x={props.x}

@@ -6,7 +6,7 @@
  */
 
 import type { ReactNode } from 'react';
-import { spacing, typography, colors } from '../lib/theme';
+import { spacing, typography } from '../lib/theme';
 
 // ─── Page wrapper ───────────────────────────────────────────────────────────
 

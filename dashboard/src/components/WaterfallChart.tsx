@@ -81,9 +81,10 @@ function getFill(type: string): string {
   return colors.neutral;
 }
 
-function getLabelColor(type: string): string {
+function _getLabelColor(type: string): string {
   return type === 'negative' ? colors.highlight : colors.emphasisText;
 }
+void _getLabelColor;
 
 // ─── Component ──────────────────────────────────────────────────────────────
 
@@ -136,7 +137,7 @@ export function WaterfallChart({
           <LabelList
             dataKey="originalValue"
             position="top"
-            formatter={(v: number) => formatValue(v)}
+            formatter={(v: unknown) => formatValue(v as number)}
             style={{ fontSize: typography.annotation.size, fontWeight: typography.annotation.weight }}
             fill={colors.emphasisText}
           />
@@ -145,8 +146,8 @@ export function WaterfallChart({
         <Tooltip
           contentStyle={tooltipStyle}
           labelStyle={{ color: typography.tooltipLabel.color, fontSize: typography.tooltipLabel.size }}
-          formatter={(value: number, name: string, props: { payload: ProcessedBar }) => {
-            const entry = props.payload;
+          formatter={(_value: unknown, _name: unknown, props: unknown) => {
+            const entry = (props as { payload: ProcessedBar }).payload;
             const abs = formatValue(entry.originalValue);
             const pct = data[0]?.value
               ? `${((Math.abs(entry.originalValue) / data[0].value) * 100).toFixed(1)}%`
