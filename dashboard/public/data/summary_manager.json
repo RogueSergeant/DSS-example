@@ -1,0 +1,482 @@
+[
+  {
+    "regional_manager": "Alejandro Ballentine",
+    "year": 2011,
+    "sales": 150062.01,
+    "profit": 3243.0,
+    "margin_pct": 0.021611,
+    "adjusted_profit": 3243.0,
+    "adjusted_margin_pct": 0.021611,
+    "fixed_country_count": 0
+  },
+  {
+    "regional_manager": "Alejandro Ballentine",
+    "year": 2012,
+    "sales": 186162.93,
+    "profit": 2738.13,
+    "margin_pct": 0.014708,
+    "adjusted_profit": 2738.13,
+    "adjusted_margin_pct": 0.014708,
+    "fixed_country_count": 0
+  },
+  {
+    "regional_manager": "Alejandro Ballentine",
+    "year": 2013,
+    "sales": 225130.02,
+    "profit": 3166.2,
+    "margin_pct": 0.014064,
+    "adjusted_profit": 3166.2,
+    "adjusted_margin_pct": 0.014064,
+    "fixed_country_count": 0
+  },
+  {
+    "regional_manager": "Alejandro Ballentine",
+    "year": 2014,
+    "sales": 323068.21,
+    "profit": 8705.0,
+    "margin_pct": 0.026945,
+    "adjusted_profit": 8705.0,
+    "adjusted_margin_pct": 0.026945,
+    "fixed_country_count": 0
+  },
+  {
+    "regional_manager": "Anna Andreadi",
+    "year": 2011,
+    "sales": 517501.94,
+    "profit": 52678.47,
+    "margin_pct": 0.101794,
+    "adjusted_profit": 70979.48,
+    "adjusted_margin_pct": 0.137158,
+    "fixed_country_count": 3
+  },
+  {
+    "regional_manager": "Anna Andreadi",
+    "year": 2012,
+    "sales": 602045.13,
+    "profit": 63617.31,
+    "margin_pct": 0.105669,
+    "adjusted_profit": 83214.74,
+    "adjusted_margin_pct": 0.13822,
+    "fixed_country_count": 3
+  },
+  {
+    "regional_manager": "Anna Andreadi",
+    "year": 2013,
+    "sales": 763715.13,
+    "profit": 97384.63,
+    "margin_pct": 0.127514,
+    "adjusted_profit": 124958.27,
+    "adjusted_margin_pct": 0.163619,
+    "fixed_country_count": 3
+  },
+  {
+    "regional_manager": "Anna Andreadi",
+    "year": 2014,
+    "sales": 939040.32,
+    "profit": 97723.57,
+    "margin_pct": 0.104067,
+    "adjusted_profit": 128081.95,
+    "adjusted_margin_pct": 0.136397,
+    "fixed_country_count": 3
+  },
+  {
+    "regional_manager": "Anthony Jacobs",
+    "year": 2011,
+    "sales": 171418.56,
+    "profit": 21428.76,
+    "margin_pct": 0.125008,
+    "adjusted_profit": 21454.74,
+    "adjusted_margin_pct": 0.12516,
+    "fixed_country_count": 1
+  },
+  {
+    "regional_manager": "Anthony Jacobs",
+    "year": 2012,
+    "sales": 250065.67,
+    "profit": 29675.32,
+    "margin_pct": 0.11867,
+    "adjusted_profit": 29724.64,
+    "adjusted_margin_pct": 0.118867,
+    "fixed_country_count": 1
+  },
+  {
+    "regional_manager": "Anthony Jacobs",
+    "year": 2013,
+    "sales": 316270.49,
+    "profit": 37553.45,
+    "margin_pct": 0.118738,
+    "adjusted_profit": 38238.53,
+    "adjusted_margin_pct": 0.120905,
+    "fixed_country_count": 1
+  },
+  {
+    "regional_manager": "Anthony Jacobs",
+    "year": 2014,
+    "sales": 362429.89,
+    "profit": 31431.58,
+    "margin_pct": 0.086725,
+    "adjusted_profit": 31506.82,
+    "adjusted_margin_pct": 0.086932,
+    "fixed_country_count": 1
+  },
+  {
+    "regional_manager": "Chuck Magee",
+    "year": 2011,
+    "sales": 284042.2,
+    "profit": 17849.1,
+    "margin_pct": 0.06284,
+    "adjusted_profit": 28034.1,
+    "adjusted_margin_pct": 0.098697,
+    "fixed_country_count": 4
+  },
+  {
+    "regional_manager": "Chuck Magee",
+    "year": 2012,
+    "sales": 328005.51,
+    "profit": 30975.36,
+    "margin_pct": 0.094436,
+    "adjusted_profit": 38263.71,
+    "adjusted_margin_pct": 0.116656,
+    "fixed_country_count": 4
+  },
+  {
+    "regional_manager": "Chuck Magee",
+    "year": 2013,
+    "sales": 443643.22,
+    "profit": 39755.14,
+    "margin_pct": 0.089611,
+    "adjusted_profit": 55565.58,
+    "adjusted_margin_pct": 0.125248,
+    "fixed_country_count": 4
+  },
+  {
+    "regional_manager": "Chuck Magee",
+    "year": 2014,
+    "sales": 545216.11,
+    "profit": 51776.16,
+    "margin_pct": 0.094964,
+    "adjusted_profit": 69115.73,
+    "adjusted_margin_pct": 0.126768,
+    "fixed_country_count": 4
+  },
+  {
+    "regional_manager": "Deborah Brumfield",
+    "year": 2011,
+    "sales": 127187.27,
+    "profit": 10944.11,
+    "margin_pct": 0.086047,
+    "adjusted_profit": 19117.7,
+    "adjusted_margin_pct": 0.150311,
+    "fixed_country_count": 3
+  },
+  {
+    "regional_manager": "Deborah Brumfield",
+    "year": 2012,
+    "sales": 144480.71,
+    "profit": 11908.94,
+    "margin_pct": 0.082426,
+    "adjusted_profit": 20932.08,
+    "adjusted_margin_pct": 0.144878,
+    "fixed_country_count": 3
+  },
+  {
+    "regional_manager": "Deborah Brumfield",
+    "year": 2013,
+    "sales": 229068.79,
+    "profit": 26687.11,
+    "margin_pct": 0.116503,
+    "adjusted_profit": 39111.57,
+    "adjusted_margin_pct": 0.170742,
+    "fixed_country_count": 3
+  },
+  {
+    "regional_manager": "Deborah Brumfield",
+    "year": 2014,
+    "sales": 283036.44,
+    "profit": 39331.47,
+    "margin_pct": 0.138963,
+    "adjusted_profit": 51526.45,
+    "adjusted_margin_pct": 0.182049,
+    "fixed_country_count": 3
+  },
+  {
+    "regional_manager": "Giulietta Dortch",
+    "year": 2011,
+    "sales": 57043.43,
+    "profit": 4358.91,
+    "margin_pct": 0.076414,
+    "adjusted_profit": 5274.49,
+    "adjusted_margin_pct": 0.092464,
+    "fixed_country_count": 1
+  },
+  {
+    "regional_manager": "Giulietta Dortch",
+    "year": 2012,
+    "sales": 64147.58,
+    "profit": 8706.26,
+    "margin_pct": 0.135722,
+    "adjusted_profit": 8882.47,
+    "adjusted_margin_pct": 0.138469,
+    "fixed_country_count": 1
+  },
+  {
+    "regional_manager": "Giulietta Dortch",
+    "year": 2013,
+    "sales": 97598.3,
+    "profit": 8973.54,
+    "margin_pct": 0.091944,
+    "adjusted_profit": 10926.86,
+    "adjusted_margin_pct": 0.111957,
+    "fixed_country_count": 1
+  },
+  {
+    "regional_manager": "Giulietta Dortch",
+    "year": 2014,
+    "sales": 105491.56,
+    "profit": 12532.62,
+    "margin_pct": 0.118802,
+    "adjusted_profit": 14207.35,
+    "adjusted_margin_pct": 0.134678,
+    "fixed_country_count": 1
+  },
+  {
+    "regional_manager": "Jack Lebron",
+    "year": 2011,
+    "sales": 212937.88,
+    "profit": 35866.23,
+    "margin_pct": 0.168435,
+    "adjusted_profit": 40843.82,
+    "adjusted_margin_pct": 0.191811,
+    "fixed_country_count": 3
+  },
+  {
+    "regional_manager": "Jack Lebron",
+    "year": 2012,
+    "sales": 300230.97,
+    "profit": 50905.94,
+    "margin_pct": 0.169556,
+    "adjusted_profit": 54503.74,
+    "adjusted_margin_pct": 0.181539,
+    "fixed_country_count": 3
+  },
+  {
+    "regional_manager": "Jack Lebron",
+    "year": 2013,
+    "sales": 305832.98,
+    "profit": 51167.43,
+    "margin_pct": 0.167305,
+    "adjusted_profit": 57897.34,
+    "adjusted_margin_pct": 0.18931,
+    "fixed_country_count": 3
+  },
+  {
+    "regional_manager": "Jack Lebron",
+    "year": 2014,
+    "sales": 429163.77,
+    "profit": 56658.35,
+    "margin_pct": 0.13202,
+    "adjusted_profit": 69829.8,
+    "adjusted_margin_pct": 0.162711,
+    "fixed_country_count": 3
+  },
+  {
+    "regional_manager": "Kelly Williams",
+    "year": 2011,
+    "sales": 128680.46,
+    "profit": 17059.61,
+    "margin_pct": 0.132573,
+    "adjusted_profit": 17059.61,
+    "adjusted_margin_pct": 0.132573,
+    "fixed_country_count": 0
+  },
+  {
+    "regional_manager": "Kelly Williams",
+    "year": 2012,
+    "sales": 156332.06,
+    "profit": 21091.01,
+    "margin_pct": 0.134912,
+    "adjusted_profit": 21091.01,
+    "adjusted_margin_pct": 0.134912,
+    "fixed_country_count": 0
+  },
+  {
+    "regional_manager": "Kelly Williams",
+    "year": 2013,
+    "sales": 180529.31,
+    "profit": 20176.81,
+    "margin_pct": 0.111765,
+    "adjusted_profit": 20176.81,
+    "adjusted_margin_pct": 0.111765,
+    "fixed_country_count": 0
+  },
+  {
+    "regional_manager": "Kelly Williams",
+    "year": 2014,
+    "sales": 213239.42,
+    "profit": 33195.35,
+    "margin_pct": 0.155672,
+    "adjusted_profit": 33195.35,
+    "adjusted_margin_pct": 0.155672,
+    "fixed_country_count": 0
+  },
+  {
+    "regional_manager": "Matt Collister",
+    "year": 2011,
+    "sales": 147883.03,
+    "profit": 20065.69,
+    "margin_pct": 0.135686,
+    "adjusted_profit": 20065.69,
+    "adjusted_margin_pct": 0.135686,
+    "fixed_country_count": 0
+  },
+  {
+    "regional_manager": "Matt Collister",
+    "year": 2012,
+    "sales": 139966.25,
+    "profit": 20492.19,
+    "margin_pct": 0.146408,
+    "adjusted_profit": 20492.19,
+    "adjusted_margin_pct": 0.146408,
+    "fixed_country_count": 0
+  },
+  {
+    "regional_manager": "Matt Collister",
+    "year": 2013,
+    "sales": 186976.02,
+    "profit": 23959.94,
+    "margin_pct": 0.128144,
+    "adjusted_profit": 23959.94,
+    "adjusted_margin_pct": 0.128144,
+    "fixed_country_count": 0
+  },
+  {
+    "regional_manager": "Matt Collister",
+    "year": 2014,
+    "sales": 250632.53,
+    "profit": 43900.63,
+    "margin_pct": 0.175159,
+    "adjusted_profit": 43900.63,
+    "adjusted_margin_pct": 0.175159,
+    "fixed_country_count": 0
+  },
+  {
+    "regional_manager": "Nicole Hansen",
+    "year": 2011,
+    "sales": 8509.11,
+    "profit": 1807.08,
+    "margin_pct": 0.21237,
+    "adjusted_profit": 1807.08,
+    "adjusted_margin_pct": 0.21237,
+    "fixed_country_count": 0
+  },
+  {
+    "regional_manager": "Nicole Hansen",
+    "year": 2012,
+    "sales": 16096.8,
+    "profit": 4887.84,
+    "margin_pct": 0.303653,
+    "adjusted_profit": 4887.84,
+    "adjusted_margin_pct": 0.303653,
+    "fixed_country_count": 0
+  },
+  {
+    "regional_manager": "Nicole Hansen",
+    "year": 2013,
+    "sales": 19161.15,
+    "profit": 5129.46,
+    "margin_pct": 0.267701,
+    "adjusted_profit": 5129.46,
+    "adjusted_margin_pct": 0.267701,
+    "fixed_country_count": 0
+  },
+  {
+    "regional_manager": "Nicole Hansen",
+    "year": 2014,
+    "sales": 23161.11,
+    "profit": 5993.01,
+    "margin_pct": 0.258753,
+    "adjusted_profit": 5993.01,
+    "adjusted_margin_pct": 0.258753,
+    "fixed_country_count": 0
+  },
+  {
+    "regional_manager": "Nora Preis",
+    "year": 2011,
+    "sales": 123238.03,
+    "profit": 22846.45,
+    "margin_pct": 0.185385,
+    "adjusted_profit": 25537.61,
+    "adjusted_margin_pct": 0.207222,
+    "fixed_country_count": 1
+  },
+  {
+    "regional_manager": "Nora Preis",
+    "year": 2012,
+    "sales": 174133.4,
+    "profit": 28977.08,
+    "margin_pct": 0.166407,
+    "adjusted_profit": 32988.65,
+    "adjusted_margin_pct": 0.189445,
+    "fixed_country_count": 1
+  },
+  {
+    "regional_manager": "Nora Preis",
+    "year": 2013,
+    "sales": 196314.88,
+    "profit": 33109.18,
+    "margin_pct": 0.168653,
+    "adjusted_profit": 40796.63,
+    "adjusted_margin_pct": 0.207812,
+    "fixed_country_count": 1
+  },
+  {
+    "regional_manager": "Nora Preis",
+    "year": 2014,
+    "sales": 259140.26,
+    "profit": 47547.48,
+    "margin_pct": 0.183482,
+    "adjusted_profit": 57417.24,
+    "adjusted_margin_pct": 0.221568,
+    "fixed_country_count": 1
+  },
+  {
+    "regional_manager": "Shirley Daniels",
+    "year": 2011,
+    "sales": 194526.66,
+    "profit": 35513.37,
+    "margin_pct": 0.182563,
+    "adjusted_profit": 40644.29,
+    "adjusted_margin_pct": 0.208939,
+    "fixed_country_count": 1
+  },
+  {
+    "regional_manager": "Shirley Daniels",
+    "year": 2012,
+    "sales": 152357.33,
+    "profit": 28020.32,
+    "margin_pct": 0.183912,
+    "adjusted_profit": 29926.63,
+    "adjusted_margin_pct": 0.196424,
+    "fixed_country_count": 1
+  },
+  {
+    "regional_manager": "Shirley Daniels",
+    "year": 2013,
+    "sales": 236865.46,
+    "profit": 49274.29,
+    "margin_pct": 0.208026,
+    "adjusted_profit": 50812.12,
+    "adjusted_margin_pct": 0.214519,
+    "fixed_country_count": 1
+  },
+  {
+    "regional_manager": "Shirley Daniels",
+    "year": 2014,
+    "sales": 264560.33,
+    "profit": 52770.44,
+    "margin_pct": 0.199465,
+    "adjusted_profit": 56943.43,
+    "adjusted_margin_pct": 0.215238,
+    "fixed_country_count": 1
+  }
+]
