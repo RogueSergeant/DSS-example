@@ -33,7 +33,7 @@ export function HatchPatternDefs() {
           />
         </pattern>
 
-        {/* Subtle loss-zone hatch for slider charts (5% opacity) */}
+        {/* Subtle loss-zone hatch for slider charts (10% opacity for visibility on light bg) */}
         <pattern
           id="hatch-loss-zone"
           width={PATTERN_SIZE}
@@ -49,7 +49,7 @@ export function HatchPatternDefs() {
             y2={PATTERN_SIZE}
             stroke={hatch.stroke}
             strokeWidth={hatch.lineWidth}
-            opacity={0.05}
+            opacity={0.1}
           />
         </pattern>
       </defs>

@@ -6,7 +6,7 @@
  */
 
 import type { ReactNode } from 'react';
-import { spacing, typography } from '../lib/theme';
+import { spacing, typography, colors } from '../lib/theme';
 
 // ─── Page wrapper ───────────────────────────────────────────────────────────
 
@@ -17,18 +17,33 @@ interface DashboardPageProps {
 
 export function DashboardPage({ title, children }: DashboardPageProps) {
   return (
-    <div style={{ padding: spacing.pagePadding, minHeight: '100vh' }}>
+    <div
+      className="animate-in"
+      style={{ padding: spacing.pagePadding, minHeight: '100vh' }}
+    >
       <h1
         style={{
           margin: 0,
-          marginBottom: spacing.pagePadding,
+          marginBottom: 8,
+          fontFamily: typography.displayFont,
           fontSize: typography.pageTitle.size,
           fontWeight: typography.pageTitle.weight,
           color: typography.pageTitle.color,
+          letterSpacing: '-0.01em',
         }}
       >
         {title}
       </h1>
+      {/* Decorative accent rule */}
+      <div
+        style={{
+          width: 40,
+          height: 2,
+          background: colors.accent,
+          borderRadius: 1,
+          marginBottom: spacing.pagePadding,
+        }}
+      />
       {children}
     </div>
   );
@@ -48,11 +63,26 @@ export function Section({ heading, children }: SectionProps) {
         style={{
           margin: 0,
           marginBottom: spacing.cardGap,
+          fontFamily: typography.displayFont,
           fontSize: typography.sectionHeading.size,
           fontWeight: typography.sectionHeading.weight,
           color: typography.sectionHeading.color,
+          display: 'flex',
+          alignItems: 'center',
+          gap: 10,
         }}
       >
+        {/* Left accent bar */}
+        <span
+          style={{
+            display: 'inline-block',
+            width: 3,
+            height: 16,
+            background: colors.accent,
+            borderRadius: 2,
+            flexShrink: 0,
+          }}
+        />
         {heading}
       </h2>
       {children}

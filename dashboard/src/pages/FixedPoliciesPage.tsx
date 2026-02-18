@@ -266,7 +266,7 @@ export function FixedPoliciesPage({ year: _year, onNavigate: _onNavigate }: Fixe
             patternTransform="rotate(45)"
           >
             <rect width={12} height={12} fill={colors.highlight} />
-            <line x1={0} y1={0} x2={0} y2={12} stroke="#c2410c" strokeWidth={3} />
+            <line x1={0} y1={0} x2={0} y2={12} stroke={colors.hatchStroke} strokeWidth={3} />
           </pattern>
         </defs>
       </svg>
@@ -363,7 +363,7 @@ export function FixedPoliciesPage({ year: _year, onNavigate: _onNavigate }: Fixe
                             {row.regional_manager ? (
                               row.regional_manager
                             ) : (
-                              <span style={{ color: '#f59e0b', fontWeight: 500 }}>None</span>
+                              <span style={{ color: colors.warning, fontWeight: 500 }}>None</span>
                             )}
                           </td>
                         </tr>

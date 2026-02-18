@@ -260,7 +260,7 @@ export function TwoProblemsPage({ year, onNavigate }: TwoProblemsPageProps) {
               <div
                 style={{
                   width: `${variablePct}%`,
-                  background: '#f97316',
+                  background: colors.highlight,
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
@@ -295,7 +295,7 @@ export function TwoProblemsPage({ year, onNavigate }: TwoProblemsPageProps) {
               <span style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
                 <span style={{
                   display: 'inline-block', width: 12, height: 12,
-                  background: '#f97316',
+                  background: colors.highlight,
                   borderRadius: 2,
                 }} />
                 Variable over-discount loss

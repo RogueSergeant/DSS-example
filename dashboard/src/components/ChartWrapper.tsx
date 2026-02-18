@@ -2,20 +2,11 @@
  * §9 Standard Chart Defaults
  *
  * Wraps any Recharts composition with the design-system card treatment,
- * title/subtitle, and standard chart margins. Also injects the hatch
- * pattern defs into the SVG.
- *
- * Usage:
- *   <ChartWrapper title="Anything above ~25% discount is underwater"
- *                 subtitle="Margin by discount band, 2011-2014">
- *     <BarChart ...>
- *       ...
- *     </BarChart>
- *   </ChartWrapper>
+ * title/subtitle, and standard chart margins.
  */
 
 import type { ReactNode } from 'react';
-import { spacing, typography, colors, kpiCard as card } from '../lib/theme';
+import { spacing, typography, colors, kpiCard as card, shadows } from '../lib/theme';
 
 interface ChartWrapperProps {
   /** Argument-style title (§4: written as arguments, not descriptions) */
@@ -44,13 +35,16 @@ export function ChartWrapper({
         background: card.background,
         border: card.border,
         borderRadius: card.borderRadius,
+        borderTop: `2px solid ${colors.accent}`,
         padding: spacing.cardPadding,
+        boxShadow: card.boxShadow,
       }}
     >
       <h3
         style={{
           margin: 0,
           marginBottom: subtitle ? spacing.chartTitleMb : spacing.chartSubtitleMb,
+          fontFamily: typography.displayFont,
           fontSize: typography.chartTitle.size,
           fontWeight: typography.chartTitle.weight,
           color: typography.chartTitle.color,
@@ -84,6 +78,7 @@ export const tooltipStyle: React.CSSProperties = {
   border: `1px solid ${colors.muted}`,
   borderRadius: 6,
   padding: '10px 14px',
+  boxShadow: shadows.card,
 };
 
 /** Standard Recharts cartesian grid props (§9) */

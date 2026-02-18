@@ -164,7 +164,6 @@ export function InteractiveSlider({
           aria-label={label ?? 'Discount threshold'}
           style={{
             width: '100%',
-            accentColor: colors.selection,
           }}
         />
       </div>

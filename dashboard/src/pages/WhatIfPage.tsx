@@ -331,13 +331,16 @@ export function WhatIfPage() {
                 background: kpiCard.background,
                 border: kpiCard.border,
                 borderRadius: kpiCard.borderRadius,
+                borderTop: `2px solid ${colors.accent}`,
                 padding: kpiCard.padding,
+                boxShadow: kpiCard.boxShadow,
               }}
             >
               <h3
                 style={{
                   margin: 0,
                   marginBottom: spacing.chartSubtitleMb,
+                  fontFamily: typography.displayFont,
                   fontSize: typography.chartTitle.size,
                   fontWeight: typography.chartTitle.weight,
                   color: typography.chartTitle.color,
@@ -392,10 +395,12 @@ export function WhatIfPage() {
                   background: kpiCard.background,
                   border: kpiCard.border,
                   borderRadius: kpiCard.borderRadius,
+                  borderTop: `2px solid ${colors.accent}`,
                   borderLeft: isGovernance
                     ? `4px solid ${colors.highlight}`
                     : kpiCard.border,
                   padding: kpiCard.padding,
+                  boxShadow: kpiCard.boxShadow,
                   display: 'flex',
                   flexDirection: 'column',
                   gap: 8,
@@ -407,13 +412,13 @@ export function WhatIfPage() {
                     width: 28,
                     height: 28,
                     borderRadius: '50%',
-                    backgroundColor: '#3b82f6',
+                    backgroundColor: colors.selection,
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
                     fontSize: 14,
                     fontWeight: 700,
-                    color: '#ffffff',
+                    color: '#fff',
                     flexShrink: 0,
                   }}
                 >

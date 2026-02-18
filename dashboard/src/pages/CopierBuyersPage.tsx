@@ -113,14 +113,14 @@ function buildLiftMatrix(cats: string[]): number[][] {
   return matrix;
 }
 
-/** Map lift value to greyscale color */
+/** Map lift value to blue-tinted color for light theme */
 function liftColor(lift: number): string {
   if (lift === 0) return 'transparent'; // diagonal
   const t = Math.min((lift - 1.0) / 0.17, 1);
-  // Interpolate from #1e293b (dark) to #64748b (lighter)
-  const r = Math.round(30 + t * (100 - 30));
-  const g = Math.round(41 + t * (116 - 41));
-  const b = Math.round(59 + t * (139 - 59));
+  // Interpolate from #eef2f7 (very light) to #6b8db5 (medium blue-grey)
+  const r = Math.round(238 + t * (107 - 238));
+  const g = Math.round(242 + t * (141 - 242));
+  const b = Math.round(247 + t * (181 - 247));
   return `rgb(${r},${g},${b})`;
 }
 

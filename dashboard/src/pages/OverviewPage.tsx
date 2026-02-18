@@ -383,21 +383,6 @@ export function OverviewPage({ year, onNavigate: _onNavigate }: OverviewPageProp
               }
               ariaLabel={`Total Sales ${displayYear}: ${fmtDollar(kpis?.totalSales ?? 0)}`}
             />
-            {/* Blue detail overlay */}
-            {kpis && (
-              <div
-                style={{
-                  marginTop: -28,
-                  paddingLeft: 24,
-                  paddingBottom: 8,
-                  fontSize: typography.kpiLabel.size,
-                  fontWeight: typography.kpiLabel.weight,
-                  color: colors.selection,
-                }}
-              >
-                {`▲ +${(kpis.salesGrowth * 100).toFixed(0)}%`}
-              </div>
-            )}
           </GridCell>
           <GridCell span={3}>
             <KpiCard
@@ -414,18 +399,6 @@ export function OverviewPage({ year, onNavigate: _onNavigate }: OverviewPageProp
               detail="▲ +2pp"
               ariaLabel={`Customer Retention ${displayYear}`}
             />
-            <div
-              style={{
-                marginTop: -28,
-                paddingLeft: 24,
-                paddingBottom: 8,
-                fontSize: typography.kpiLabel.size,
-                fontWeight: typography.kpiLabel.weight,
-                color: colors.selection,
-              }}
-            >
-              ▲ +2pp
-            </div>
           </GridCell>
           <GridCell span={3}>
             <KpiCard
@@ -438,20 +411,6 @@ export function OverviewPage({ year, onNavigate: _onNavigate }: OverviewPageProp
               }
               ariaLabel={`Active Customers ${displayYear}: ${fmtNumber(kpis?.totalCustomers ?? 0)}`}
             />
-            {kpis && (
-              <div
-                style={{
-                  marginTop: -28,
-                  paddingLeft: 24,
-                  paddingBottom: 8,
-                  fontSize: typography.kpiLabel.size,
-                  fontWeight: typography.kpiLabel.weight,
-                  color: colors.selection,
-                }}
-              >
-                {`▲ +${(kpis.customerGrowth * 100).toFixed(0)}%`}
-              </div>
-            )}
           </GridCell>
         </Grid>
       </Section>
@@ -577,7 +536,9 @@ export function OverviewPage({ year, onNavigate: _onNavigate }: OverviewPageProp
                 background: kpiCard.background,
                 border: kpiCard.border,
                 borderRadius: kpiCard.borderRadius,
+                borderTop: `2px solid ${colors.accent}`,
                 padding: spacing.cardPadding,
+                boxShadow: kpiCard.boxShadow,
                 overflowX: 'auto',
               }}
             >
