@@ -15,7 +15,7 @@
     "sub_category": "Art",
     "breakeven_discount": 0.25,
     "zero_discount_margin": 0.250136,
-    "recommended_ceiling": 0.25
+    "recommended_ceiling": 0.2
   },
   {
     "sub_category": "Binders",
@@ -33,19 +33,19 @@
     "sub_category": "Chairs",
     "breakeven_discount": 0.27,
     "zero_discount_margin": 0.238757,
-    "recommended_ceiling": 0.25
+    "recommended_ceiling": 0.2
   },
   {
     "sub_category": "Copiers",
     "breakeven_discount": 0.27,
     "zero_discount_margin": 0.263118,
-    "recommended_ceiling": 0.25
+    "recommended_ceiling": 0.2
   },
   {
     "sub_category": "Envelopes",
     "breakeven_discount": 0.32,
     "zero_discount_margin": 0.286391,
-    "recommended_ceiling": 0.3
+    "recommended_ceiling": 0.25
   },
   {
     "sub_category": "Fasteners",
@@ -63,7 +63,7 @@
     "sub_category": "Labels",
     "breakeven_discount": 0.32,
     "zero_discount_margin": 0.299379,
-    "recommended_ceiling": 0.3
+    "recommended_ceiling": 0.25
   },
   {
     "sub_category": "Machines",
@@ -75,13 +75,13 @@
     "sub_category": "Paper",
     "breakeven_discount": 0.32,
     "zero_discount_margin": 0.318883,
-    "recommended_ceiling": 0.3
+    "recommended_ceiling": 0.25
   },
   {
     "sub_category": "Phones",
     "breakeven_discount": 0.26,
     "zero_discount_margin": 0.240134,
-    "recommended_ceiling": 0.25
+    "recommended_ceiling": 0.2
   },
   {
     "sub_category": "Storage",
@@ -93,12 +93,12 @@
     "sub_category": "Supplies",
     "breakeven_discount": 0.21,
     "zero_discount_margin": 0.210923,
-    "recommended_ceiling": 0.2
+    "recommended_ceiling": 0.15
   },
   {
     "sub_category": "Tables",
     "breakeven_discount": 0.21,
     "zero_discount_margin": 0.230883,
-    "recommended_ceiling": 0.2
+    "recommended_ceiling": 0.15
   }
 ]

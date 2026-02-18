@@ -462,11 +462,11 @@ for subcat, grp in detail.groupby("sub_category"):
     avg_disc_margin = discounted["profit"].sum() / discounted["sales"].sum() if discounted["sales"].sum() != 0 else None
 
     be = breakeven_map.get(subcat)
-    # Recommended ceiling = breakeven rounded down to nearest 0.05
+    # Recommended ceiling = breakeven − 0.05 (safety margin), rounded to nearest 0.05
     rec_ceiling = None
     if be is not None:
-        rec_ceiling = math.floor(be / 0.05) * 0.05
-        rec_ceiling = round(rec_ceiling, 2)
+        rec_ceiling = round((be - 0.05) / 0.05) * 0.05
+        rec_ceiling = round(max(rec_ceiling, 0.0), 2)
 
     subcat_stats.append({
         "sub_category": subcat,
@@ -482,39 +482,196 @@ sp = pd.DataFrame(subcat_stats)
 to_json_file(sp, "summary_product.json")
 
 
-# 9.6 whatif_discount_curve.json — Discount rate 0.00–0.70 at 0.01 steps -----
-print("  whatif_discount_curve …")
+# 9.6 whatif_discount_curve.json — Brief 2: What-If Calculation Engine --------
+print("  whatif_discount_curve (Brief 2 — full calculation engine) …")
 
-# Use variable-country data
+# ---- 2.1 Discount-to-Margin Curve -------------------------------------------
+# Use variable-country data only
 var_detail = detail[detail["country"].isin(variable_countries)].copy()
 var_detail["margin"] = var_detail["profit"] / var_detail["sales"]
 
 disc_margins = var_detail.groupby("discount").agg(
     avg_margin=("margin", "mean"),
-    sales=("sales", "sum"),
-    profit=("profit", "sum"),
-    count=("row_id", "count"),
+    order_count=("row_id", "count"),
 ).reset_index()
 
-# Fit PCHIP to all data points
+# Build set of observed discount rates for the interpolated flag
+observed_rates = set(disc_margins["discount"].round(2).values)
+
+# Fit PCHIP to observed data points
 x_obs = disc_margins["discount"].values.astype(float)
-y_obs = (disc_margins["profit"] / disc_margins["sales"]).values.astype(float)
-# Use margin computed as total profit / total sales per discount level
-y_obs2 = disc_margins["avg_margin"].values.astype(float)
+y_obs = disc_margins["avg_margin"].values.astype(float)
+count_obs = disc_margins["order_count"].values.astype(int)
 
 sort_idx = np.argsort(x_obs)
 x_obs = x_obs[sort_idx]
-y_obs2 = y_obs2[sort_idx]
+y_obs = y_obs[sort_idx]
+count_obs = count_obs[sort_idx]
 
-interp = PchipInterpolator(x_obs, y_obs2)
+interp_curve = PchipInterpolator(x_obs, y_obs)
 x_curve = np.round(np.arange(0.0, 0.71, 0.01), 2)
-y_curve = interp(x_curve)
+y_curve = interp_curve(x_curve)
 
-wdc = pd.DataFrame({
-    "discount_rate": x_curve,
-    "expected_margin_pct": np.round(y_curve, 6),
-})
-to_json_file(wdc, "whatif_discount_curve.json")
+# Build lookup dict: discount_rate (2dp) → order_count from observations
+obs_count_map = dict(zip(np.round(x_obs, 2), count_obs))
+
+curve_records = []
+for i, dr in enumerate(x_curve):
+    dr_rounded = round(float(dr), 2)
+    is_observed = dr_rounded in observed_rates
+    curve_records.append({
+        "discount_rate": dr_rounded,
+        "avg_margin": round(float(y_curve[i]), 6),
+        "order_count": int(obs_count_map.get(dr_rounded, 0)),
+        "interpolated": not is_observed,
+    })
+
+# Quick margin lookup by integer percentage (0–70)
+margin_at = {r["discount_rate"]: r["avg_margin"] for r in curve_records}
+
+print(f"    Curve: {len(curve_records)} points, "
+      f"margin at 0%={margin_at[0.0]:.4f}, at 30%={margin_at[0.30]:.4f}")
+
+# ---- Section 7: Key Constants -----------------------------------------------
+total_company_baseline_profit = round(float(detail["profit"].sum()), 2)
+
+fixed_detail = detail[detail["discount_regime"] == "Fixed"].copy()
+variable_detail = detail[detail["discount_regime"] == "Variable"].copy()
+zero_detail = detail[detail["discount_regime"] == "Zero discount"].copy()
+
+fixed_country_current_profit = round(float(fixed_detail["profit"].sum()), 2)
+variable_country_current_profit = round(float(variable_detail["profit"].sum()), 2)
+zero_discount_country_profit = round(float(zero_detail["profit"].sum()), 2)
+
+constants = {
+    "total_company_baseline_profit": total_company_baseline_profit,
+    "fixed_country_current_profit": fixed_country_current_profit,
+    "variable_country_current_profit": variable_country_current_profit,
+    "zero_discount_country_profit": zero_discount_country_profit,
+}
+
+print(f"    Constants: total_profit={total_company_baseline_profit:,.0f}, "
+      f"fixed_profit={fixed_country_current_profit:,.0f}, "
+      f"variable_profit={variable_country_current_profit:,.0f}, "
+      f"zero_profit={zero_discount_country_profit:,.0f}")
+
+# ---- Section 3: Slider A — Fixed-Country Discount Cap Lookup ----------------
+print("    Building whatif_fixed_cap_lookup …")
+fixed_total_sales = float(fixed_detail["sales"].sum())
+
+fixed_cap_lookup = []
+for cap_int in range(0, 31):
+    cap_dec = round(cap_int / 100.0, 2)
+    m = margin_at.get(cap_dec, 0.0)
+    projected_profit = round(fixed_total_sales * m, 2)
+    recovery = round(projected_profit - fixed_country_current_profit, 2)
+    uplift_pct = round(recovery / total_company_baseline_profit, 6) if total_company_baseline_profit != 0 else 0.0
+    fixed_cap_lookup.append({
+        "cap": cap_int,
+        "projected_profit": projected_profit,
+        "recovery": recovery,
+        "uplift_pct": uplift_pct,
+    })
+
+print(f"    Fixed cap lookup: {len(fixed_cap_lookup)} entries")
+print(f"      cap=0 → profit={fixed_cap_lookup[0]['projected_profit']:,.0f}, "
+      f"recovery={fixed_cap_lookup[0]['recovery']:,.0f}")
+print(f"      cap=20 → profit={fixed_cap_lookup[20]['projected_profit']:,.0f}, "
+      f"recovery={fixed_cap_lookup[20]['recovery']:,.0f}")
+
+# ---- Section 4: Slider B — Variable-Country Discount Cap Lookup -------------
+print("    Building whatif_variable_cap_lookup …")
+
+# Pre-compute actual margin per line for variable-regime order lines
+var_lines = variable_detail[["sales", "profit", "discount"]].copy()
+var_lines["actual_margin"] = var_lines["profit"] / var_lines["sales"]
+variable_baseline_profit = float(var_lines["profit"].sum())
+
+variable_cap_lookup = []
+for cap_int in range(0, 31):
+    cap_dec = round(cap_int / 100.0, 2)
+    m_at_cap = margin_at.get(cap_dec, 0.0)
+
+    # Lines where discount > cap
+    affected = var_lines[var_lines["discount"] > cap_dec]
+    lines_affected = int(len(affected))
+
+    # line_recovery = sales * (margin_at_cap - actual_margin) for each affected line
+    if lines_affected > 0:
+        line_recoveries = affected["sales"] * (m_at_cap - affected["actual_margin"])
+        total_recovery = round(float(line_recoveries.sum()), 2)
+    else:
+        total_recovery = 0.0
+
+    # new_total_profit = total company profit if only variable cap is applied
+    # (fixed countries remain at current rates, zero-discount countries unchanged)
+    new_total_profit = round(total_company_baseline_profit + total_recovery, 2)
+    uplift_pct = round(total_recovery / total_company_baseline_profit, 6) if total_company_baseline_profit != 0 else 0.0
+
+    variable_cap_lookup.append({
+        "cap": cap_int,
+        "lines_affected": lines_affected,
+        "recovery": total_recovery,
+        "new_total_profit": new_total_profit,
+        "uplift_pct": uplift_pct,
+    })
+
+print(f"    Variable cap lookup: {len(variable_cap_lookup)} entries")
+print(f"      cap=15 → lines={variable_cap_lookup[15]['lines_affected']}, "
+      f"recovery={variable_cap_lookup[15]['recovery']:,.0f}, "
+      f"new_profit={variable_cap_lookup[15]['new_total_profit']:,.0f}")
+
+# ---- Section 5: Combined Scenario Matrix ------------------------------------
+print("    Building scenario_matrix …")
+
+# Build lookup dicts for fast access
+fixed_lookup = {e["cap"]: e for e in fixed_cap_lookup}
+variable_lookup = {e["cap"]: e for e in variable_cap_lookup}
+
+# Matrix rows: fixed cap values; columns: variable cap values
+# Use a range covering the reference values from the brief (0, 5, 10, 15, 20, 25, 30)
+# and all 1% increments for full flexibility
+matrix_caps = list(range(0, 31))
+
+scenario_matrix = []
+for fixed_cap in matrix_caps:
+    for var_cap in matrix_caps:
+        fp = fixed_lookup[fixed_cap]["projected_profit"]
+        var_new = variable_lookup[var_cap]["new_total_profit"]
+        fixed_recovery = fixed_lookup[fixed_cap]["recovery"]
+
+        # new_total_profit already includes the full company baseline + variable recovery.
+        # To combine both caps, add the fixed-country recovery (improvement from cap)
+        # on top: total = new_total_profit(var) + fixed_recovery
+        # Equivalently: total = fixed_projected + variable_baseline_profit
+        #                     + variable_recovery + zero_discount_profit
+        total_profit = round(var_new + fixed_recovery, 2)
+        combined_uplift = round(
+            (total_profit / total_company_baseline_profit) - 1, 6
+        ) if total_company_baseline_profit != 0 else 0.0
+
+        scenario_matrix.append({
+            "fixed_cap": fixed_cap,
+            "variable_cap": var_cap,
+            "total_profit": total_profit,
+            "combined_uplift": combined_uplift,
+        })
+
+print(f"    Scenario matrix: {len(scenario_matrix)} cells ({len(matrix_caps)}×{len(matrix_caps)})")
+
+# ---- Assemble final whatif_discount_curve.json structure ---------------------
+whatif_output = {
+    "curve": curve_records,
+    "constants": constants,
+    "whatif_fixed_cap_lookup": fixed_cap_lookup,
+    "whatif_variable_cap_lookup": variable_cap_lookup,
+    "scenario_matrix": scenario_matrix,
+}
+
+whatif_path = OUT / "whatif_discount_curve.json"
+with open(whatif_path, "w") as f:
+    json.dump(whatif_output, f, indent=2, allow_nan=False)
+print(f"  Wrote {whatif_path.name} (structured object with curve, constants, lookups, matrix)")
 
 
 # 9.7 whatif_product_breakeven.json — Sub-Category ---------------------------
@@ -528,8 +685,8 @@ for subcat in sorted(breakeven_map.keys()):
 
     rec_ceiling = None
     if be is not None:
-        rec_ceiling = math.floor(be / 0.05) * 0.05
-        rec_ceiling = round(rec_ceiling, 2)
+        rec_ceiling = round((be - 0.05) / 0.05) * 0.05
+        rec_ceiling = round(max(rec_ceiling, 0.0), 2)
 
     wpb_records.append({
         "sub_category": subcat,

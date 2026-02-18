@@ -21,7 +21,7 @@
     "sub_category": "Art",
     "zero_discount_margin": 0.250136,
     "breakeven_discount": 0.25,
-    "recommended_ceiling": 0.25,
+    "recommended_ceiling": 0.2,
     "avg_discounted_margin": -0.199314,
     "order_count_heavy_discount": 828,
     "order_count_not_heavy_discount": 4055
@@ -48,7 +48,7 @@
     "sub_category": "Chairs",
     "zero_discount_margin": 0.238757,
     "breakeven_discount": 0.27,
-    "recommended_ceiling": 0.25,
+    "recommended_ceiling": 0.2,
     "avg_discounted_margin": -0.014047,
     "order_count_heavy_discount": 683,
     "order_count_not_heavy_discount": 2751
@@ -57,7 +57,7 @@
     "sub_category": "Copiers",
     "zero_discount_margin": 0.263118,
     "breakeven_discount": 0.27,
-    "recommended_ceiling": 0.25,
+    "recommended_ceiling": 0.2,
     "avg_discounted_margin": 0.000292,
     "order_count_heavy_discount": 421,
     "order_count_not_heavy_discount": 1802
@@ -66,7 +66,7 @@
     "sub_category": "Envelopes",
     "zero_discount_margin": 0.286391,
     "breakeven_discount": 0.32,
-    "recommended_ceiling": 0.3,
+    "recommended_ceiling": 0.25,
     "avg_discounted_margin": -0.14496,
     "order_count_heavy_discount": 558,
     "order_count_not_heavy_discount": 1877
@@ -93,7 +93,7 @@
     "sub_category": "Labels",
     "zero_discount_margin": 0.299379,
     "breakeven_discount": 0.32,
-    "recommended_ceiling": 0.3,
+    "recommended_ceiling": 0.25,
     "avg_discounted_margin": -0.057259,
     "order_count_heavy_discount": 519,
     "order_count_not_heavy_discount": 2084
@@ -111,7 +111,7 @@
     "sub_category": "Paper",
     "zero_discount_margin": 0.318883,
     "breakeven_discount": 0.32,
-    "recommended_ceiling": 0.3,
+    "recommended_ceiling": 0.25,
     "avg_discounted_margin": 0.037378,
     "order_count_heavy_discount": 511,
     "order_count_not_heavy_discount": 3027
@@ -120,7 +120,7 @@
     "sub_category": "Phones",
     "zero_discount_margin": 0.240134,
     "breakeven_discount": 0.26,
-    "recommended_ceiling": 0.25,
+    "recommended_ceiling": 0.2,
     "avg_discounted_margin": -0.033288,
     "order_count_heavy_discount": 631,
     "order_count_not_heavy_discount": 2726
@@ -138,7 +138,7 @@
     "sub_category": "Supplies",
     "zero_discount_margin": 0.210923,
     "breakeven_discount": 0.21,
-    "recommended_ceiling": 0.2,
+    "recommended_ceiling": 0.15,
     "avg_discounted_margin": -0.210225,
     "order_count_heavy_discount": 537,
     "order_count_not_heavy_discount": 1888
@@ -147,7 +147,7 @@
     "sub_category": "Tables",
     "zero_discount_margin": 0.230883,
     "breakeven_discount": 0.21,
-    "recommended_ceiling": 0.2,
+    "recommended_ceiling": 0.15,
     "avg_discounted_margin": -0.251459,
     "order_count_heavy_discount": 467,
     "order_count_not_heavy_discount": 394
