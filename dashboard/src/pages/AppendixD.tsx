@@ -121,7 +121,12 @@ function CustomerTable({ rows, id }: { rows: CustomerRow[]; id: string }) {
                 <td style={tdStyle}>{r.customer_name}</td>
                 <td style={tdStyle}>{r.segment}</td>
                 <td style={{ ...tdStyle, textAlign: 'right' }}>{fmtDollar(r.lifetime_sales)}</td>
-                <td style={{ ...tdStyle, textAlign: 'right', color: r.lifetime_profit < 0 ? colors.highlight : colors.emphasisText }}>
+                <td style={{
+                  ...tdStyle,
+                  textAlign: 'right',
+                  color: r.lifetime_profit < 0 ? colors.highlight : colors.emphasisText,
+                  backgroundColor: r.lifetime_profit < 0 ? '#fff5f0' : undefined,
+                }}>
                   {fmtDollar(r.lifetime_profit)}
                 </td>
                 <td style={{ ...tdStyle, textAlign: 'right' }}>{fmtPct(r.lifetime_margin)}</td>

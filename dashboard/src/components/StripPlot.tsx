@@ -99,7 +99,7 @@ export function StripPlot({
       <ScatterChart
         width={width}
         height={height}
-        margin={{ ...chartDefaults.margin, right: 80 }}
+        margin={{ ...chartDefaults.margin, top: 28, right: 80 }}
       >
         <CartesianGrid {...gridProps} />
         <XAxis
@@ -109,6 +109,7 @@ export function StripPlot({
           tick={{ fill: typography.axisLabel.color, fontSize: typography.axisLabel.size }}
           axisLine={false}
           name="Discount"
+          tickFormatter={(v: number) => `${(v * 100).toFixed(0)}%`}
         />
         <YAxis
           dataKey="y"

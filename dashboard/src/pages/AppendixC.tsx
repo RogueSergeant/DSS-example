@@ -58,16 +58,11 @@ function blueIntensity(value: number, max: number): string {
   return `rgb(${r}, ${g}, ${b})`;
 }
 
-/** Return dark text for light cells and white text for dark cells. */
+/** Return white text on dark cells (intensity > 0.5) and dark text on light cells. */
 function heatTextColor(value: number, max: number): string {
-  if (max === 0) return colors.emphasisText;
+  if (max === 0) return '#1a1a2e';
   const ratio = value / max;
-  // Compute perceived brightness of the cell (same interpolation as blueIntensity)
-  const r = 238 + (59 - 238) * ratio;
-  const g = 242 + (89 - 242) * ratio;
-  const b = 255 + (152 - 255) * ratio;
-  const brightness = (r * 299 + g * 587 + b * 114) / 1000;
-  return brightness > 160 ? colors.emphasisText : '#ffffff';
+  return ratio > 0.5 ? '#ffffff' : '#1a1a2e';
 }
 
 // ─── Table styles ──────────────────────────────────────────────────────────

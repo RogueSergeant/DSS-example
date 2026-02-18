@@ -81,6 +81,7 @@ export function ButterflyChart({
           type="number"
           tick={{ fill: typography.axisLabel.color, fontSize: typography.axisLabel.size }}
           axisLine={false}
+          tickFormatter={(v: number) => `${(v * 100).toFixed(0)}%`}
         />
         <YAxis
           dataKey="subCategory"

@@ -13,7 +13,6 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
-  ResponsiveContainer,
 } from 'recharts';
 import { colors, typography, spacing } from '../lib/theme';
 import {
@@ -273,65 +272,63 @@ export function CopierBuyersPage() {
             subtitle="Average lifetime spend, margin, and order count"
             minHeight={280}
           >
-            <div style={{ width: '100%', height: 280, position: 'relative' }}>
-              <ResponsiveContainer width="100%" height="100%">
-                <BarChart
-                  data={grouped}
-                  margin={{ top: 16, right: 24, bottom: 8, left: 24 }}
-                  barCategoryGap="25%"
-                  barGap={4}
+            <BarChart
+              width={700}
+              height={300}
+              data={grouped}
+              margin={{ top: 16, right: 24, bottom: 8, left: 24 }}
+              barCategoryGap="25%"
+              barGap={4}
+            >
+              <defs>
+                <pattern
+                  id="hatch-copier"
+                  width={8}
+                  height={8}
+                  patternUnits="userSpaceOnUse"
+                  patternTransform="rotate(45)"
                 >
-                  <defs>
-                    <pattern
-                      id="hatch-copier"
-                      width={8}
-                      height={8}
-                      patternUnits="userSpaceOnUse"
-                      patternTransform="rotate(45)"
-                    >
-                      <rect width={8} height={8} fill={COPIER_BLUE} fillOpacity={0.35} />
-                      <line
-                        x1={0} y1={0} x2={0} y2={8}
-                        stroke={COPIER_BLUE}
-                        strokeWidth={2}
-                        strokeOpacity={0.7}
-                      />
-                    </pattern>
-                  </defs>
-                  <CartesianGrid {...gridProps} />
-                  <XAxis
-                    dataKey="metric"
-                    tick={{ fill: colors.secondaryText, fontSize: 12 }}
-                    axisLine={false}
-                    tickLine={false}
+                  <rect width={8} height={8} fill={COPIER_BLUE} fillOpacity={0.35} />
+                  <line
+                    x1={0} y1={0} x2={0} y2={8}
+                    stroke={COPIER_BLUE}
+                    strokeWidth={2}
+                    strokeOpacity={0.7}
                   />
-                  <YAxis hide domain={[0, 110]} />
-                  <Tooltip
-                    contentStyle={tooltipStyle}
-                    labelStyle={{ color: colors.secondaryText, fontSize: 12 }}
-                    formatter={(_value: number | undefined, name: string | undefined, props: any) => {
-                      const fmt = props?.payload?.format as 'dollar' | 'pct' | 'number' | undefined;
-                      // Show raw (un-normalized) values in tooltip
-                      const rawKey = name === 'Non-Buyer' ? 'rawNonBuyer' : 'rawCopierBuyer';
-                      const rawVal = props?.payload?.[rawKey] as number | undefined;
-                      return [fmtBarLabel(rawVal ?? 0, fmt ?? 'number'), name ?? ''];
-                    }}
-                  />
-                  <Bar
-                    dataKey="nonBuyer"
-                    name="Non-Buyer"
-                    fill={SLATE}
-                    radius={[3, 3, 0, 0]}
-                  />
-                  <Bar
-                    dataKey="copierBuyer"
-                    name="Copier Buyer"
-                    fill="url(#hatch-copier)"
-                    radius={[3, 3, 0, 0]}
-                  />
-                </BarChart>
-              </ResponsiveContainer>
-            </div>
+                </pattern>
+              </defs>
+              <CartesianGrid {...gridProps} />
+              <XAxis
+                dataKey="metric"
+                tick={{ fill: colors.secondaryText, fontSize: 12 }}
+                axisLine={false}
+                tickLine={false}
+              />
+              <YAxis hide domain={[0, 110]} />
+              <Tooltip
+                contentStyle={tooltipStyle}
+                labelStyle={{ color: colors.secondaryText, fontSize: 12 }}
+                formatter={(_value: number | undefined, name: string | undefined, props: any) => {
+                  const fmt = props?.payload?.format as 'dollar' | 'pct' | 'number' | undefined;
+                  // Show raw (un-normalized) values in tooltip
+                  const rawKey = name === 'Non-Buyer' ? 'rawNonBuyer' : 'rawCopierBuyer';
+                  const rawVal = props?.payload?.[rawKey] as number | undefined;
+                  return [fmtBarLabel(rawVal ?? 0, fmt ?? 'number'), name ?? ''];
+                }}
+              />
+              <Bar
+                dataKey="nonBuyer"
+                name="Non-Buyer"
+                fill={SLATE}
+                radius={[3, 3, 0, 0]}
+              />
+              <Bar
+                dataKey="copierBuyer"
+                name="Copier Buyer"
+                fill="url(#hatch-copier)"
+                radius={[3, 3, 0, 0]}
+              />
+            </BarChart>
 
             {/* Custom legend */}
             <div
@@ -503,52 +500,50 @@ export function CopierBuyersPage() {
             subtitle="Distribution shifts right for copier buyers"
             minHeight={260}
           >
-            <div style={{ width: '100%', height: 260, position: 'relative' }}>
-              <ResponsiveContainer width="100%" height="100%">
-                <BarChart
-                  data={histogramData}
-                  margin={{ top: 16, right: 16, bottom: 8, left: 16 }}
-                  barGap={0}
-                  barCategoryGap="10%"
-                >
-                  <CartesianGrid {...gridProps} />
-                  <XAxis
-                    dataKey="label"
-                    tick={{ fill: colors.secondaryText, fontSize: 11 }}
-                    axisLine={false}
-                    tickLine={false}
-                    interval={1}
-                  />
-                  <YAxis
-                    tick={{ fill: colors.secondaryText, fontSize: 11 }}
-                    axisLine={false}
-                    tickLine={false}
-                    width={36}
-                  />
-                  <Tooltip
-                    contentStyle={tooltipStyle}
-                    labelStyle={{ color: colors.secondaryText, fontSize: 12 }}
-                    formatter={(value: number | undefined, name: string | undefined) => [fmtNumber(value ?? 0), name ?? '']}
-                  />
-                  <Bar
-                    dataKey="nonBuyer"
-                    name="Non-Buyer"
-                    fill={SLATE}
-                    fillOpacity={0.8}
-                    radius={[2, 2, 0, 0]}
-                  />
-                  <Bar
-                    dataKey="copierBuyer"
-                    name="Copier Buyer"
-                    fill={COPIER_BLUE}
-                    fillOpacity={0.55}
-                    stroke={COPIER_BLUE}
-                    strokeWidth={1.5}
-                    radius={[2, 2, 0, 0]}
-                  />
-                </BarChart>
-              </ResponsiveContainer>
-            </div>
+            <BarChart
+              width={700}
+              height={300}
+              data={histogramData}
+              margin={{ top: 16, right: 16, bottom: 8, left: 16 }}
+              barGap={0}
+              barCategoryGap="10%"
+            >
+              <CartesianGrid {...gridProps} />
+              <XAxis
+                dataKey="label"
+                tick={{ fill: colors.secondaryText, fontSize: 11 }}
+                axisLine={false}
+                tickLine={false}
+                interval={1}
+              />
+              <YAxis
+                tick={{ fill: colors.secondaryText, fontSize: 11 }}
+                axisLine={false}
+                tickLine={false}
+                width={36}
+              />
+              <Tooltip
+                contentStyle={tooltipStyle}
+                labelStyle={{ color: colors.secondaryText, fontSize: 12 }}
+                formatter={(value: number | undefined, name: string | undefined) => [fmtNumber(value ?? 0), name ?? '']}
+              />
+              <Bar
+                dataKey="nonBuyer"
+                name="Non-Buyer"
+                fill={SLATE}
+                fillOpacity={0.8}
+                radius={[2, 2, 0, 0]}
+              />
+              <Bar
+                dataKey="copierBuyer"
+                name="Copier Buyer"
+                fill={COPIER_BLUE}
+                fillOpacity={0.55}
+                stroke={COPIER_BLUE}
+                strokeWidth={1.5}
+                radius={[2, 2, 0, 0]}
+              />
+            </BarChart>
 
             {/* Legend */}
             <div

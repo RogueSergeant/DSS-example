@@ -14,7 +14,6 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
-  Cell,
   ReferenceLine,
   ResponsiveContainer,
 } from 'recharts';
@@ -444,6 +443,7 @@ export function OverviewPage({ year, onNavigate: _onNavigate }: OverviewPageProp
                 axisLine={false}
                 tickLine={false}
                 tickFormatter={(v: number) => fmtDollar(v)}
+                domain={[0, 'auto']}
               />
               <YAxis
                 yAxisId="right"
@@ -480,30 +480,17 @@ export function OverviewPage({ year, onNavigate: _onNavigate }: OverviewPageProp
               <Bar
                 yAxisId="left"
                 dataKey="sales"
+                fill="#2563eb"
                 barSize={60}
                 radius={[2, 2, 0, 0]}
                 cursor="pointer"
-              >
-                {yearlyData.map((entry) => (
-                  <Cell
-                    key={entry.year}
-                    fill={
-                      selectedYear === entry.year
-                        ? colors.selection
-                        : colors.neutral
-                    }
-                    opacity={
-                      selectedYear && selectedYear !== entry.year ? 0.25 : 1
-                    }
-                  />
-                ))}
-              </Bar>
+              />
               <Line
                 yAxisId="right"
                 type="monotone"
                 dataKey="margin_pct"
                 stroke={colors.highlight}
-                strokeWidth={2}
+                strokeWidth={3}
                 dot={{ r: 4, fill: colors.highlight, stroke: colors.highlight }}
                 activeDot={{ r: 6 }}
               />
