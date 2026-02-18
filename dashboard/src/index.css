@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+
+/* ─── §2 Colour Palette — Tailwind v4 theme tokens ───────────────────────── */
+
+@theme {
+  --color-highlight: #f97316;
+  --color-selection: #3b82f6;
+  --color-neutral: #64748b;
+  --color-muted: #334155;
+  --color-emphasis-text: #f1f5f9;
+  --color-secondary-text: #94a3b8;
+  --color-surface: #1e293b;
+  --color-page-bg: #0f172a;
+  --color-warning: #f59e0b;
+  --color-hatch-stroke: #c2410c;
+}
+
+/* ─── §4 Typography & Global Styles ──────────────────────────────────────── */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-page-bg);
+  color: var(--color-emphasis-text);
+  line-height: 1.5;
+}
+
+/* ─── §8 Accessibility — Focus ring ─────────────────────────────────────── */
+
+:focus-visible {
+  outline: 2px solid var(--color-selection);
+  outline-offset: 2px;
+}
