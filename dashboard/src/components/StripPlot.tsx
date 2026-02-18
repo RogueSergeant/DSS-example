@@ -142,7 +142,7 @@ export function StripPlot({
           isAnimationActive={false}
           onClick={(entry) => onDotClick?.(entry as unknown as StripPlotDatum)}
         >
-          {variableData.map((entry, i) => (
+          {variableData.map((_, i) => (
             <Cell
               key={`var-${i}`}
               fill={colors.neutral}
@@ -158,7 +158,7 @@ export function StripPlot({
           isAnimationActive={false}
           onClick={(entry) => onDotClick?.(entry as unknown as StripPlotDatum)}
         >
-          {fixedData.map((entry, i) => (
+          {fixedData.map((_, i) => (
             <Cell key={`fix-${i}`} fill={colors.highlight} />
           ))}
         </Scatter>
