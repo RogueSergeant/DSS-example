@@ -452,7 +452,7 @@ export function OverviewPage({ year, onNavigate: _onNavigate }: OverviewPageProp
                 axisLine={false}
                 tickLine={false}
                 tickFormatter={(v: number) => `${(v * 100).toFixed(0)}%`}
-                domain={[0, 'auto']}
+                domain={[0, 0.5]}
               />
               <Tooltip
                 contentStyle={tooltipStyle}
