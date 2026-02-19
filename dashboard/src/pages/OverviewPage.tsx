@@ -472,7 +472,7 @@ export function OverviewPage({ year, onNavigate: _onNavigate }: OverviewPageProp
                 strokeDasharray="4 4"
                 label={{
                   value: '2011 baseline',
-                  position: 'left',
+                  position: 'right',
                   fill: colors.secondaryText,
                   fontSize: typography.footnote.size,
                 }}
