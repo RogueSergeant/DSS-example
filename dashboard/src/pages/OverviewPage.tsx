@@ -15,6 +15,7 @@ import {
   CartesianGrid,
   Tooltip,
   ReferenceLine,
+  ResponsiveContainer,
 } from 'recharts';
 import { colors, typography, kpiCard, spacing, chartDefaults } from '../lib/theme';
 import {
@@ -419,11 +420,11 @@ export function OverviewPage({ year, onNavigate: _onNavigate }: OverviewPageProp
           title="Sales double. Margin doesn't move."
           subtitle={`Annual sales and net margin, 2011–2014${selectedMarket ? ` — ${selectedMarket}` : ''}`}
         >
+          <ResponsiveContainer width="100%" height={280}>
             <ComposedChart
-              width={700}
               height={280}
               data={yearlyData}
-              margin={{ ...chartDefaults.margin, right: 120 }}
+              margin={{ ...chartDefaults.margin, top: 24, right: 120 }}
               onClick={(state: any) => {
                 if (state?.activePayload?.[0]?.payload) {
                   handleBarClick(state.activePayload[0].payload);
@@ -452,7 +453,7 @@ export function OverviewPage({ year, onNavigate: _onNavigate }: OverviewPageProp
                 axisLine={false}
                 tickLine={false}
                 tickFormatter={(v: number) => `${(v * 100).toFixed(0)}%`}
-                domain={[0, 'auto']}
+                domain={[0, (dataMax: number) => dataMax * 1.2]}
               />
               <Tooltip
                 contentStyle={tooltipStyle}
@@ -472,7 +473,7 @@ export function OverviewPage({ year, onNavigate: _onNavigate }: OverviewPageProp
                 strokeDasharray="4 4"
                 label={{
                   value: '2011 baseline',
-                  position: 'left',
+                  position: 'right',
                   fill: colors.secondaryText,
                   fontSize: typography.footnote.size,
                 }}
@@ -510,6 +511,7 @@ export function OverviewPage({ year, onNavigate: _onNavigate }: OverviewPageProp
                 />
               )}
             </ComposedChart>
+          </ResponsiveContainer>
         </ChartWrapper>
       </Section>
 
