@@ -66,7 +66,7 @@ export const spacing = {
   cardPadding: 20,
   cardGap: 16,
   chartTitleMb: 4,
-  chartSubtitleMb: 12,
+  chartSubtitleMb: 20,
   legendMt: 8,
   minChartHeight: 240,
   kpiCardHeight: 100,

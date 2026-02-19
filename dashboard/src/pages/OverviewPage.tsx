@@ -423,7 +423,7 @@ export function OverviewPage({ year, onNavigate: _onNavigate }: OverviewPageProp
               width={700}
               height={280}
               data={yearlyData}
-              margin={{ ...chartDefaults.margin, right: 120 }}
+              margin={{ ...chartDefaults.margin, top: 24, right: 120 }}
               onClick={(state: any) => {
                 if (state?.activePayload?.[0]?.payload) {
                   handleBarClick(state.activePayload[0].payload);
