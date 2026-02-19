@@ -387,20 +387,13 @@ export function TwoProblemsPage({ year, onNavigate }: TwoProblemsPageProps) {
       <div style={{ marginTop: spacing.cardGap }}>
         <Grid>
           <GridCell span={12}>
-            <ChartWrapper
+            <StripPlot
+              data={stripData}
+              width={720}
+              height={320}
               title="No human sets exactly 60% on 1,378 consecutive orders. These are system configurations."
               subtitle="Each dot is a country. X = discount rate, Y = margin. Diamonds = fixed regime."
-              minHeight={320}
-            >
-              <ResponsiveContainer width="100%" height={320}>
-                <StripPlot
-                  data={stripData}
-                  width={720}
-                  height={320}
-                  title=""
-                />
-              </ResponsiveContainer>
-            </ChartWrapper>
+            />
           </GridCell>
         </Grid>
       </div>

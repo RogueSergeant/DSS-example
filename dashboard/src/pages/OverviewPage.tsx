@@ -480,7 +480,7 @@ export function OverviewPage({ year, onNavigate: _onNavigate }: OverviewPageProp
               <Bar
                 yAxisId="left"
                 dataKey="sales"
-                fill="#2563eb"
+                fill={colors.selection}
                 barSize={60}
                 radius={[2, 2, 0, 0]}
                 cursor="pointer"

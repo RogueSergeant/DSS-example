@@ -20,6 +20,8 @@ import {
   Tooltip,
   Cell,
   ReferenceLine,
+  Customized,
+  ResponsiveContainer,
 } from 'recharts';
 import { colors, chartDefaults, typography } from '../lib/theme';
 import { ChartWrapper, tooltipStyle, gridProps } from './ChartWrapper';
@@ -45,19 +47,25 @@ interface DumbbellChartProps {
 
 // ─── Custom connecting line component ───────────────────────────────────────
 
-function _ConnectingLines({
+function ConnectingLines({
   data,
-  xScale,
-  yScale,
+  xAxisMap,
+  yAxisMap,
 }: {
   data: DumbbellDatum[];
-  xScale: (v: number) => number;
-  yScale: (v: string) => number;
+  xAxisMap?: Record<string, { scale: (v: number) => number }>;
+  yAxisMap?: Record<string, { scale: (v: string) => number; bandSize?: number }>;
 }) {
+  if (!xAxisMap || !yAxisMap) return null;
+  const xScale = Object.values(xAxisMap)[0]?.scale;
+  const yAxis = Object.values(yAxisMap)[0];
+  const yScale = yAxis?.scale;
+  if (!xScale || !yScale) return null;
+  const bandOffset = (yAxis.bandSize ?? 0) / 2;
   return (
     <g>
       {data.map((d) => {
-        const y = yScale(d.manager);
+        const y = yScale(d.manager as unknown as string) + bandOffset;
         const x1 = xScale(d.rawMargin);
         const x2 = xScale(d.adjustedMargin);
         if (isNaN(x1) || isNaN(x2) || isNaN(y)) return null;
@@ -76,18 +84,18 @@ function _ConnectingLines({
     </g>
   );
 }
-void _ConnectingLines;
 
 // ─── Component ──────────────────────────────────────────────────────────────
 
 export function DumbbellChart({
   data,
-  width = 720,
+  width: _width = 720,
   height = 400,
   title = "Most managers carry inherited policy drag — Ballentine doesn't",
   subtitle,
   onManagerClick,
 }: DumbbellChartProps) {
+  void _width;
   const DOT_RADIUS = 8;
 
   // Prepare scatter data for raw and adjusted dots
@@ -113,12 +121,18 @@ export function DumbbellChart({
 
   return (
     <ChartWrapper title={title} subtitle={subtitle}>
+      <ResponsiveContainer width="100%" height={height}>
       <ScatterChart
-        width={width}
-        height={height}
         margin={{ ...chartDefaults.margin, left: 100 }}
       >
         <CartesianGrid {...gridProps} />
+        <Customized component={(props: Record<string, unknown>) => (
+          <ConnectingLines
+            data={data}
+            xAxisMap={props.xAxisMap as Record<string, { scale: (v: number) => number }>}
+            yAxisMap={props.yAxisMap as Record<string, { scale: (v: string) => number; bandSize?: number }>}
+          />
+        )} />
         <XAxis
           dataKey="x"
           type="number"
@@ -187,6 +201,7 @@ export function DumbbellChart({
           itemStyle={{ color: typography.tooltipValue.color, fontSize: typography.tooltipValue.size }}
         />
       </ScatterChart>
+      </ResponsiveContainer>
     </ChartWrapper>
   );
 }

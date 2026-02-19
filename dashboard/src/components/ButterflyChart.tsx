@@ -19,6 +19,7 @@ import {
   Tooltip,
   Cell,
   ReferenceLine,
+  ResponsiveContainer,
 } from 'recharts';
 import { colors, chartDefaults, typography } from '../lib/theme';
 import { ChartWrapper, tooltipStyle, gridProps } from './ChartWrapper';
@@ -46,13 +47,14 @@ interface ButterflyChartProps {
 
 export function ButterflyChart({
   data,
-  width = 720,
+  width: _width = 720,
   height = 400,
   title = 'Tables and Storage collapse under discounting',
   subtitle,
   boldTop = 2,
   onRowClick,
 }: ButterflyChartProps) {
+  void _width;
   // Sort descending by absolute swing
   const sorted = [...data].sort(
     (a, b) =>
@@ -69,10 +71,9 @@ export function ButterflyChart({
 
   return (
     <ChartWrapper title={title} subtitle={subtitle}>
+      <ResponsiveContainer width="100%" height={height}>
       <BarChart
         layout="vertical"
-        width={width}
-        height={height}
         data={chartData}
         margin={chartDefaults.margin}
       >
@@ -138,6 +139,7 @@ export function ButterflyChart({
           itemStyle={{ color: typography.tooltipValue.color, fontSize: typography.tooltipValue.size }}
         />
       </BarChart>
+      </ResponsiveContainer>
     </ChartWrapper>
   );
 }

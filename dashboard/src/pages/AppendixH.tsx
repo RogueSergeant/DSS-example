@@ -141,18 +141,18 @@ export function AppendixH() {
               />
 
               {/* 20%/80% reference */}
-              <ReferenceLine x={20} stroke={colors.muted} strokeDasharray="6 4" />
-              <ReferenceLine y={80} stroke={colors.muted} strokeDasharray="6 4" />
+              <ReferenceLine x={20} stroke={colors.neutral} strokeDasharray="6 4" />
+              <ReferenceLine y={80} stroke={colors.neutral} strokeDasharray="6 4" />
 
               {/* 50% reference */}
-              <ReferenceLine x={50} stroke={colors.muted} strokeDasharray="6 4" />
-              <ReferenceLine y={13} stroke={colors.muted} strokeDasharray="6 4" />
+              <ReferenceLine x={50} stroke={colors.neutral} strokeDasharray="6 4" />
+              <ReferenceLine y={13} stroke={colors.neutral} strokeDasharray="6 4" />
 
               {/* Diagonal reference (perfect equality) */}
               <Line
                 data={[{ cumPctCustomers: 0, cumPctSales: 0 }, { cumPctCustomers: 100, cumPctSales: 100 }]}
                 dataKey="cumPctSales"
-                stroke={colors.muted}
+                stroke={colors.neutral}
                 strokeDasharray="3 3"
                 strokeWidth={1}
                 dot={false}

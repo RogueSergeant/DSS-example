@@ -399,6 +399,7 @@ export function FixedPoliciesPage({ year: _year, onNavigate: _onNavigate }: Fixe
                         }}
                         axisLine={false}
                         tickLine={false}
+                        interval={0}
                       />
                       <YAxis
                         tick={{
