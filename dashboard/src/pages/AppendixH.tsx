@@ -128,7 +128,7 @@ export function AppendixH() {
                 tick={{ fill: colors.secondaryText, fontSize: 12 }}
                 axisLine={{ stroke: colors.muted }}
                 tickLine={false}
-                label={{ value: '% of Sales', angle: -90, position: 'insideLeft', offset: -16, fill: colors.secondaryText, fontSize: 12 }}
+                label={{ value: '% of Sales', angle: -90, position: 'insideLeft', offset: -16, fill: '#5c6470', fontSize: 12 }}
               />
               <Tooltip
                 contentStyle={tooltipStyle}
