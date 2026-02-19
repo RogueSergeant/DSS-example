@@ -2,14 +2,14 @@
  * §12 Caveat Display Standards
  *
  * Four caveat types, each with a distinct visual treatment:
- *   1. Data completeness warning — amber banner with ⚠ icon.
+ *   1. Data completeness warning — amber banner with ⚠ icon and left border.
  *   2. Methodology footnote — 11px italic, prefixed *.
  *   3. Governance gap callout — card with orange left border.
  *   4. Reliability flag — ⚑ icon with hover tooltip.
  */
 
 import { useState } from 'react';
-import { colors, typography } from '../lib/theme';
+import { colors, typography, shadows } from '../lib/theme';
 
 // ─── 1. Data Completeness Warning ───────────────────────────────────────────
 
@@ -26,10 +26,11 @@ export function WarningBanner({ children }: WarningBannerProps) {
         alignItems: 'center',
         gap: 8,
         padding: '8px 12px',
-        background: `${colors.warning}14`, // 8% opacity
-        borderRadius: 6,
+        background: '#fef3cd',
+        borderLeft: `4px solid ${colors.warning}`,
+        borderRadius: '0 6px 6px 0',
         fontSize: typography.kpiLabel.size,
-        color: colors.secondaryText,
+        color: colors.emphasisText,
       }}
     >
       <span style={{ color: colors.warning, fontSize: 16 }} aria-hidden="true">
@@ -55,6 +56,7 @@ export function Footnote({ children }: FootnoteProps) {
         fontWeight: typography.footnote.weight,
         fontStyle: 'italic',
         color: typography.footnote.color,
+        lineHeight: 1.6,
       }}
     >
       * {children}
@@ -73,9 +75,9 @@ export function GovernanceCallout({ children }: GovernanceCalloutProps) {
     <div
       style={{
         borderLeft: `4px solid ${colors.highlight}`,
-        background: `${colors.highlight}14`, // 8% opacity
+        background: '#fff4ed',
         padding: '12px 16px',
-        borderRadius: '0 6px 6px 0',
+        borderRadius: '0 8px 8px 0',
         fontSize: typography.tableCell.size,
         color: colors.emphasisText,
       }}
@@ -122,10 +124,12 @@ export function ReliabilityFlag({
             background: colors.surface,
             border: `1px solid ${colors.muted}`,
             borderRadius: 6,
+            boxShadow: shadows.card,
             fontSize: typography.tooltipLabel.size,
             color: typography.tooltipLabel.color,
             whiteSpace: 'nowrap',
             zIndex: 10,
+            animation: 'fadeIn 0.15s ease-out',
           }}
         >
           {tooltip}

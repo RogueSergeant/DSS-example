@@ -67,7 +67,7 @@ interface ProductBarEntry {
 const PRODUCT_COMPARISONS: { product: string; subtitle: string; data: ProductBarEntry[] }[] = [
   {
     product: 'Phones',
-    subtitle: 'Phones \u2014 same product, four years, opposite results.',
+    subtitle: 'Phones — same product, four years, opposite results.',
     data: [
       { country: 'UK', margin: 0.21, isFixed: false },
       { country: 'US', margin: 0.12, isFixed: false },
@@ -78,7 +78,7 @@ const PRODUCT_COMPARISONS: { product: string; subtitle: string; data: ProductBar
   },
   {
     product: 'Tables',
-    subtitle: 'Tables \u2014 high-value items, destroyed by blanket discounts.',
+    subtitle: 'Tables — high-value items, destroyed by blanket discounts.',
     data: [
       { country: 'UK', margin: 0.18, isFixed: false },
       { country: 'US', margin: 0.09, isFixed: false },
@@ -89,7 +89,7 @@ const PRODUCT_COMPARISONS: { product: string; subtitle: string; data: ProductBar
   },
   {
     product: 'Copiers',
-    subtitle: 'Copiers \u2014 the one profitable sub-category, still underwater.',
+    subtitle: 'Copiers — the one profitable sub-category, still underwater.',
     data: [
       { country: 'UK', margin: 0.25, isFixed: false },
       { country: 'US', margin: 0.17, isFixed: false },
@@ -254,7 +254,7 @@ export function FixedPoliciesPage({ year: _year, onNavigate: _onNavigate }: Fixe
   // ── Render ──────────────────────────────────────────────────────────────
 
   return (
-    <DashboardPage title="Page 3 \u2014 The Fixed-Policy Countries">
+    <DashboardPage title="Page 3 — The Fixed-Policy Countries">
       {/* SVG defs for hatch pattern (referenced in bar charts) */}
       <svg width={0} height={0} style={{ position: 'absolute' }}>
         <defs>
@@ -266,7 +266,7 @@ export function FixedPoliciesPage({ year: _year, onNavigate: _onNavigate }: Fixe
             patternTransform="rotate(45)"
           >
             <rect width={12} height={12} fill={colors.highlight} />
-            <line x1={0} y1={0} x2={0} y2={12} stroke="#c2410c" strokeWidth={3} />
+            <line x1={0} y1={0} x2={0} y2={12} stroke={colors.hatchStroke} strokeWidth={3} />
           </pattern>
         </defs>
       </svg>
@@ -363,7 +363,7 @@ export function FixedPoliciesPage({ year: _year, onNavigate: _onNavigate }: Fixe
                             {row.regional_manager ? (
                               row.regional_manager
                             ) : (
-                              <span style={{ color: '#f59e0b', fontWeight: 500 }}>None</span>
+                              <span style={{ color: colors.warning, fontWeight: 500 }}>None</span>
                             )}
                           </td>
                         </tr>
@@ -399,6 +399,7 @@ export function FixedPoliciesPage({ year: _year, onNavigate: _onNavigate }: Fixe
                         }}
                         axisLine={false}
                         tickLine={false}
+                        interval={0}
                       />
                       <YAxis
                         tick={{
@@ -474,7 +475,7 @@ export function FixedPoliciesPage({ year: _year, onNavigate: _onNavigate }: Fixe
               <p style={{ margin: '0 0 8px', fontSize: typography.tableCell.size }}>
                 Discount range:{' '}
                 <strong>
-                  {fmtPct(emeaDiscountMin)} \u2013 {fmtPct(emeaDiscountMax)}
+                  {fmtPct(emeaDiscountMin)} – {fmtPct(emeaDiscountMax)}
                 </strong>
               </p>
               <p style={{ margin: '0 0 8px', fontSize: typography.tableCell.size }}>

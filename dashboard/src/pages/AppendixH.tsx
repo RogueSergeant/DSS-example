@@ -128,7 +128,7 @@ export function AppendixH() {
                 tick={{ fill: colors.secondaryText, fontSize: 12 }}
                 axisLine={{ stroke: colors.muted }}
                 tickLine={false}
-                label={{ value: '% of Sales', angle: -90, position: 'insideLeft', offset: -16, fill: colors.secondaryText, fontSize: 12 }}
+                label={{ value: '% of Sales', angle: -90, position: 'insideLeft', offset: -16, fill: '#5c6470', fontSize: 12 }}
               />
               <Tooltip
                 contentStyle={tooltipStyle}
@@ -141,18 +141,18 @@ export function AppendixH() {
               />
 
               {/* 20%/80% reference */}
-              <ReferenceLine x={20} stroke="#334155" strokeDasharray="6 4" />
-              <ReferenceLine y={80} stroke="#334155" strokeDasharray="6 4" />
+              <ReferenceLine x={20} stroke={colors.neutral} strokeDasharray="6 4" />
+              <ReferenceLine y={80} stroke={colors.neutral} strokeDasharray="6 4" />
 
               {/* 50% reference */}
-              <ReferenceLine x={50} stroke="#334155" strokeDasharray="6 4" />
-              <ReferenceLine y={13} stroke="#334155" strokeDasharray="6 4" />
+              <ReferenceLine x={50} stroke={colors.neutral} strokeDasharray="6 4" />
+              <ReferenceLine y={13} stroke={colors.neutral} strokeDasharray="6 4" />
 
               {/* Diagonal reference (perfect equality) */}
               <Line
                 data={[{ cumPctCustomers: 0, cumPctSales: 0 }, { cumPctCustomers: 100, cumPctSales: 100 }]}
                 dataKey="cumPctSales"
-                stroke={colors.muted}
+                stroke={colors.neutral}
                 strokeDasharray="3 3"
                 strokeWidth={1}
                 dot={false}
@@ -162,7 +162,7 @@ export function AppendixH() {
               {/* Pareto curve */}
               <Line
                 dataKey="cumPctSales"
-                stroke="#94a3b8"
+                stroke={colors.secondaryText}
                 strokeWidth={2.5}
                 dot={false}
                 isAnimationActive={false}

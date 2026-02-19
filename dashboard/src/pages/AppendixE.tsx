@@ -27,11 +27,18 @@ void (0 as unknown as _SegmentMarketCell);
 function blueIntensity(value: number, max: number): string {
   if (max === 0) return 'transparent';
   const ratio = value / max;
-  const r = Math.round(15 + (59 - 15) * (1 - ratio));
-  const g = Math.round(23 + (130 - 23) * (1 - ratio));
-  const b = Math.round(42 + (246 - 42) * (1 - ratio));
-  const alpha = 0.2 + ratio * 0.8;
-  return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+  // Interpolate from light (#eef2ff) at ratio=0 to deep blue (#0f172a) at ratio=1
+  const r = Math.round(238 + (15 - 238) * ratio);
+  const g = Math.round(242 + (23 - 242) * ratio);
+  const b = Math.round(255 + (42 - 255) * ratio);
+  return `rgb(${r}, ${g}, ${b})`;
+}
+
+/** Return white text for dark cells, dark text for light cells. */
+function heatTextColor(value: number, max: number): string {
+  if (max === 0) return '#1a1a2e';
+  const t = value / max;
+  return t > 0.55 ? '#ffffff' : '#1a1a2e';
 }
 
 // ─── Table styles ──────────────────────────────────────────────────────────
@@ -191,7 +198,7 @@ export function AppendixE() {
                     const cell = segmentOrderDist.cells.find(c => c.segment === seg && c.band === band);
                     const count = cell?.count ?? 0;
                     return (
-                      <td key={band} style={{ ...cellStyle, background: blueIntensity(count, segmentOrderDist.max) }}>
+                      <td key={band} style={{ ...cellStyle, background: blueIntensity(count, segmentOrderDist.max), color: heatTextColor(count, segmentOrderDist.max) }}>
                         {fmtNumber(count)}
                       </td>
                     );

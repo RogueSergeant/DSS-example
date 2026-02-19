@@ -14,9 +14,7 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
-  Cell,
   ReferenceLine,
-  ResponsiveContainer,
 } from 'recharts';
 import { colors, typography, kpiCard, spacing, chartDefaults } from '../lib/theme';
 import {
@@ -383,21 +381,6 @@ export function OverviewPage({ year, onNavigate: _onNavigate }: OverviewPageProp
               }
               ariaLabel={`Total Sales ${displayYear}: ${fmtDollar(kpis?.totalSales ?? 0)}`}
             />
-            {/* Blue detail overlay */}
-            {kpis && (
-              <div
-                style={{
-                  marginTop: -28,
-                  paddingLeft: 24,
-                  paddingBottom: 8,
-                  fontSize: typography.kpiLabel.size,
-                  fontWeight: typography.kpiLabel.weight,
-                  color: colors.selection,
-                }}
-              >
-                {`▲ +${(kpis.salesGrowth * 100).toFixed(0)}%`}
-              </div>
-            )}
           </GridCell>
           <GridCell span={3}>
             <KpiCard
@@ -414,18 +397,6 @@ export function OverviewPage({ year, onNavigate: _onNavigate }: OverviewPageProp
               detail="▲ +2pp"
               ariaLabel={`Customer Retention ${displayYear}`}
             />
-            <div
-              style={{
-                marginTop: -28,
-                paddingLeft: 24,
-                paddingBottom: 8,
-                fontSize: typography.kpiLabel.size,
-                fontWeight: typography.kpiLabel.weight,
-                color: colors.selection,
-              }}
-            >
-              ▲ +2pp
-            </div>
           </GridCell>
           <GridCell span={3}>
             <KpiCard
@@ -438,20 +409,6 @@ export function OverviewPage({ year, onNavigate: _onNavigate }: OverviewPageProp
               }
               ariaLabel={`Active Customers ${displayYear}: ${fmtNumber(kpis?.totalCustomers ?? 0)}`}
             />
-            {kpis && (
-              <div
-                style={{
-                  marginTop: -28,
-                  paddingLeft: 24,
-                  paddingBottom: 8,
-                  fontSize: typography.kpiLabel.size,
-                  fontWeight: typography.kpiLabel.weight,
-                  color: colors.selection,
-                }}
-              >
-                {`▲ +${(kpis.customerGrowth * 100).toFixed(0)}%`}
-              </div>
-            )}
           </GridCell>
         </Grid>
       </Section>
@@ -459,13 +416,14 @@ export function OverviewPage({ year, onNavigate: _onNavigate }: OverviewPageProp
       {/* ── Section 2: The Paradox Chart ───────────────────────────────── */}
       <Section heading="The Paradox">
         <ChartWrapper
-          title="Sales double. Margin doesn\u2019t move."
-          subtitle={`Annual sales and net margin, 2011\u20132014${selectedMarket ? ` \u2014 ${selectedMarket}` : ''}`}
+          title="Sales double. Margin doesn't move."
+          subtitle={`Annual sales and net margin, 2011–2014${selectedMarket ? ` — ${selectedMarket}` : ''}`}
         >
-          <ResponsiveContainer width="100%" height={280}>
             <ComposedChart
+              width={700}
+              height={280}
               data={yearlyData}
-              margin={chartDefaults.margin}
+              margin={{ ...chartDefaults.margin, right: 120 }}
               onClick={(state: any) => {
                 if (state?.activePayload?.[0]?.payload) {
                   handleBarClick(state.activePayload[0].payload);
@@ -485,6 +443,7 @@ export function OverviewPage({ year, onNavigate: _onNavigate }: OverviewPageProp
                 axisLine={false}
                 tickLine={false}
                 tickFormatter={(v: number) => fmtDollar(v)}
+                domain={[0, 'auto']}
               />
               <YAxis
                 yAxisId="right"
@@ -521,29 +480,17 @@ export function OverviewPage({ year, onNavigate: _onNavigate }: OverviewPageProp
               <Bar
                 yAxisId="left"
                 dataKey="sales"
+                fill={colors.selection}
+                barSize={60}
                 radius={[2, 2, 0, 0]}
                 cursor="pointer"
-              >
-                {yearlyData.map((entry) => (
-                  <Cell
-                    key={entry.year}
-                    fill={
-                      selectedYear === entry.year
-                        ? colors.selection
-                        : colors.neutral
-                    }
-                    opacity={
-                      selectedYear && selectedYear !== entry.year ? 0.25 : 1
-                    }
-                  />
-                ))}
-              </Bar>
+              />
               <Line
                 yAxisId="right"
                 type="monotone"
                 dataKey="margin_pct"
                 stroke={colors.highlight}
-                strokeWidth={2}
+                strokeWidth={3}
                 dot={{ r: 4, fill: colors.highlight, stroke: colors.highlight }}
                 activeDot={{ r: 6 }}
               />
@@ -554,7 +501,7 @@ export function OverviewPage({ year, onNavigate: _onNavigate }: OverviewPageProp
                   x={2014}
                   stroke="transparent"
                   label={{
-                    value: `${((yearlyData.find((y) => y.year === 2014)?.margin_pct ?? 0) * 100).toFixed(1)}% \u2014 same as 2011`,
+                    value: `${((yearlyData.find((y) => y.year === 2014)?.margin_pct ?? 0) * 100).toFixed(1)}% — same as 2011`,
                     position: 'top',
                     fill: colors.highlight,
                     fontSize: typography.annotation.size,
@@ -563,7 +510,6 @@ export function OverviewPage({ year, onNavigate: _onNavigate }: OverviewPageProp
                 />
               )}
             </ComposedChart>
-          </ResponsiveContainer>
         </ChartWrapper>
       </Section>
 
@@ -577,7 +523,9 @@ export function OverviewPage({ year, onNavigate: _onNavigate }: OverviewPageProp
                 background: kpiCard.background,
                 border: kpiCard.border,
                 borderRadius: kpiCard.borderRadius,
+                borderTop: `2px solid ${colors.accent}`,
                 padding: spacing.cardPadding,
+                boxShadow: kpiCard.boxShadow,
                 overflowX: 'auto',
               }}
             >
@@ -657,7 +605,7 @@ export function OverviewPage({ year, onNavigate: _onNavigate }: OverviewPageProp
                                 color: colors.warning,
                               }}
                             >
-                              \u26A0
+                              ⚠
                             </span>
                           )}
                         </td>
@@ -720,7 +668,7 @@ export function OverviewPage({ year, onNavigate: _onNavigate }: OverviewPageProp
           <Section heading="Category Mix">
             <ChartWrapper
               title="Furniture takes a third of sales. It earns a fraction of the margin."
-              subtitle={`Sales share and margin by category, ${selectedYear ?? displayYear}${selectedMarket ? ` \u2014 ${selectedMarket}` : ''}`}
+              subtitle={`Sales share and margin by category, ${selectedYear ?? displayYear}${selectedMarket ? ` — ${selectedMarket}` : ''}`}
               minHeight={120}
             >
               <CategoryBar categories={categoryData} selectedMarket={selectedMarket} />

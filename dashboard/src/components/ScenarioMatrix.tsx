@@ -6,13 +6,12 @@
  *
  * Rendering:
  *   - CSS grid / HTML table (not Recharts).
- *   - Single-hue blue scale: surface (#1e293b) at min → selection (#3b82f6) at max.
- *   - Cell text: profit (emphasis 14px 600) + uplift % (secondary 12px 400).
- *   - Active cell: 2px solid emphasis border.
- *   - High-intensity → emphasis text. Low-intensity → secondary text.
+ *   - Single-hue blue scale: light lavender at min → selection blue at max.
+ *   - Cell text: dark on light cells, white on saturated cells.
+ *   - Active cell: blue glow ring.
  */
 
-import { colors, typography } from '../lib/theme';
+import { colors, typography, shadows } from '../lib/theme';
 
 // ─── Types ──────────────────────────────────────────────────────────────────
 
@@ -39,19 +38,19 @@ interface ScenarioMatrixProps {
 
 // ─── Helpers ────────────────────────────────────────────────────────────────
 
-/** Interpolate between surface (#1e293b) and selection (#3b82f6) */
+/** Interpolate between light lavender (#f0ecf8) and selection blue (#2563eb) */
 function interpolateBlue(t: number): string {
-  // #1e293b → rgb(30, 41, 59)
-  // #3b82f6 → rgb(59, 130, 246)
-  const r = Math.round(30 + (59 - 30) * t);
-  const g = Math.round(41 + (130 - 41) * t);
-  const b = Math.round(59 + (246 - 59) * t);
+  // #f0ecf8 → rgb(240, 236, 248)
+  // #2563eb → rgb(37, 99, 235)
+  const r = Math.round(240 + (37 - 240) * t);
+  const g = Math.round(236 + (99 - 236) * t);
+  const b = Math.round(248 + (235 - 248) * t);
   return `rgb(${r}, ${g}, ${b})`;
 }
 
-/** High-intensity cells get emphasis text; low-intensity get secondary */
+/** Dark text on light cells, white on saturated cells */
 function textColor(t: number): string {
-  return t > 0.5 ? colors.emphasisText : colors.secondaryText;
+  return t > 0.55 ? '#ffffff' : colors.emphasisText;
 }
 
 // ─── Component ──────────────────────────────────────────────────────────────
@@ -76,7 +75,7 @@ export function ScenarioMatrix({
       <table
         style={{
           borderCollapse: 'separate',
-          borderSpacing: 2,
+          borderSpacing: 3,
           width: '100%',
         }}
       >
@@ -93,6 +92,7 @@ export function ScenarioMatrix({
                   color: typography.tableHeader.color,
                   textAlign: 'center',
                   padding: '6px 8px',
+                  letterSpacing: '0.02em',
                 }}
               >
                 {col}
@@ -137,14 +137,27 @@ export function ScenarioMatrix({
                     }}
                     style={{
                       background: interpolateBlue(t),
-                      border: isActive
-                        ? `2px solid ${colors.emphasisText}`
-                        : '2px solid transparent',
-                      borderRadius: 4,
-                      padding: '8px 10px',
+                      boxShadow: isActive
+                        ? `0 0 0 2px ${colors.selection}`
+                        : 'none',
+                      borderRadius: 6,
+                      padding: '10px 12px',
                       textAlign: 'center',
                       cursor: onCellClick ? 'pointer' : undefined,
-                      minWidth: 90,
+                      minWidth: 100,
+                      transition: 'transform 0.15s ease, box-shadow 0.15s ease',
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.transform = 'scale(1.02)';
+                      if (!isActive) {
+                        e.currentTarget.style.boxShadow = shadows.card;
+                      }
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.transform = 'scale(1)';
+                      if (!isActive) {
+                        e.currentTarget.style.boxShadow = 'none';
+                      }
                     }}
                   >
                     <div
@@ -162,7 +175,7 @@ export function ScenarioMatrix({
                         fontSize: 12,
                         fontWeight: 400,
                         color: textColor(t),
-                        opacity: 0.8,
+                        opacity: 0.85,
                       }}
                     >
                       +{cell.uplift.toFixed(0)}%

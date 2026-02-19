@@ -7,7 +7,7 @@
 
 import { useMemo } from 'react';
 import {
-  BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Cell, ResponsiveContainer,
+  BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Cell,
 } from 'recharts';
 import { colors } from '../lib/theme';
 import { DashboardPage, Section, ChartWrapper, GovernanceCallout, Footnote } from '../components';
@@ -110,8 +110,7 @@ export function AppendixF() {
               </pattern>
             </defs>
           </svg>
-          <ResponsiveContainer width="100%" height={320}>
-            <BarChart data={marketData} margin={{ top: 8, right: 24, bottom: 8, left: 24 }}>
+          <BarChart width={700} height={320} data={marketData} margin={{ top: 8, right: 24, bottom: 8, left: 24 }}>
               <CartesianGrid {...gridProps} />
               <XAxis
                 dataKey="market"
@@ -139,7 +138,6 @@ export function AppendixF() {
                 ))}
               </Bar>
             </BarChart>
-          </ResponsiveContainer>
         </ChartWrapper>
       </Section>
 

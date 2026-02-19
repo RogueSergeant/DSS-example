@@ -51,12 +51,18 @@ function buildHeatmap(data: OverviewRow[]): { cells: HeatCell[]; categories: str
 function blueIntensity(value: number, max: number): string {
   if (max === 0) return 'transparent';
   const ratio = value / max;
-  // Range from very dark blue to bright blue
-  const r = Math.round(15 + (59 - 15) * (1 - ratio));
-  const g = Math.round(23 + (130 - 23) * (1 - ratio));
-  const b = Math.round(42 + (246 - 42) * (1 - ratio));
-  const alpha = 0.2 + ratio * 0.8;
-  return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+  // Light theme: interpolate from light blue (#eef2ff) to medium blue (#3b5998)
+  const r = Math.round(238 + (59 - 238) * ratio);
+  const g = Math.round(242 + (89 - 242) * ratio);
+  const b = Math.round(255 + (152 - 255) * ratio);
+  return `rgb(${r}, ${g}, ${b})`;
+}
+
+/** Return white text on dark cells (intensity > 0.5) and dark text on light cells. */
+function heatTextColor(value: number, max: number): string {
+  if (max === 0) return '#1a1a2e';
+  const ratio = value / max;
+  return ratio > 0.5 ? '#ffffff' : '#1a1a2e';
 }
 
 // ─── Table styles ──────────────────────────────────────────────────────────
@@ -142,7 +148,7 @@ export function AppendixC() {
                     const cell = cells.find(c => c.category === cat && c.market === mkt);
                     const count = cell?.count ?? 0;
                     return (
-                      <td key={mkt} style={{ ...cellStyle, background: blueIntensity(count, max) }}>
+                      <td key={mkt} style={{ ...cellStyle, background: blueIntensity(count, max), color: heatTextColor(count, max) }}>
                         {fmtNumber(count)}
                       </td>
                     );

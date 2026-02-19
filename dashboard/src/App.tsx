@@ -52,7 +52,7 @@ function App() {
     <>
       <HatchPatternDefs />
 
-      {/* Top navigation bar */}
+      {/* Top navigation bar — dark navy anchor */}
       <nav
         style={{
           position: 'sticky',
@@ -60,69 +60,125 @@ function App() {
           zIndex: 50,
           display: 'flex',
           alignItems: 'center',
-          gap: 4,
-          padding: '8px 24px',
-          background: colors.surface,
-          borderBottom: `1px solid ${colors.muted}`,
+          gap: 0,
+          padding: '0 24px',
+          background: colors.navBg,
+          borderBottom: `1px solid rgba(255,255,255,0.08)`,
+          backdropFilter: 'blur(8px)',
         }}
       >
-        <div style={{ display: 'flex', gap: 2, flex: 1, flexWrap: 'wrap' }}>
-          {PRIMARY_TABS.map((tab) => (
-            <button
-              key={tab.id}
-              onClick={() => { setPage(tab.id); setAppendixOpen(false); }}
-              style={{
-                padding: '6px 14px',
-                borderRadius: 6,
-                border: 'none',
-                cursor: 'pointer',
-                fontSize: 13,
-                fontWeight: page === tab.id ? 600 : 400,
-                background: page === tab.id ? colors.selection : 'transparent',
-                color: page === tab.id ? '#fff' : colors.secondaryText,
-              }}
-            >
-              {tab.label}
-            </button>
-          ))}
+        {/* Brand */}
+        <div
+          style={{
+            fontFamily: typography.displayFont,
+            fontSize: 16,
+            fontWeight: 500,
+            color: '#e8ecf2',
+            letterSpacing: '-0.01em',
+            paddingRight: 20,
+            marginRight: 20,
+            borderRight: '1px solid rgba(255,255,255,0.1)',
+            whiteSpace: 'nowrap',
+            lineHeight: '48px',
+          }}
+        >
+          Global Superstore
+        </div>
+
+        {/* Primary tabs */}
+        <div style={{ display: 'flex', gap: 0, flex: 1, flexWrap: 'wrap' }}>
+          {PRIMARY_TABS.map((tab) => {
+            const isActive = page === tab.id;
+            return (
+              <button
+                key={tab.id}
+                onClick={() => { setPage(tab.id); setAppendixOpen(false); }}
+                style={{
+                  padding: '0 14px',
+                  border: 'none',
+                  cursor: 'pointer',
+                  fontSize: 13,
+                  fontFamily: typography.fontFamily,
+                  fontWeight: isActive ? 600 : 400,
+                  background: 'transparent',
+                  color: isActive ? '#ffffff' : '#9ca3b0',
+                  lineHeight: '48px',
+                  borderBottom: isActive ? `2px solid ${colors.selection}` : '2px solid transparent',
+                  transition: 'color 0.2s ease, border-color 0.2s ease',
+                }}
+                onMouseEnter={(e) => { if (!isActive) e.currentTarget.style.color = '#d0d4db'; }}
+                onMouseLeave={(e) => { if (!isActive) e.currentTarget.style.color = '#9ca3b0'; }}
+              >
+                {tab.label}
+              </button>
+            );
+          })}
           <button
             onClick={() => setAppendixOpen((o) => !o)}
             style={{
-              padding: '6px 14px',
-              borderRadius: 6,
+              padding: '0 14px',
               border: 'none',
               cursor: 'pointer',
               fontSize: 13,
+              fontFamily: typography.fontFamily,
               fontWeight: isAppendix ? 600 : 400,
-              background: isAppendix ? colors.selection : 'transparent',
-              color: isAppendix ? '#fff' : colors.secondaryText,
+              background: 'transparent',
+              color: isAppendix ? '#ffffff' : '#9ca3b0',
+              lineHeight: '48px',
+              borderBottom: isAppendix ? `2px solid ${colors.selection}` : '2px solid transparent',
+              transition: 'color 0.2s ease, border-color 0.2s ease',
             }}
           >
             Appendices {appendixOpen ? '▴' : '▾'}
           </button>
         </div>
 
-        {/* Year selector — persistent across all pages */}
-        <div style={{ display: 'flex', gap: 2, alignItems: 'center' }}>
-          <span style={{ fontSize: 11, color: colors.secondaryText, marginRight: 6 }}>Year:</span>
-          {YEARS.map((y) => (
-            <button
-              key={y}
-              onClick={() => setYear(y)}
-              style={{
-                padding: '4px 10px',
-                borderRadius: 4,
-                border: 'none',
-                cursor: 'pointer',
-                fontSize: 12,
-                fontWeight: year === y ? 600 : 400,
-                background: year === y ? colors.muted : 'transparent',
-                color: year === y ? colors.emphasisText : colors.secondaryText,
-              }}
-            >
-              {y}
-            </button>
-          ))}
+        {/* Year selector */}
+        <div
+          style={{
+            display: 'flex',
+            gap: 2,
+            alignItems: 'center',
+            padding: '6px 8px',
+            borderRadius: 8,
+            border: '1px solid rgba(255,255,255,0.1)',
+          }}
+        >
+          <span
+            style={{
+              fontSize: 11,
+              color: '#6b7280',
+              marginRight: 4,
+              fontFamily: typography.fontFamily,
+              textTransform: 'uppercase',
+              letterSpacing: '0.05em',
+            }}
+          >
+            Year
+          </span>
+          {YEARS.map((y) => {
+            const isActive = year === y;
+            return (
+              <button
+                key={y}
+                onClick={() => setYear(y)}
+                style={{
+                  padding: '3px 10px',
+                  borderRadius: 4,
+                  border: 'none',
+                  cursor: 'pointer',
+                  fontSize: 12,
+                  fontFamily: typography.fontFamily,
+                  fontWeight: isActive ? 600 : 400,
+                  background: isActive ? colors.navSurface : 'transparent',
+                  color: isActive ? '#ffffff' : '#8b919a',
+                  transition: 'all 0.15s ease',
+                }}
+              >
+                {y}
+              </button>
+            );
+          })}
         </div>
       </nav>
 
@@ -131,34 +187,39 @@ function App() {
         <div
           style={{
             position: 'sticky',
-            top: 46,
+            top: 49,
             zIndex: 49,
             display: 'flex',
             gap: 2,
-            padding: '6px 24px',
-            background: colors.pageBg,
-            borderBottom: `1px solid ${colors.muted}`,
+            padding: '8px 24px',
+            background: colors.navSurface,
+            borderBottom: '1px solid rgba(255,255,255,0.06)',
             flexWrap: 'wrap',
           }}
         >
-          {APPENDIX_TABS.map((tab) => (
-            <button
-              key={tab.id}
-              onClick={() => setPage(tab.id)}
-              style={{
-                padding: '4px 12px',
-                borderRadius: 4,
-                border: 'none',
-                cursor: 'pointer',
-                fontSize: 12,
-                fontWeight: page === tab.id ? 600 : 400,
-                background: page === tab.id ? colors.muted : 'transparent',
-                color: page === tab.id ? colors.emphasisText : colors.secondaryText,
-              }}
-            >
-              {tab.label}
-            </button>
-          ))}
+          {APPENDIX_TABS.map((tab) => {
+            const isActive = page === tab.id;
+            return (
+              <button
+                key={tab.id}
+                onClick={() => setPage(tab.id)}
+                style={{
+                  padding: '4px 12px',
+                  borderRadius: 4,
+                  border: 'none',
+                  cursor: 'pointer',
+                  fontSize: 12,
+                  fontFamily: typography.fontFamily,
+                  fontWeight: isActive ? 600 : 400,
+                  background: isActive ? 'rgba(255,255,255,0.1)' : 'transparent',
+                  color: isActive ? '#ffffff' : '#8b919a',
+                  transition: 'all 0.15s ease',
+                }}
+              >
+                {tab.label}
+              </button>
+            );
+          })}
         </div>
       )}
 
@@ -183,11 +244,12 @@ function App() {
       {/* Global footer */}
       <footer
         style={{
-          padding: '12px 24px',
+          padding: '16px 24px',
           borderTop: `1px solid ${colors.muted}`,
           fontSize: typography.footnote.size,
           color: typography.footnote.color,
           textAlign: 'center',
+          fontFamily: typography.fontFamily,
         }}
       >
         Dataset covers 2011–2014. All figures derived from Global Superstore transactional data.

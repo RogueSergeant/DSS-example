@@ -91,6 +91,7 @@ export function InteractiveSlider({
           type="number"
           domain={[xMin, xMax]}
           tick={{ fill: typography.axisLabel.color, fontSize: typography.axisLabel.size }}
+          tickFormatter={(v: number) => `${(v * 100).toFixed(0)}%`}
           axisLine={false}
         />
         <YAxis
@@ -98,6 +99,7 @@ export function InteractiveSlider({
           type="number"
           domain={[yMin, yMax]}
           tick={{ fill: typography.axisLabel.color, fontSize: typography.axisLabel.size }}
+          tickFormatter={(v: number) => `${(v * 100).toFixed(0)}%`}
           axisLine={false}
         />
 
@@ -137,6 +139,8 @@ export function InteractiveSlider({
           contentStyle={tooltipStyle}
           labelStyle={{ color: typography.tooltipLabel.color, fontSize: typography.tooltipLabel.size }}
           itemStyle={{ color: typography.tooltipValue.color, fontSize: typography.tooltipValue.size }}
+          labelFormatter={(v: unknown) => `Discount: ${(Number(v) * 100).toFixed(0)}%`}
+          formatter={(v: unknown) => [`${(Number(v) * 100).toFixed(1)}%`, 'Margin']}
         />
       </LineChart>
 
@@ -164,7 +168,6 @@ export function InteractiveSlider({
           aria-label={label ?? 'Discount threshold'}
           style={{
             width: '100%',
-            accentColor: colors.selection,
           }}
         />
       </div>

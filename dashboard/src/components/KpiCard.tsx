@@ -1,13 +1,13 @@
 /**
  * §10 KPI Card Standard
  *
- * Neutral card: value in white, optional trend arrow in blue.
+ * Neutral card: value in dark navy, optional trend arrow in blue.
  * Loss card:    value in orange, bold.
  *
  * Trend arrows (▲/▼) use blue for direction — not a semantic encoding.
  */
 
-import { colors, typography, kpiCard as card } from '../lib/theme';
+import { colors, typography, kpiCard as card, shadows } from '../lib/theme';
 
 interface KpiCardProps {
   /** Formatted value string, e.g. "$4.3M" or "−$413K" */
@@ -31,12 +31,24 @@ export function KpiCard({ value, label, detail, isLoss = false, ariaLabel }: Kpi
         background: card.background,
         border: card.border,
         borderRadius: card.borderRadius,
+        borderTop: `2px solid ${isLoss ? colors.highlight : colors.accent}`,
         padding: card.padding,
         minHeight: 100,
+        boxShadow: card.boxShadow,
+        transition: 'transform 0.2s ease, box-shadow 0.2s ease',
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.transform = 'translateY(-1px)';
+        e.currentTarget.style.boxShadow = shadows.hover;
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.transform = 'translateY(0)';
+        e.currentTarget.style.boxShadow = card.boxShadow;
       }}
     >
       <div
         style={{
+          fontFamily: typography.monoFont,
           fontSize: typography.kpiValue.size,
           fontWeight: typography.kpiValue.weight,
           color: isLoss ? colors.highlight : typography.kpiValue.color,
@@ -48,7 +60,7 @@ export function KpiCard({ value, label, detail, isLoss = false, ariaLabel }: Kpi
 
       <div
         style={{
-          marginTop: 4,
+          marginTop: 6,
           fontSize: typography.kpiLabel.size,
           fontWeight: typography.kpiLabel.weight,
           color: typography.kpiLabel.color,

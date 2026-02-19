@@ -116,6 +116,11 @@ export function WaterfallChart({
         <YAxis
           tick={{ fill: typography.axisLabel.color, fontSize: typography.axisLabel.size }}
           axisLine={false}
+          tickFormatter={(v: number) =>
+            Math.abs(v) >= 1_000_000
+              ? `$${(v / 1_000_000).toFixed(1)}M`
+              : `$${(v / 1_000).toFixed(0)}K`
+          }
         />
 
         <ReferenceLine y={0} stroke={colors.muted} />

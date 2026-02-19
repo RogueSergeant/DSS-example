@@ -20,6 +20,8 @@ import {
   Tooltip,
   Cell,
   ReferenceLine,
+  Customized,
+  ResponsiveContainer,
 } from 'recharts';
 import { colors, chartDefaults, typography } from '../lib/theme';
 import { ChartWrapper, tooltipStyle, gridProps } from './ChartWrapper';
@@ -45,19 +47,25 @@ interface DumbbellChartProps {
 
 // ─── Custom connecting line component ───────────────────────────────────────
 
-function _ConnectingLines({
+function ConnectingLines({
   data,
-  xScale,
-  yScale,
+  xAxisMap,
+  yAxisMap,
 }: {
   data: DumbbellDatum[];
-  xScale: (v: number) => number;
-  yScale: (v: string) => number;
+  xAxisMap?: Record<string, { scale: (v: number) => number }>;
+  yAxisMap?: Record<string, { scale: (v: string) => number; bandSize?: number }>;
 }) {
+  if (!xAxisMap || !yAxisMap) return null;
+  const xScale = Object.values(xAxisMap)[0]?.scale;
+  const yAxis = Object.values(yAxisMap)[0];
+  const yScale = yAxis?.scale;
+  if (!xScale || !yScale) return null;
+  const bandOffset = (yAxis.bandSize ?? 0) / 2;
   return (
     <g>
       {data.map((d) => {
-        const y = yScale(d.manager);
+        const y = yScale(d.manager as unknown as string) + bandOffset;
         const x1 = xScale(d.rawMargin);
         const x2 = xScale(d.adjustedMargin);
         if (isNaN(x1) || isNaN(x2) || isNaN(y)) return null;
@@ -76,42 +84,61 @@ function _ConnectingLines({
     </g>
   );
 }
-void _ConnectingLines;
 
 // ─── Component ──────────────────────────────────────────────────────────────
 
 export function DumbbellChart({
   data,
-  width = 720,
+  width: _width = 720,
   height = 400,
   title = "Most managers carry inherited policy drag — Ballentine doesn't",
   subtitle,
   onManagerClick,
 }: DumbbellChartProps) {
+  void _width;
   const DOT_RADIUS = 8;
 
   // Prepare scatter data for raw and adjusted dots
   const rawDots = data.map((d) => ({ ...d, x: d.rawMargin, y: d.manager }));
   const adjDots = data.map((d) => ({ ...d, x: d.adjustedMargin, y: d.manager }));
 
-  // Calculate domain
+  // Calculate domain with nice round percentage ticks
   const allValues = data.flatMap((d) => [d.rawMargin, d.adjustedMargin]);
   const xMin = Math.min(...allValues);
   const xMax = Math.max(...allValues);
   const padding = (xMax - xMin) * 0.15;
 
+  // Round domain to nearest 5% for clean axis
+  const domainMin = Math.floor((xMin - padding) * 20) / 20; // nearest 5%
+  const domainMax = Math.ceil((xMax + padding) * 20) / 20;
+
+  // Generate evenly-spaced round ticks (every 5 or 10 percentage points)
+  const xTicks: number[] = [];
+  const step = 0.05; // 5 percentage points
+  for (let t = domainMin; t <= domainMax + 1e-9; t += step) {
+    xTicks.push(Math.round(t * 100) / 100);
+  }
+
   return (
     <ChartWrapper title={title} subtitle={subtitle}>
+      <ResponsiveContainer width="100%" height={height}>
       <ScatterChart
-        width={width}
-        height={height}
         margin={{ ...chartDefaults.margin, left: 100 }}
       >
         <CartesianGrid {...gridProps} />
+        <Customized component={(props: Record<string, unknown>) => (
+          <ConnectingLines
+            data={data}
+            xAxisMap={props.xAxisMap as Record<string, { scale: (v: number) => number }>}
+            yAxisMap={props.yAxisMap as Record<string, { scale: (v: string) => number; bandSize?: number }>}
+          />
+        )} />
         <XAxis
           dataKey="x"
           type="number"
-          domain={[xMin - padding, xMax + padding]}
+          domain={[domainMin, domainMax]}
+          ticks={xTicks}
+          tickFormatter={(v: number) => `${(v * 100).toFixed(0)}%`}
           tick={{ fill: typography.axisLabel.color, fontSize: typography.axisLabel.size }}
           axisLine={false}
           name="Margin"
@@ -147,13 +174,15 @@ export function DumbbellChart({
           ))}
         </Scatter>
 
-        {/* Annotations for managers with no inherited policy */}
-        {data
-          .filter((d) => d.noInheritedPolicy)
-          .map((d) => (
+        {/* Annotation for managers with no inherited policy — show label only once */}
+        {(() => {
+          const noPolicyManagers = data.filter((d) => d.noInheritedPolicy);
+          if (noPolicyManagers.length === 0) return null;
+          const first = noPolicyManagers[0];
+          return (
             <ReferenceLine
-              key={d.manager}
-              x={d.rawMargin}
+              key={first.manager}
+              x={first.rawMargin}
               stroke="transparent"
               label={{
                 value: 'No inherited policies',
@@ -163,7 +192,8 @@ export function DumbbellChart({
                 position: 'right',
               }}
             />
-          ))}
+          );
+        })()}
 
         <Tooltip
           contentStyle={tooltipStyle}
@@ -171,6 +201,7 @@ export function DumbbellChart({
           itemStyle={{ color: typography.tooltipValue.color, fontSize: typography.tooltipValue.size }}
         />
       </ScatterChart>
+      </ResponsiveContainer>
     </ChartWrapper>
   );
 }

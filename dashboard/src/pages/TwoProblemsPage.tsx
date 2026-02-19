@@ -35,7 +35,7 @@ import type { DiscountRow, CountryRegimeRow, YearFilter, PageId } from '../lib/t
 
 // ─── Band ordering ─────────────────────────────────────────────────────────
 
-const BAND_ORDER = ['None', '1\u201315%', '16\u201330%', '31\u201350%', '51%+'];
+const BAND_ORDER = ['None', '1–15%', '16–30%', '31–50%', '51%+'];
 
 // ─── Helpers ───────────────────────────────────────────────────────────────
 
@@ -260,7 +260,7 @@ export function TwoProblemsPage({ year, onNavigate }: TwoProblemsPageProps) {
               <div
                 style={{
                   width: `${variablePct}%`,
-                  background: '#f97316',
+                  background: colors.highlight,
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
@@ -295,7 +295,7 @@ export function TwoProblemsPage({ year, onNavigate }: TwoProblemsPageProps) {
               <span style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
                 <span style={{
                   display: 'inline-block', width: 12, height: 12,
-                  background: '#f97316',
+                  background: colors.highlight,
                   borderRadius: 2,
                 }} />
                 Variable over-discount loss
@@ -308,7 +308,7 @@ export function TwoProblemsPage({ year, onNavigate }: TwoProblemsPageProps) {
         <GridCell span={6}>
           <ChartWrapper
             title={marginChartTitle}
-            subtitle={year === 'All' ? 'Margin by discount band, 2011\u20132014' : `Margin by discount band, ${year}`}
+            subtitle={year === 'All' ? 'Margin by discount band, 2011–2014' : `Margin by discount band, ${year}`}
             minHeight={240}
           >
             <ResponsiveContainer width="100%" height={240}>
@@ -387,20 +387,13 @@ export function TwoProblemsPage({ year, onNavigate }: TwoProblemsPageProps) {
       <div style={{ marginTop: spacing.cardGap }}>
         <Grid>
           <GridCell span={12}>
-            <ChartWrapper
+            <StripPlot
+              data={stripData}
+              width={720}
+              height={320}
               title="No human sets exactly 60% on 1,378 consecutive orders. These are system configurations."
               subtitle="Each dot is a country. X = discount rate, Y = margin. Diamonds = fixed regime."
-              minHeight={320}
-            >
-              <ResponsiveContainer width="100%" height={320}>
-                <StripPlot
-                  data={stripData}
-                  width={720}
-                  height={320}
-                  title=""
-                />
-              </ResponsiveContainer>
-            </ChartWrapper>
+            />
           </GridCell>
         </Grid>
       </div>
