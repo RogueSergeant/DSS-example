@@ -15,6 +15,7 @@ import {
   CartesianGrid,
   Tooltip,
   ReferenceLine,
+  ResponsiveContainer,
 } from 'recharts';
 import { colors, typography, kpiCard, spacing, chartDefaults } from '../lib/theme';
 import {
@@ -419,8 +420,8 @@ export function OverviewPage({ year, onNavigate: _onNavigate }: OverviewPageProp
           title="Sales double. Margin doesn't move."
           subtitle={`Annual sales and net margin, 2011–2014${selectedMarket ? ` — ${selectedMarket}` : ''}`}
         >
+          <ResponsiveContainer width="100%" height={280}>
             <ComposedChart
-              width={700}
               height={280}
               data={yearlyData}
               margin={{ ...chartDefaults.margin, top: 24, right: 120 }}
@@ -510,6 +511,7 @@ export function OverviewPage({ year, onNavigate: _onNavigate }: OverviewPageProp
                 />
               )}
             </ComposedChart>
+          </ResponsiveContainer>
         </ChartWrapper>
       </Section>
 
